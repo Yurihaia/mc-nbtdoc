@@ -20,4 +20,4 @@ Doc comments, which show the description of certain objects start with `///`. Re
 start with `//`. Doc comments are valid before `compound` and `enum` definitions, and on their fields
 
 ## Contributing
-Help on this repo is welcomed and encouraged, but make sure you follow the style guidelines
+Help on this repo is welcomed and encouraged, but make sure you follow the style guidelines at [CONTRIBUTING](CONTRIBUTING.md)
