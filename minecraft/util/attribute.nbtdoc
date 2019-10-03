@@ -1,0 +1,15 @@
+enum(string) Attribute {
+	MaxHealth = "generic.maxHealth",
+	FollowRange = "generic.followRange",
+	KnockbackResistance = "generic.knockbackResistance",
+	MovementSpeed = "generic.movementSpeed",
+	AttackDamage = "generic.attackDamage",
+	Armor = "generic.armor",
+	ArmorToughness = "generic.armorToughness,
+	AttackKnockback = "generic.attackKnockback",
+	AttackSpeed = "generic.attackSpeed",
+	Luck = "generic.luck",
+	HorseJumpStrength = "horse.jumpStrength",
+	FlyingSpeed = "generic.flyingSpeed",
+	ZombieSpawnReinforcements = "zombie.spawnReinforcements"
+}
