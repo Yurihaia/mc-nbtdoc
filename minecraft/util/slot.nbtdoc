@@ -1,0 +1,8 @@
+enum(string) Slot {
+	Mainhand = "mainhand",
+	Offhand = "offhand",
+	Feet = "feet",
+	Legs = "legs",
+	Chest = "chest",
+	Head = "head"
+}
