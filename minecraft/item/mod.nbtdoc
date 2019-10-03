@@ -28,8 +28,7 @@ compound ItemBase {
 	/// 8 -> `CanDestroy`  
 	/// 16 -> `CanPlaceOn` (for block items)  
 	/// 32 -> other misc info
-	HideFlags: int,
-	
+	HideFlags: int
 }
 
 ItemBase describes items;
