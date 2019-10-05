@@ -1,11 +1,11 @@
 WrittenBook describes minecraft:item[
 	minecraft:written_book
 ];
-ShieldItem describes minecraft:item[
-	minecraft:shield
-];
 Crossbow describes minecraft:item[
 	minecraft:crossbow
+];
+Shield describes minecraft:item[
+	minecraft:shield
 ];
 DebugStick describes minecraft:item[
 	minecraft:debug_stick
