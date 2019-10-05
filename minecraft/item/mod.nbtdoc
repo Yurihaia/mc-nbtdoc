@@ -1,5 +1,5 @@
-use ::util::attribute::Attribute;
-use ::util::slot::Slot;
+use ::minecraft::util::attribute::Attribute;
+use ::minecraft::util::slot::Slot;
 
 /// The base NBT of all items
 compound ItemBase {
@@ -9,7 +9,7 @@ compound ItemBase {
 	/// Only used for tools, armor, etc
 	Unbreakable: boolean
 	/// A list of the blocks that can be destoryed by this item when holding it in adventure mode
-	CanDestroy: [id(blocks)]
+	CanDestroy: [id(minecraft:block)]
 	/// A tag that A tag that describes the custom model an item will take.  
 	/// Gets used by the `custom_model_data` model predicate
 	CustomModelData: int,
@@ -31,7 +31,7 @@ compound ItemBase {
 	HideFlags: int
 }
 
-ItemBase describes items;
+ItemBase describes minecraft:item;
 
 /// An individual enchantment, with ID and level
 compound Enchantment {

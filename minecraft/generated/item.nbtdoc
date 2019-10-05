@@ -1,22 +1,22 @@
-WrittenBook describes items[
+WrittenBook describes minecraft:item[
 	minecraft:written_book
 ];
-ShieldItem describes items[
+ShieldItem describes minecraft:item[
 	minecraft:shield
 ];
-Crossbow describes items[
+Crossbow describes minecraft:item[
 	minecraft:crossbow
 ];
-DebugStick describes items[
+DebugStick describes minecraft:item[
 	minecraft:debug_stick
 ];
-FilledMap describes items[
+FilledMap describes minecraft:item[
 	minecraft:filled_map
 ];
-EnchantedBook describes items[
+EnchantedBook describes minecraft:item[
 	minecraft:enchanted_book
 ];
-BlockItem describes items[
+BlockItem describes minecraft:item[
 	minecraft:air,
 	minecraft:stone,
 	minecraft:granite,
@@ -564,7 +564,7 @@ BlockItem describes items[
 	minecraft:bee_nest,
 	minecraft:bee_hive
 ];
-WallBlockItem describes items[
+WallBlockItem describes minecraft:item[
 	minecraft:torch,
 	minecraft:redstone_torch,
 	minecraft:tube_coral_fan,
@@ -599,13 +599,13 @@ WallBlockItem describes items[
 	minecraft:red_banner,
 	minecraft:black_banner
 ];
-WritableBook describes items[
+WritableBook describes minecraft:item[
 	minecraft:writable_book
 ];
-FireworkStar describes items[
+FireworkStar describes minecraft:item[
 	minecraft:firework_star
 ];
-Bucket describes items[
+Bucket describes minecraft:item[
 	minecraft:bucket,
 	minecraft:water_bucket,
 	minecraft:lava_bucket,
@@ -614,32 +614,32 @@ Bucket describes items[
 	minecraft:cod_bucket,
 	minecraft:tropical_fish_bucket
 ];
-KnowlegeBook describes items[
+KnowlegeBook describes minecraft:item[
 	minecraft:knowledge_book
 ];
-EffectItem describes items[
+EffectItem describes minecraft:item[
 	minecraft:potion,
 	minecraft:splash_potion,
 	minecraft:tipped_arrow,
 	minecraft:lingering_potion
 ];
-LeatherArmor describes items[
+LeatherArmor describes minecraft:item[
 	minecraft:leather_helmet,
 	minecraft:leather_chestplate,
 	minecraft:leather_leggings,
 	minecraft:leather_boots,
 	minecraft:leather_horse_armor
 ];
-PlayerHead describes items[
+PlayerHead describes minecraft:item[
 	minecraft:player_head
 ];
-FireworkRocket describes items[
+FireworkRocket describes minecraft:item[
 	minecraft:firework_rocket
 ];
-SuspiciousStew describes items[
+SuspiciousStew describes minecraft:item[
 	minecraft:suspicious_stew
 ];
-SpawnItem describes items[
+SpawnItem describes minecraft:item[
 	minecraft:bat_spawn_egg,
 	minecraft:bee_spawn_egg,
 	minecraft:blaze_spawn_egg,
