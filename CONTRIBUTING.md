@@ -41,10 +41,10 @@ enum(string) MyEnum {
 ```
 
 ```
-MyCompound describes [
+MyCompound describes minecraft:entity[
 	minecraft:sheep,
 	minecraft:cow
 ];
 
-MyOtherCompound describes [ minecraft:chicken ];
+MyOtherCompound describes minecraft:entity[ minecraft:chicken ];
 ```
