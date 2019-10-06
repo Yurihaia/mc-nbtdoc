@@ -18,8 +18,8 @@ compound Properties {
 }
 
 compound Texture {
-	/// Signiature of the texture
-	Signiature: string,
+	/// Signature of the texture
+	Signature: string,
 	/// Base64 encoded JSON value of the texture
 	Value: string
 }
