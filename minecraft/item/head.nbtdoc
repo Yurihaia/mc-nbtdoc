@@ -1,0 +1,25 @@
+compound PlayerHead extends super::ItemBase {
+	/// The skull owner
+	SkullOwner: (SkullOwner | string)
+}
+
+compound SkullOwner {
+	/// UUID of the owner, optional
+	Id: string,
+	/// Name of the owner, if missing appears as a steve head
+	Name: string,
+	/// Texture properties
+	Properties: Properties
+}
+
+compound Properties {
+	/// The textures
+	textures: [Texture]
+}
+
+compound Texture {
+	/// Signiature of the texture
+	Signiature: string,
+	/// Base64 encoded JSON value of the texture
+	Value: string
+}
