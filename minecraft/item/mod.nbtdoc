@@ -23,9 +23,9 @@ compound ItemBase {
 	Damage: int,
 	/// Whether the item should be unbreakable
 	/// Only used for tools, armor, etc
-	Unbreakable: boolean
+	Unbreakable: boolean,
 	/// A list of the blocks that can be destoryed by this item when holding it in adventure mode
-	CanDestroy: [id(minecraft:block)]
+	CanDestroy: [id(minecraft:block)],
 	/// A tag that A tag that describes the custom model an item will take.  
 	/// Gets used by the `custom_model_data` model predicate
 	CustomModelData: int,
