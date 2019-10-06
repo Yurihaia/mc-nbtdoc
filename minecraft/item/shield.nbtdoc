@@ -1,0 +1,19 @@
+use ::minecraft::util::color::Color;
+use ::minecraft::util::bannerpattern::BannerPattern
+
+compound Shield extends super::ItemBase {
+	/// The tag for the shield
+	BlockEntityTag: Tag
+}
+
+compound Tag {
+	/// The patterns on the shield
+	Patterns: [Pattern]
+}
+
+compound Pattern {
+	/// The color of the pattern
+	Color: Color,
+	/// The pattern id
+	Pattern: BannerPattern
+}

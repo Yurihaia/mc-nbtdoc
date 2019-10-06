@@ -1,7 +1,9 @@
+/// An item that can be placed as a block
 compound BlockItem extends super::ItemBase {
 	/// A list of blocks that this block item can be placed on
 	CanPlaceOn: [id(minecraft:block)],
 	/// The tags that the block entity that is placed can have
-	BlockEntityTag: blocks[super.id],
-	
+	BlockEntityTag: minecraft:block[super.id],
+	/// The block states that the placed block will have
+	BlockStateTag: custom:blockitemstates[super.id]
 }

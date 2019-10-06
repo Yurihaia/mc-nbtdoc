@@ -1,0 +1,9 @@
+use super::inventoryitem::InventoryItem;
+
+/// A crossbow
+compound Crossbow extends super::ItemBase {
+	/// The projectiles loaded into the crossbow
+	ChargedProjectiles: [InventoryItem] @ 0..3,
+	/// Whether the crossbow is charged
+	Charged: boolean
+}

@@ -1,0 +1,37 @@
+compound FireworkRocket extends super::ItemBase {
+	/// The firework settings
+	Fireworks: Fireworks
+}
+
+compound FireworkStar extends super::ItemBase {
+	/// The explosion settings
+	Explosion: Explosion
+}
+
+compound Fireworks {
+	/// Flight duration of the firework rocket
+	Flight: byte,
+	/// Explosions on the firework
+	Explosions: [Explosion]
+}
+
+compound Explosion {
+	/// Whether the explosion should flicker
+	Flicker: boolean,
+	/// Whether the explosion should have a trait
+	Trail: boolean,
+	/// The type of the explosion
+	Type: Type,
+	/// The colors of the explosion, calculated as RED <<16 | GREEN <<8 | BLUE
+	Colors: int[],
+	/// The colors of the explosion fade, calculated as RED <<16 | GREEN <<8 | BLUE
+	FadeColors: int[]
+}
+
+enum(byte) Type {
+	SmallBall = 0,
+	LargeBall = 1,
+	Star = 2,
+	Creeper = 3,
+	Burst = 4
+}

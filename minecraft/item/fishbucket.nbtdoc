@@ -1,0 +1,4 @@
+compound FishBucket extends super::spawnitem::SpawnItem {
+	/// The variant of fish. Only used for tropical fish
+	BucketVariantTag: int
+}

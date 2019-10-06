@@ -1,3 +1,19 @@
+mod blockitem;
+mod book;
+mod crossbow;
+mod enchantedbook;
+mod firework;
+mod fishbucket;
+mod head;
+mod inventoryitem;
+mod knowlegebook;
+mod leatherarmor;
+mod map;
+mod potion;
+mod shield;
+mod spawnitem;
+mod suspiciousstew;
+
 use ::minecraft::util::attribute::Attribute;
 use ::minecraft::util::slot::Slot;
 

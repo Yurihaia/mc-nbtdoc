@@ -1,22 +1,100 @@
-WrittenBook describes minecraft:item[
+::minecraft::item::book::WrittenBook describes minecraft:item[
 	minecraft:written_book
 ];
-Crossbow describes minecraft:item[
-	minecraft:crossbow
+::minecraft::item::leatherarmor::LeatherArmor describes minecraft:item[
+	minecraft:leather_helmet,
+	minecraft:leather_chestplate,
+	minecraft:leather_leggings,
+	minecraft:leather_boots,
+	minecraft:leather_horse_armor
 ];
-Shield describes minecraft:item[
-	minecraft:shield
+::minecraft::item::potion::EffectItem describes minecraft:item[
+	minecraft:potion,
+	minecraft:splash_potion,
+	minecraft:tipped_arrow,
+	minecraft:lingering_potion
 ];
-DebugStick describes minecraft:item[
-	minecraft:debug_stick
+::minecraft::item::spawnitem::SpawnItem describes minecraft:item[
+	minecraft:bat_spawn_egg,
+	minecraft:bee_spawn_egg,
+	minecraft:blaze_spawn_egg,
+	minecraft:cat_spawn_egg,
+	minecraft:cave_spider_spawn_egg,
+	minecraft:chicken_spawn_egg,
+	minecraft:cod_spawn_egg,
+	minecraft:cow_spawn_egg,
+	minecraft:creeper_spawn_egg,
+	minecraft:dolphin_spawn_egg,
+	minecraft:donkey_spawn_egg,
+	minecraft:drowned_spawn_egg,
+	minecraft:elder_guardian_spawn_egg,
+	minecraft:enderman_spawn_egg,
+	minecraft:endermite_spawn_egg,
+	minecraft:evoker_spawn_egg,
+	minecraft:fox_spawn_egg,
+	minecraft:ghast_spawn_egg,
+	minecraft:guardian_spawn_egg,
+	minecraft:horse_spawn_egg,
+	minecraft:husk_spawn_egg,
+	minecraft:llama_spawn_egg,
+	minecraft:magma_cube_spawn_egg,
+	minecraft:mooshroom_spawn_egg,
+	minecraft:mule_spawn_egg,
+	minecraft:ocelot_spawn_egg,
+	minecraft:panda_spawn_egg,
+	minecraft:parrot_spawn_egg,
+	minecraft:phantom_spawn_egg,
+	minecraft:pig_spawn_egg,
+	minecraft:pillager_spawn_egg,
+	minecraft:polar_bear_spawn_egg,
+	minecraft:pufferfish_spawn_egg,
+	minecraft:rabbit_spawn_egg,
+	minecraft:ravager_spawn_egg,
+	minecraft:salmon_spawn_egg,
+	minecraft:sheep_spawn_egg,
+	minecraft:shulker_spawn_egg,
+	minecraft:silverfish_spawn_egg,
+	minecraft:skeleton_spawn_egg,
+	minecraft:skeleton_horse_spawn_egg,
+	minecraft:slime_spawn_egg,
+	minecraft:spider_spawn_egg,
+	minecraft:squid_spawn_egg,
+	minecraft:stray_spawn_egg,
+	minecraft:trader_llama_spawn_egg,
+	minecraft:tropical_fish_spawn_egg,
+	minecraft:turtle_spawn_egg,
+	minecraft:vex_spawn_egg,
+	minecraft:villager_spawn_egg,
+	minecraft:vindicator_spawn_egg,
+	minecraft:wandering_trader_spawn_egg,
+	minecraft:witch_spawn_egg,
+	minecraft:wither_skeleton_spawn_egg,
+	minecraft:wolf_spawn_egg,
+	minecraft:zombie_spawn_egg,
+	minecraft:zombie_horse_spawn_egg,
+	minecraft:zombie_pigman_spawn_egg,
+	minecraft:zombie_villager_spawn_egg,
+	minecraft:armor_stand
 ];
-FilledMap describes minecraft:item[
+::minecraft::item::knowlegebook::KnowlegeBook describes minecraft:item[
+	minecraft:knowledge_book
+];
+::minecraft::item::map::FilledMap describes minecraft:item[
 	minecraft:filled_map
 ];
-EnchantedBook describes minecraft:item[
-	minecraft:enchanted_book
+::minecraft::item::book::WritableBook describes minecraft:item[
+	minecraft:writable_book
 ];
-BlockItem describes minecraft:item[
+::minecraft::item::crossbow::Crossbow describes minecraft:item[
+	minecraft:crossbow
+];
+::minecraft::item::firework::FireworkStar describes minecraft:item[
+	minecraft:firework_star
+];
+::minecraft::item::firework::FireworkRocket describes minecraft:item[
+	minecraft:firework_rocket
+];
+::minecraft::item::blockitem::BlockItem describes minecraft:item[
 	minecraft:air,
 	minecraft:stone,
 	minecraft:granite,
@@ -163,6 +241,7 @@ BlockItem describes minecraft:item[
 	minecraft:bookshelf,
 	minecraft:mossy_cobblestone,
 	minecraft:obsidian,
+	minecraft:torch,
 	minecraft:end_rod,
 	minecraft:chorus_plant,
 	minecraft:chorus_flower,
@@ -189,6 +268,7 @@ BlockItem describes minecraft:item[
 	minecraft:acacia_pressure_plate,
 	minecraft:dark_oak_pressure_plate,
 	minecraft:redstone_ore,
+	minecraft:redstone_torch,
 	minecraft:stone_button,
 	minecraft:snow,
 	minecraft:ice,
@@ -481,6 +561,16 @@ BlockItem describes minecraft:item[
 	minecraft:dead_fire_coral,
 	minecraft:dead_horn_coral,
 	minecraft:dead_tube_coral,
+	minecraft:tube_coral_fan,
+	minecraft:brain_coral_fan,
+	minecraft:bubble_coral_fan,
+	minecraft:fire_coral_fan,
+	minecraft:horn_coral_fan,
+	minecraft:dead_tube_coral_fan,
+	minecraft:dead_brain_coral_fan,
+	minecraft:dead_bubble_coral_fan,
+	minecraft:dead_fire_coral_fan,
+	minecraft:dead_horn_coral_fan,
 	minecraft:blue_ice,
 	minecraft:conduit,
 	minecraft:polished_granite_stairs,
@@ -531,6 +621,9 @@ BlockItem describes minecraft:item[
 	minecraft:jungle_sign,
 	minecraft:acacia_sign,
 	minecraft:dark_oak_sign,
+	minecraft:bucket,
+	minecraft:water_bucket,
+	minecraft:lava_bucket,
 	minecraft:redstone,
 	minecraft:sugar_cane,
 	minecraft:kelp,
@@ -546,37 +639,6 @@ BlockItem describes minecraft:item[
 	minecraft:flower_pot,
 	minecraft:carrot,
 	minecraft:potato,
-	minecraft:beetroot_seeds,
-	minecraft:loom,
-	minecraft:barrel,
-	minecraft:smoker,
-	minecraft:blast_furnace,
-	minecraft:cartography_table,
-	minecraft:fletching_table,
-	minecraft:grindstone,
-	minecraft:lectern,
-	minecraft:smithing_table,
-	minecraft:stonecutter,
-	minecraft:bell,
-	minecraft:lantern,
-	minecraft:sweet_berries,
-	minecraft:campfire,
-	minecraft:bee_nest,
-	minecraft:bee_hive
-];
-WallBlockItem describes minecraft:item[
-	minecraft:torch,
-	minecraft:redstone_torch,
-	minecraft:tube_coral_fan,
-	minecraft:brain_coral_fan,
-	minecraft:bubble_coral_fan,
-	minecraft:fire_coral_fan,
-	minecraft:horn_coral_fan,
-	minecraft:dead_tube_coral_fan,
-	minecraft:dead_brain_coral_fan,
-	minecraft:dead_bubble_coral_fan,
-	minecraft:dead_fire_coral_fan,
-	minecraft:dead_horn_coral_fan,
 	minecraft:skeleton_skull,
 	minecraft:wither_skeleton_skull,
 	minecraft:zombie_head,
@@ -597,107 +659,40 @@ WallBlockItem describes minecraft:item[
 	minecraft:brown_banner,
 	minecraft:green_banner,
 	minecraft:red_banner,
-	minecraft:black_banner
+	minecraft:black_banner,
+	minecraft:beetroot_seeds,
+	minecraft:loom,
+	minecraft:barrel,
+	minecraft:smoker,
+	minecraft:blast_furnace,
+	minecraft:cartography_table,
+	minecraft:fletching_table,
+	minecraft:grindstone,
+	minecraft:lectern,
+	minecraft:smithing_table,
+	minecraft:stonecutter,
+	minecraft:bell,
+	minecraft:lantern,
+	minecraft:sweet_berries,
+	minecraft:campfire,
+	minecraft:bee_nest,
+	minecraft:bee_hive
 ];
-WritableBook describes minecraft:item[
-	minecraft:writable_book
+::minecraft::item::enchantedbook::EnchantedBook describes minecraft:item[
+	minecraft:enchanted_book
 ];
-FireworkStar describes minecraft:item[
-	minecraft:firework_star
+::minecraft::item::shield::Shield describes minecraft:item[
+	minecraft:shield
 ];
-Bucket describes minecraft:item[
-	minecraft:bucket,
-	minecraft:water_bucket,
-	minecraft:lava_bucket,
+::minecraft::item::fishbucket::FishBucket describes minecraft:item[
 	minecraft:pufferfish_bucket,
 	minecraft:salmon_bucket,
 	minecraft:cod_bucket,
 	minecraft:tropical_fish_bucket
 ];
-KnowlegeBook describes minecraft:item[
-	minecraft:knowledge_book
-];
-EffectItem describes minecraft:item[
-	minecraft:potion,
-	minecraft:splash_potion,
-	minecraft:tipped_arrow,
-	minecraft:lingering_potion
-];
-LeatherArmor describes minecraft:item[
-	minecraft:leather_helmet,
-	minecraft:leather_chestplate,
-	minecraft:leather_leggings,
-	minecraft:leather_boots,
-	minecraft:leather_horse_armor
-];
-PlayerHead describes minecraft:item[
+::minecraft::item::head::PlayerHead describes minecraft:item[
 	minecraft:player_head
 ];
-FireworkRocket describes minecraft:item[
-	minecraft:firework_rocket
-];
-SuspiciousStew describes minecraft:item[
+::minecraft::item::suspiciousstew::SuspiciousStew describes minecraft:item[
 	minecraft:suspicious_stew
-];
-SpawnItem describes minecraft:item[
-	minecraft:bat_spawn_egg,
-	minecraft:bee_spawn_egg,
-	minecraft:blaze_spawn_egg,
-	minecraft:cat_spawn_egg,
-	minecraft:cave_spider_spawn_egg,
-	minecraft:chicken_spawn_egg,
-	minecraft:cod_spawn_egg,
-	minecraft:cow_spawn_egg,
-	minecraft:creeper_spawn_egg,
-	minecraft:dolphin_spawn_egg,
-	minecraft:donkey_spawn_egg,
-	minecraft:drowned_spawn_egg,
-	minecraft:elder_guardian_spawn_egg,
-	minecraft:enderman_spawn_egg,
-	minecraft:endermite_spawn_egg,
-	minecraft:evoker_spawn_egg,
-	minecraft:fox_spawn_egg,
-	minecraft:ghast_spawn_egg,
-	minecraft:guardian_spawn_egg,
-	minecraft:horse_spawn_egg,
-	minecraft:husk_spawn_egg,
-	minecraft:llama_spawn_egg,
-	minecraft:magma_cube_spawn_egg,
-	minecraft:mooshroom_spawn_egg,
-	minecraft:mule_spawn_egg,
-	minecraft:ocelot_spawn_egg,
-	minecraft:panda_spawn_egg,
-	minecraft:parrot_spawn_egg,
-	minecraft:phantom_spawn_egg,
-	minecraft:pig_spawn_egg,
-	minecraft:pillager_spawn_egg,
-	minecraft:polar_bear_spawn_egg,
-	minecraft:pufferfish_spawn_egg,
-	minecraft:rabbit_spawn_egg,
-	minecraft:ravager_spawn_egg,
-	minecraft:salmon_spawn_egg,
-	minecraft:sheep_spawn_egg,
-	minecraft:shulker_spawn_egg,
-	minecraft:silverfish_spawn_egg,
-	minecraft:skeleton_spawn_egg,
-	minecraft:skeleton_horse_spawn_egg,
-	minecraft:slime_spawn_egg,
-	minecraft:spider_spawn_egg,
-	minecraft:squid_spawn_egg,
-	minecraft:stray_spawn_egg,
-	minecraft:trader_llama_spawn_egg,
-	minecraft:tropical_fish_spawn_egg,
-	minecraft:turtle_spawn_egg,
-	minecraft:vex_spawn_egg,
-	minecraft:villager_spawn_egg,
-	minecraft:vindicator_spawn_egg,
-	minecraft:wandering_trader_spawn_egg,
-	minecraft:witch_spawn_egg,
-	minecraft:wither_skeleton_spawn_egg,
-	minecraft:wolf_spawn_egg,
-	minecraft:zombie_spawn_egg,
-	minecraft:zombie_horse_spawn_egg,
-	minecraft:zombie_pigman_spawn_egg,
-	minecraft:zombie_villager_spawn_egg,
-	minecraft:armor_stand
 ];
