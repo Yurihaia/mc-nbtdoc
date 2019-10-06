@@ -1,0 +1,8 @@
+compound InventoryItem {
+	/// The number of items in the stack
+	Count: byte,
+	/// The id of the item
+	id: id(minecraft:item),
+	/// The NBT of the item
+	tag: minecraft:item[id]
+}

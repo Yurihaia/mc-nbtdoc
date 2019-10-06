@@ -1,2 +1,5 @@
 mod attribute;
 mod slot;
+mod effect;
+mod color;
+mod bannerpattern;

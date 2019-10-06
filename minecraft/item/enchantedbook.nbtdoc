@@ -1,0 +1,4 @@
+compound EnchantedBook extends super::ItemBase {
+	/// The stored enchantments
+	StoredEnchantments: [super::Enchantment]
+}
