@@ -78,7 +78,7 @@ enum(byte) IconId {
 	/// Black banner
 	BlackBanner = 25,
 	/// Red `x`
-	RedX = 26,
+	RedX = 26
 }
 
 /// The display settings of an item

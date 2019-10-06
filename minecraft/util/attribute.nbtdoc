@@ -5,7 +5,7 @@ enum(string) Attribute {
 	MovementSpeed = "generic.movementSpeed",
 	AttackDamage = "generic.attackDamage",
 	Armor = "generic.armor",
-	ArmorToughness = "generic.armorToughness,
+	ArmorToughness = "generic.armorToughness",
 	AttackKnockback = "generic.attackKnockback",
 	AttackSpeed = "generic.attackSpeed",
 	Luck = "generic.luck",

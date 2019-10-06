@@ -1,80 +1,80 @@
 enum(string) BannerPattern {
 	/// Bottom Stripe (Base)
-	BottomStripe = "bs"
+	BottomStripe = "bs",
 	/// Top Stripe (Chief)
-	TopStripe = "ts"
+	TopStripe = "ts",
 	/// Left Stripe (Pale dexter)
-	LeftStripe = "ls"
+	LeftStripe = "ls",
 	/// Right Stripe (Pale sinister)
-	RightStripe = "rs"
+	RightStripe = "rs",
 	/// Center Stripe (Vertical) (Pale)
-	CenterStripeVertical = "cs"
+	CenterStripeVertical = "cs",
 	/// Middle Stripe (Horizontal) (Fess)
-	MiddleStripeHorizontal = "ms"
+	MiddleStripeHorizontal = "ms",
 	/// Down Right Stripe (Bend)
-	DownRightStripe = "drs"
+	DownRightStripe = "drs",
 	/// Down Left Stripe (Bend sinister)
-	DownLeftStripe = "dls"
+	DownLeftStripe = "dls",
 	/// Small (Vertical) Stripes (Paly)
-	SmallVerticalStripes = "ss"
+	SmallVerticalStripes = "ss",
 	/// Diagonal Cross (Saltire)
-	DiagonalCross = "cr"
+	DiagonalCross = "cr",
 	/// Square Cross (Cross)
-	SquareCross = "sc"
+	SquareCross = "sc",
 	/// Left of Diagonal (Per bend sinister)
-	LeftOfDiagonal = "ld"
+	LeftOfDiagonal = "ld",
 	/// Right of upside-down Diagonal (Per bend)
-	RightOfUpsideDownDiagonal = "rud"
+	RightOfUpsideDownDiagonal = "rud",
 	/// Left of upside-down Diagonal (Per bend inverted)
-	LeftOfUpsideDownDiagonal = "lud"
+	LeftOfUpsideDownDiagonal = "lud",
 	/// Right of Diagonal (Per bend sinister inverted)
-	RightOfDiagonal = "rd"
+	RightOfDiagonal = "rd",
 	/// Vertical Half (left) (Per pale)
-	VerticalHalfLeft = "vh"
+	VerticalHalfLeft = "vh",
 	/// Vertical Half (right) (Per pale inverted)
-	VerticalHalfRight = "vhr"
+	VerticalHalfRight = "vhr",
 	/// Horizontal Half (top) (Per fess)
-	HorizontalHalfTop = "hh"
+	HorizontalHalfTop = "hh",
 	/// Horizontal Half (bottom) (Per fess inverted)
-	HorizontalHalfBottom = "hhb"
+	HorizontalHalfBottom = "hhb",
 	/// Bottom Left Corner (Base dexter canton)
-	BottomLeftCorner = "bl"
+	BottomLeftCorner = "bl",
 	/// Bottom Right Corner (Base sinister canton)
-	BottomRightCorner = "br"
+	BottomRightCorner = "br",
 	/// Top Left Corner (Chief dexter canton)
-	TopLeftCorner = "tl"
+	TopLeftCorner = "tl",
 	/// Top Right Corner (Chief sinister canton)
-	TopRightCorner = "tr"
+	TopRightCorner = "tr",
 	/// Bottom Triangle (Chevron)
-	BottomTriangle = "bt"
+	BottomTriangle = "bt",
 	/// Top Triangle (Inverted chevron)
-	TopTriangle = "tt"
+	TopTriangle = "tt",
 	/// Bottom Triangle Sawtooth (Base indented)
-	BottomTriangleSawtooth = "bts"
+	BottomTriangleSawtooth = "bts",
 	/// Top Triangle Sawtooth (Chief indented)
-	TopTriangleSawtooth = "tts"
+	TopTriangleSawtooth = "tts",
 	/// Middle Circle (Roundel)
-	MiddleCircle = "mc"
+	MiddleCircle = "mc",
 	/// Middle Rhombus (Lozenge)
-	MiddleRhombus = "mr"
+	MiddleRhombus = "mr",
 	/// Border (Bordure)
-	Border = "bo"
+	Border = "bo",
 	/// Curly Border (Bordure indented)
-	CurlyBorder = "cbo"
+	CurlyBorder = "cbo",
 	/// Brick (Field masoned)
-	Brick = "bri"
+	Brick = "bri",
 	/// Gradient (Gradient)
-	Gradient = "gra"
+	Gradient = "gra",
 	/// Gradient upside-down (Base gradient)
-	GradientUpsideDown = "gru"
+	GradientUpsideDown = "gru",
 	/// Creeper (Creeper charge)
-	Creeper = "cre"
+	Creeper = "cre",
 	/// Skull (Skull charge)
-	Skull = "sku"
+	Skull = "sku",
 	/// Flower (Flower charge)
-	Flower = "flo"
+	Flower = "flo",
 	/// Mojang (Thing)
-	Mojang = "moj"
+	Mojang = "moj",
 	/// Globe (Globe)
 	Globe = "glb"
 }
