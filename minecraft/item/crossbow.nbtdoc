@@ -1,4 +1,4 @@
-use super::inventoryitem::InventoryItem;
+use super::inventory::InventoryItem;
 
 /// A crossbow
 compound Crossbow extends super::ItemBase {
