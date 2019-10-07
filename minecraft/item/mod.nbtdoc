@@ -5,7 +5,7 @@ mod enchantedbook;
 mod firework;
 mod fishbucket;
 mod head;
-mod inventoryitem;
+mod inventory;
 mod knowlegebook;
 mod leatherarmor;
 mod map;
