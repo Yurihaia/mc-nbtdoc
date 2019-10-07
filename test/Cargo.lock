@@ -38,7 +38,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "nbtdoc"
 version = "0.1.0"
-source = "git+https://github.com/MrYurihi/nbtdoc-rs.git#073c2fa32583610629824b6224c92befad4bfef5"
+source = "git+https://github.com/MrYurihi/nbtdoc-rs.git#b8102c766221cb30d01ab3ba02564975722ef8c7"
 dependencies = [
  "nom 5.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -49,6 +49,7 @@ version = "0.1.0"
 dependencies = [
  "glob 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "nbtdoc 0.1.0 (git+https://github.com/MrYurihi/nbtdoc-rs.git)",
+ "nom 5.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
