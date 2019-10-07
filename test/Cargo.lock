@@ -38,7 +38,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "nbtdoc"
 version = "0.1.0"
-source = "git+https://github.com/MrYurihi/nbtdoc-rs.git#b8102c766221cb30d01ab3ba02564975722ef8c7"
+source = "git+https://github.com/MrYurihi/nbtdoc-rs.git#c2e612449acdc1fcacae722bb1119ab58cfadf80"
 dependencies = [
  "nom 5.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
