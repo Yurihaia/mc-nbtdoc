@@ -5,7 +5,6 @@ mod enchantedbook;
 mod firework;
 mod fishbucket;
 mod head;
-mod inventory;
 mod knowlegebook;
 mod leatherarmor;
 mod map;
@@ -14,8 +13,9 @@ mod shield;
 mod spawnitem;
 mod suspiciousstew;
 
-use ::minecraft::util::attribute::Attribute;
-use ::minecraft::util::slot::Slot;
+use ::minecraft::util::Attribute;
+use ::minecraft::util::Slot;
+use ::minecraft::util::attribute::Operation;
 
 /// The base NBT of all items
 compound ItemBase {
@@ -73,20 +73,6 @@ compound AttributeModifier {
 	UUIDMost: long,
 	/// Lower bits of the modifiers uuid
 	UUIDLeast: long
-}
-
-/// A modifier operation
-enum(int) Operation {
-	/// Adds all of the modifiers' amounts to the current value of the attribute
-	Additive = 0,
-	/// Multiplies the current value of the attribute by (1 + x),
-	/// where x is the sum of the modifiers' amounts.
-	Multiplicative = 1,
-	/// For every modifier, multiplies the current value of the attribute by (1 + x),
-	/// where x is the amount of the particular modifier.
-	/// Functions the same as Operation 1 if there is only a single modifier with operation 1 or 2.
-	/// However, for multiple modifiers it will multiply the modifiers rather than adding them
-	Percentage = 2
 }
 
 /// The display settings of an item
