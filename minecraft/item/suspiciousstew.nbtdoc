@@ -1,4 +1,4 @@
-use ::minecraft::util::effect::EffectId;
+use ::minecraft::util::EffectId;
 
 /// A suspicious stew item
 compound SuspiciousStew extends super::ItemBase {

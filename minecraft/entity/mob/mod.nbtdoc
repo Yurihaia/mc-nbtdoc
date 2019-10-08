@@ -1,6 +1,8 @@
-use ::minecraft::util::attribute::Attribute;
-use ::minecraft::util::effect::PotionEffect;
-use ::minecraft::item::inventory::InventoryItem;
+use ::minecraft::util::Attribute;
+use ::minecraft::util::PotionEffect;
+use ::minecraft::util::InventoryItem;
+use ::minecraft::util::Slot;
+use ::minecraft::util::attribute::Operation;
 
 /// Base NBT for all mobs
 compound MobBase extends super::EntityBase {

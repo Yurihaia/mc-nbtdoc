@@ -1,4 +1,4 @@
-use super::inventory::InventoryItem;
+use ::minecraft::util::InventoryItem;
 
 /// A crossbow
 compound Crossbow extends super::ItemBase {
