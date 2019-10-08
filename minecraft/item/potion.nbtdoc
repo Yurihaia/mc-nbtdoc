@@ -1,4 +1,4 @@
-use ::minecraft::util::effect::PotionEffect;
+use ::minecraft::util::PotionEffect;
 
 /// An item that has a potion effect
 compound EffectItem extends super::ItemBase {
