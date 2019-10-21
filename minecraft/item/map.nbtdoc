@@ -33,7 +33,7 @@ enum(byte) IconId {
 	RedMarker = 2,
 	/// Blue pentagon
 	BlueMarker = 3,
-	/// White `x`
+	/// White x
 	TargetX = 4,
 	/// Red triangle
 	TargetPoint = 5,
@@ -77,7 +77,7 @@ enum(byte) IconId {
 	RedBanner = 24,
 	/// Black banner
 	BlackBanner = 25,
-	/// Red `x`
+	/// Red x
 	RedX = 26
 }
 

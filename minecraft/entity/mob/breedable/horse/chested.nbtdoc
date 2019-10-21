@@ -1,0 +1,12 @@
+use ::minecraft::util::SlottedItem;
+
+compound ChestedHorse extends super::HorseBase {
+	/// Whether the horse has a chest
+	ChestedHorse: boolean,
+	/// The items in the horse's chest
+	Items: [SlottedItem]
+}
+
+ChestedHorse describes minecraft:entity[
+	minecraft:donkey
+];

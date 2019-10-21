@@ -1,0 +1,17 @@
+use ::minecraft::util::EffectId;
+
+compound Mooshroom extends super::Breedable {
+	/// The type of the mooshroom
+	Type: Type,
+	/// The effect that the mooshroom gives to suspicious stew
+	EffectId: EffectId,
+	/// The duration of the suspicious stew effect
+	EffectDuration: int
+}
+
+enum(string) Type {
+	Red = "red",
+	Brown = "brown"
+}
+
+Mooshroom describes minecraft:entity[minecraft:mooshroom];

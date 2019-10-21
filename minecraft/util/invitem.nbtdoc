@@ -6,3 +6,8 @@ compound InventoryItem {
 	/// The NBT of the item
 	tag: minecraft:item[id]
 }
+
+compound SlottedItem extends InventoryItem {
+	/// The inventory slot the item is in
+	Slot: byte
+}

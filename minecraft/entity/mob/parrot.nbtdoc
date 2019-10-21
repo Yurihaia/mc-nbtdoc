@@ -1,0 +1,18 @@
+compound Parrot extends super::MobBase {
+	/// The UUID of the owner
+	OwnerUUID: string,
+	/// Whether the parrot is sitting
+	Sitting: boolean,
+	/// The variant of the parrot
+	Variant: Variant
+}
+
+enum(int) Variant {
+	Red = 0,
+	Blue = 1,
+	Green = 2,
+	Cyan = 3,
+	Gray = 4
+}
+
+Parrot describes minecraft:entity[minecraft:parrot];

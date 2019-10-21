@@ -1,0 +1,43 @@
+use ::minecraft::util::SlottedItem;
+use ::minecraft::util::InventoryItem;
+
+compound Llama extends super::Breedable {
+	/// Unknown use  
+	/// Remains `0` even if the llama was bred
+	Bred: boolean,
+	/// Whether the llama is grazing
+	EatingHaystack: boolean,
+	/// Whether the llama has been tamed
+	Tame: boolean,
+	/// Higher values make the llama easier to tame  
+	/// Increases with feeding
+	Temper: int @ 0..100,
+	/// UUID of the player who tamed the llama
+	OwnerUUID: string,
+	/// The carpet item of the llama
+	DecorItem: InventoryItem,
+	/// Whether the llama has a chest
+	ChestedHorse: boolean,
+	/// The items in the llama's chest
+	Items: [SlottedItem],
+	/// Determines both the number of item the llama can carry
+	/// and how likely it is for wolves to run away
+	Strength: int @ 1..5,
+	/// The variant of the llama
+	Variant: Variant
+}
+
+enum(int) Variant {
+	Creamy = 0,
+	White = 1,
+	Brown = 2,
+	Gray = 3
+}
+
+compound TraderLlama extends Llama {
+	/// When the trader llama will despawn
+	DespawnDelay: int
+}
+
+Llama describes minecraft:entity[minecraft:llama];
+TraderLlama describes minecraft:entity[minecraft:trader_llama];

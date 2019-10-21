@@ -1,3 +1,21 @@
+mod bat;
+mod breedable;
+mod creeper;
+mod fish;
+mod dolphin;
+mod zombie;
+mod enderdragon;
+mod enderman;
+mod endermite;
+mod ghast;
+mod slime;
+mod parrot;
+mod raider;
+mod shulker;
+mod snowgolem;
+mod trader;
+mod wither;
+
 use ::minecraft::util::Attribute;
 use ::minecraft::util::PotionEffect;
 use ::minecraft::util::InventoryItem;
@@ -20,11 +38,11 @@ compound MobBase extends super::EntityBase {
 	DeathTime: short,
 	/// Whether the mob will glide when it falls
 	FallFlying: boolean,
-	/// `x` coordinate of where the mob is sleeping
+	/// The x coordinate of where the mob is sleeping
 	SleepingX: int,
-	/// `y` coordinate of where the mob is sleeping
+	/// The y coordinate of where the mob is sleeping
 	SleepingY: int,
-	/// `z` coordinate of where the mob is sleeping
+	/// The z coordinate of where the mob is sleeping
 	SleepingZ: int,
 	/// The mob's brain, empty
 	Brain: Brain,
@@ -80,9 +98,9 @@ compound AttributeModifier {
 	Operation: Operation,
 	/// The change in the attribute
 	Amount: double,
-	/// Upper bits of the modifiers uuid
+	/// The upper bits of the modifier's UUID
 	UUIDMost: long,
-	/// Lower bits of the modifiers uuid
+	/// The lower bits of the modifier's UUID
 	UUIDLeast: long
 }
 
@@ -94,17 +112,31 @@ compound Brain {
 compound Memories {}
 
 compound UUIDLeash {
-	/// UUIDMost of other entity leash is attached to
+	/// The upper bits of the other entity's UUID
 	UUIDMost: long,
-	/// UUIDLeast of other entity leash is attached to
+	/// The lower bits of the other entity's UUID
 	UUIDLeast: long
 }
 
 compound BlockLeash {
-	/// `x` coordiante of leash knot
+	/// The x coordiante of leash knot
 	X: int,
-	/// `y` coordiante of leash knot
+	/// The y coordiante of leash knot
 	Y: int,
-	/// `z` coordiante of leash knot
+	/// The z coordiante of leash knot
 	Z: int
 }
+
+MobBase describes minecraft:entity[
+	minecraft:blaze,
+	minecraft:cave_spider,
+	minecraft:elder_guardian,
+	minecraft:giant,
+	minecraft:guardian,
+	minecraft:silverfish,
+	minecraft:skeleton,
+	minecraft:spider,
+	minecraft:squid,
+	minecraft:stray,
+	minecraft:wither_skeleton
+];

@@ -1,0 +1,13 @@
+compound Enderman extends super::MobBase {
+	/// The block the enderman is carrying
+	carriedBlockState: CarriedBlockState
+}
+
+compound CarriedBlockState {
+	/// The Id of the block
+	Name: id(minecraft:block),
+	/// The properties of the block
+	Properties: custom:blockitemstates[Name]
+}
+
+Enderman describes minecraft:entity[minecraft:enderman];
