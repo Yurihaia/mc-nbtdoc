@@ -1,0 +1,7 @@
+/// A bat
+compound Bat extends super::MobBase {
+	/// Whether the bat is upside down
+	BatFlags: boolean
+}
+
+Bat describes minecraft:entity[minecraft:bat];

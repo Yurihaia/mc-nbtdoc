@@ -1,0 +1,8 @@
+mod cat;
+
+compound Tamable extends super::Breedable {
+	/// The UUID of the owner
+	OwerUUID: string,
+	/// Whether the mob is sitting
+	Sitting: boolean
+}

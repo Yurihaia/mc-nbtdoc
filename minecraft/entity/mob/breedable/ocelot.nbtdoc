@@ -1,0 +1,4 @@
+compound Ocelot {
+	/// Whether the ocelot trusts players
+	Trusting: boolean
+}

@@ -1,0 +1,10 @@
+compound Ravager extends super::RaiderBase {
+	/// Ticks until the ravager can attack
+	AttackTick: int,
+	/// Ticks until the ravager can roar
+	RoarTick: int,
+	/// Ticks the ravager is stunned for
+	StunTick: int
+}
+
+Ravager extends minecraft:entity[minecraft:ravager];

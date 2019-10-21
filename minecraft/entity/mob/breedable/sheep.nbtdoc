@@ -1,0 +1,10 @@
+use ::minecraft::util::Color;
+
+compound Sheep extends super::Breedable {
+	/// Whether the sheep has been shorn
+	Sheared: boolean,
+	/// The color of the sheep
+	Color: Color
+}
+
+Sheep describes minecraft:entity[minecraft:sheep];

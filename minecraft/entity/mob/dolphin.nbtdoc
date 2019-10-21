@@ -1,0 +1,14 @@
+compound Dolphin extends super::MobBase {
+	/// The x coordinate of the treasure the dolphin leads to
+	TreasurePosX: int,
+	/// The y coordinate of the treasure the dolphin leads to
+	TreasurePosY: int,
+	/// The z coordinate of the treasure the dolphin leads to
+	TreasurePosZ: int,
+	/// Whether the dolphin has gotten fish from a player
+	GotFish: boolean,
+	/// Whether the dolphin will lead a player to treasure
+	CanFindTreasure: boolean
+}
+
+Dolphin describes minecraft:entity[minecraft:dolphin];

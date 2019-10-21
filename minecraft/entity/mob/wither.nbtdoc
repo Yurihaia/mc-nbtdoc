@@ -1,0 +1,6 @@
+compound Wither extends super::MobBase {
+	/// The number of ticks the wither is invulnerable for
+	Invul: int
+}
+
+Wither extends minecraft:entity[minecraft:wither];

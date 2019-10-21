@@ -1,0 +1,6 @@
+compound Ghast extends super::MobBase {
+	/// The explosion radius of the fireball created by the ghast
+	ExplosionPower: int @ 0..
+}
+
+Ghast describes minecraft:entity[minecraft:ghast];
