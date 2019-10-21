@@ -1,0 +1,8 @@
+compound Endermite extends super::MobBase {
+	/// How long the endermite has existed
+	Lifetime: int,
+	/// Whether enderman should attack the endermite
+	PlayerSpawned: boolean
+}
+
+Endermite describes minecraft:entity[minecraft:endermite];

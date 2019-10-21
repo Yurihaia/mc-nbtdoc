@@ -1,0 +1,9 @@
+compound Spellcaster extends super::RaiderBase {
+	/// Number of ticks until the raider can cast their spell
+	SpellTicks: int
+}
+
+Spellcaster describes minecraft:entity[
+	minecraft:evoker,
+	minecraft:illusioner
+];

@@ -1,0 +1,37 @@
+use super::breedable::villager::VillagerData;
+use super::breedable::villager::Gossip;
+use super::breedable::villager::Offers;
+
+compound Zombie extends super::MobBase {
+	/// Whether the zombie is a baby
+	IsBaby: boolean,
+	/// Whether the zombie can break doors
+	CanBreakDoors: boolean,
+	/// Time until the zombie converts
+	DrownedConversionTime: int,
+	/// Time the zombie has been in the water
+	InWaterTime: int
+}
+
+Zombie describes minecraft:entity[
+	minecraft:drowned,
+	minecraft:husk,
+	minecraft:zombie
+];
+
+compound ZombieVillager extends Zombie {
+	/// The villager's skin data
+	VillagerData: VillagerData,
+	/// The villager's gossips
+	Gossips: [Gossip],
+	/// The villager's offers
+	Offers: Offers,
+	/// The number of ticks until the zombie villager is converted
+	ConversionTime: int,
+	/// The lower bits of the player's uuid who triggered the conversion
+	ConversionPlayerLeast: long,
+	/// The upper bits of the player's uuid who triggered the conversion
+	ConversionPlayerMost: long
+}
+
+ZombieVillager describes minecraft:entity[minecraft:zombie_villager];

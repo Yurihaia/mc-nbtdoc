@@ -24,9 +24,9 @@ compound EntityBase {
 	Invulnerable: boolean,
 	/// How long until the entity can go through a nether portal
 	PortalCooldown: int,
-	/// Upper bits of the modifiers uuid
+	/// The upper bits of the modifiers UUID
 	UUIDMost: long,
-	/// Lower bits of the modifiers uuid
+	/// The lower bits of the modifiers UUID
 	UUIDLeast: long,
 	/// The JSON text component name
 	CustomName: string,

@@ -12,3 +12,4 @@ export use effect::EffectId;
 export use color::Color;
 export use bannerpattern::BannerPattern;
 export use invitem::InventoryItem;
+export use invitem::SlottedItem;

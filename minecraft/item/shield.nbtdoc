@@ -1,4 +1,4 @@
-use ::minecraft::util::Color;
+use ::minecraft::util::color::ColorInt;
 use ::minecraft::util::BannerPattern;
 
 compound Shield extends super::ItemBase {
@@ -13,7 +13,7 @@ compound Tag {
 
 compound Pattern {
 	/// The color of the pattern
-	Color: Color,
+	Color: ColorInt,
 	/// The pattern id
 	Pattern: BannerPattern
 }

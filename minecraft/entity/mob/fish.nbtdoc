@@ -1,0 +1,28 @@
+compound Fish extends super::MobBase {
+	/// If this fish was released from a bucket
+	FromBucket: boolean
+}
+
+compound Pufferfish extends Fish {
+	PuffState: PuffState
+}
+
+compound TropicalFish extends Fish {
+	/// The fish variant
+	Variant: int
+}
+
+enum(int) PuffState {
+	Deflated = 0,
+	HalfPuffed = 1,
+	Puffed = 2
+}
+
+Fish describes minecraft:entity[
+	minecraft:cod,
+	minecraft:salmon
+];
+
+Pufferfish describes minecraft:entity[minecraft:pufferfish];
+
+TropicalFish describes minecraft:entity[minecraft:tropical_fish];

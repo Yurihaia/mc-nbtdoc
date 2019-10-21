@@ -1,0 +1,6 @@
+compound Vindicator extends super::RaiderBase {
+	/// Whether the vindicator should try to attack most other mobs
+	Johnny: boolean
+}
+
+Vindicator describes minecraft:entity[minecraft:vindicator];

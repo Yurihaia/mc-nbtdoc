@@ -1,0 +1,6 @@
+compound IronGolem extends super::MobBase {
+	/// Whether the player created the golem
+	PlayerCreated: boolean
+}
+
+IronGolem describes minecraft:entity[minecraft:iron_golem];

@@ -1,0 +1,32 @@
+mod chicken;
+mod horse;
+mod fox;
+mod llama;
+mod mooshroom;
+mod tamable;
+mod ocelot;
+mod panda;
+mod rabbit;
+mod sheep;
+mod turtle;
+mod villager;
+
+compound Breedable extends super::MobBase {
+	/// Number of ticks until the mob stops searching for a mate
+	InLove: int @ 0..,
+	/// The age of the mob  
+	/// When negative the mob is a baby
+	Age: int,
+	/// A value of age assigned to this mob when it grows up  
+	/// Incremented when a baby mob is fed
+	ForcedAge: int,
+	/// The UUIDMost of the entity that caused this mob to breed
+	LoveCauseMost: long,
+	/// The UUIDMost of the entity that caused this mob to breed
+	LoveCauseLeast: long
+}
+
+Breedable describes minecraft:entity[
+	minecraft:cow,
+	minecraft:polar_bear
+];

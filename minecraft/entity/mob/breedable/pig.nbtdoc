@@ -1,0 +1,6 @@
+compound Pig extends super::Breedable {
+	/// Whether there is a saddle on the pig
+	Saddle: boolean
+}
+
+Pig extends minecraft:entity[minecraft:pig];

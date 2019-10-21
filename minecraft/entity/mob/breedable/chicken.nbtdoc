@@ -1,0 +1,9 @@
+compound Chicken extends super::Breedable {
+	/// Whether this chicken is from a chicken jokey
+	/// If true this chicken will despawn and will drop more experience
+	IsChickenJokey: boolean,
+	/// Time until this chicken lays another egg
+	EggLayTime: int
+}
+
+Chicken describes minecraft:entity[minecraft:chicken];

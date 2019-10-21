@@ -1,0 +1,8 @@
+use ::minecraft::util::SlottedItem;
+
+compound Pillager extends super::RaiderBase {
+	/// The pillager's inventory
+	Inventory: [SlottedItem]
+}
+
+Pillager describes minecraft:entity[minecraft:pillager];

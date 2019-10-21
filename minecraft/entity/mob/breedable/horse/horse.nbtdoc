@@ -1,0 +1,6 @@
+compound Horse extends super::HorseBase {
+	/// The variant of the horse
+	Variant: int
+}
+
+Horse describes minecraft:entity[minecraft:horse];

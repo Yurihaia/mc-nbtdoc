@@ -1,0 +1,6 @@
+compound SnowGolem extends super::MobBase {
+	/// Whether the snow golem has a pumpkin
+	Pumpkin: boolean
+}
+
+SnowGolem describes minecraft:entity[minecraft:snow_golem];

@@ -69,9 +69,9 @@ compound AttributeModifier {
 	Operation: Operation,
 	/// The change in the attribute
 	Amount: double,
-	/// Upper bits of the modifiers uuid
+	/// The upper bits of the modifiers UUID
 	UUIDMost: long,
-	/// Lower bits of the modifiers uuid
+	/// The lower bits of the modifiers UUID
 	UUIDLeast: long
 }
 
