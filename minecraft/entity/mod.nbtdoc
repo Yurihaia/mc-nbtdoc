@@ -1,4 +1,5 @@
 mod mob;
+mod projectile;
 
 /// Base NBT for all entities
 compound EntityBase {

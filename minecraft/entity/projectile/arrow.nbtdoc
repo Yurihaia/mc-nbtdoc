@@ -1,0 +1,58 @@
+use ::minecraft::util::PotionEffect;
+use ::minecraft::util::InventoryItem;
+
+compound ArrowBase extends super::ProjectileBase {
+	/// How players can pick up the projectile
+	pickup: Pickup,
+	/// Whether a player shot the projectile
+	player: boolean,
+	/// The number of ticks since the projectile last moved
+	life: short,
+	/// The damage the projectile should do
+	damage: double,
+	/// Whether the projectile is in the ground
+	inGround: boolean,
+	/// Whether the projectile should do critical damage
+	crit: boolean,
+	/// Whether the projectile was shot from a crossbow
+	ShotFromCrossbow: boolean,
+	/// The number of entities to pass through
+	PierceLevel: byte,
+	/// The sound event to play when the projectile hits something
+	SoundEvent: string,
+	/// The upper bits of the owner's UUID
+	OwnerUUIDMost: long,
+	/// The lower bits of the owner's UUID
+	OwnerUUIDLeast: long
+}
+
+enum(byte) Pickup {
+	None = 0,
+	Any = 1,
+	Creative = 2
+}
+
+compound Arrow extends ArrowBase {
+	/// The color of the arrow, calculated as RED <<16 | GREEN <<8 | BLUE
+	Color: int,
+	/// The custom potion effects to give to the hit entity
+	CustomPotionEffects: [PotionEffect],
+	/// The name of the default potion effect
+	Potion: id(minecraft:mob_effect),
+	/// The color of the arrow's particles, calculated as RED <<16 | GREEN <<8 | BLUE
+	CustomPotionColor: int
+}
+
+compound SpectralArrow extends ArrowBase {
+	/// The number of ticks the glowing effect lasts
+	Duration: int
+}
+
+compound Trident extends ArrowBase {
+	/// The trident that was thrown
+	Trident: InventoryItem
+}
+
+Arrow describes minecraft:entity[minecraft:arrow];
+SpectralArrow describes minecraft:entity[minecraft:spectral_arrow];
+Trident describes minecraft:entity[minecraft:trident];

@@ -27,6 +27,18 @@ compound Llama extends super::Breedable {
 	Variant: Variant
 }
 
+compound LlamaSpit extends super::super::super::EntityBase {
+	/// The owner of the spit
+	Owner: Owner
+}
+
+compound Owner {
+	/// The upper bits of the owner's UUID
+	OwnerUUIDMost: long,
+	/// The lower bits of the owner's UUID
+	OwnerUUIDLeast: long
+}
+
 enum(int) Variant {
 	Creamy = 0,
 	White = 1,
@@ -41,3 +53,4 @@ compound TraderLlama extends Llama {
 
 Llama describes minecraft:entity[minecraft:llama];
 TraderLlama describes minecraft:entity[minecraft:trader_llama];
+LlamaSpit describes minecraft:entity[minecraft:llama_spit];
