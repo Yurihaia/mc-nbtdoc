@@ -1,0 +1,27 @@
+use ::minecraft::util::InventoryItem;
+
+compound FireballBase extends super::super::EntityBase {
+	/// The direction of the fireball
+	direction: [double] @ 3,
+	/// The number of ticks since the fireball last moved
+	life: int,
+	/// The acceleration of the fireball
+	power: [double] @ 3
+}
+
+compound Fireball extends FireballBase {
+	/// The item the fireball should render as
+	Item: InventoryItem
+}
+
+compound LargeFireball extends Fireball {
+	/// The power of the fireball explosion
+	ExplosionPower: int
+}
+
+FireballBase describes minecraft:entity[
+	minecraft:dragon_fireball,
+	minecraft:wither_skull
+];
+Fireball describes minecraft:entity[minecraft:small_fireball];
+LargeFireball describes minecraft:entity[minecraft:fireball];
