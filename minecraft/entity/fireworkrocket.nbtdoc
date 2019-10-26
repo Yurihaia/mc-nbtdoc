@@ -1,0 +1,14 @@
+use ::minecraft::util::InventoryItem;
+
+compound FireworkRocket extends super::EntityBase {
+	/// The number of ticks the firework rocket has been alive for
+	Life: int,
+	/// The number of ticks this firework rocket will live for
+	LifeTime: int,
+	/// Whether the firework rocket should move at an angle
+	ShotAtAngle: boolean,
+	/// The item representation of the firework rocket
+	FireworksItem: InventoryItem
+}
+
+FireworkRocket describes minecraft:entity[minecraft:firework_rocket];
