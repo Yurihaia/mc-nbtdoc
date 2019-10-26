@@ -15,6 +15,8 @@ mod shulker;
 mod snowgolem;
 mod trader;
 mod wither;
+mod armorstand;
+mod player;
 
 use ::minecraft::util::Attribute;
 use ::minecraft::util::PotionEffect;
@@ -22,8 +24,7 @@ use ::minecraft::util::InventoryItem;
 use ::minecraft::util::Slot;
 use ::minecraft::util::attribute::Operation;
 
-/// Base NBT for all mobs
-compound MobBase extends super::EntityBase {
+compound LivingEntity extends super::EntityBase {
 	/// How much health the entity has
 	Health: float,
 	/// How much absorbtion health the entity has
@@ -50,6 +51,14 @@ compound MobBase extends super::EntityBase {
 	Attributes: [Attribute],
 	/// The active potion effects on the mob
 	ActiveEffects: [PotionEffect],
+	/// Whether the mob should have an AI
+	NoAI: boolean,
+	/// The team to join when the mob is spawned
+	Team: string
+}
+
+/// Base NBT for all mobs
+compound MobBase extends LivingEntity {
 	/// The items that the mob is holding, in [main hand, offhand]
 	HandItems: [InventoryItem] @ 2,
 	/// The items that the mob is wearing, in [head, body, legs, feet]
@@ -64,14 +73,10 @@ compound MobBase extends super::EntityBase {
 	DeathLootTableSeed: long,
 	/// Wether the mob can pick up loot
 	CanPickUpLoot: boolean,
-	/// Whether the mob should have an AI
-	NoAI: boolean,
 	/// Whether the mob should not despawn naturally
 	PersistenceRequired: boolean,
 	/// Whether the mob is left handed
 	LeftHanded: boolean,
-	/// The team to join when the mob is spawned
-	Team: string,
 	/// Whether the mob is leashed
 	Leashed: boolean,
 	/// What the leash is attached to
