@@ -10,6 +10,7 @@ mod rabbit;
 mod sheep;
 mod turtle;
 mod villager;
+mod bee;
 
 compound Breedable extends super::MobBase {
 	/// Number of ticks until the mob stops searching for a mate
