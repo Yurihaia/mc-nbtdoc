@@ -1,0 +1,8 @@
+use ::minecraft::util::InventoryItem;
+
+compound EyeOfEnder extends super::EntityBase {
+	/// The item to render as
+	Item: InventoryItem
+}
+
+EyeOfEnder describes minecraft:entity[minecraft:eye_of_ender];

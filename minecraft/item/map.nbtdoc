@@ -87,6 +87,7 @@ compound Display {
 	Name: string,
 	/// The lore of an item, with each element being a lore line
 	Lore: [string],
-	/// The color of the map, stored as RED << 16 | GREEN << 8 | BLUE
+	/// The color of the map  
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
 	MapColor: int
 }

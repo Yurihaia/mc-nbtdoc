@@ -22,9 +22,11 @@ compound Explosion {
 	Trail: boolean,
 	/// The type of the explosion
 	Type: Type,
-	/// The colors of the explosion, calculated as RED <<16 | GREEN <<8 | BLUE
+	/// The colors of the explosion  
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
 	Colors: int[],
-	/// The colors of the explosion fade, calculated as RED <<16 | GREEN <<8 | BLUE
+	/// The colors of the explosion fade  
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
 	FadeColors: int[]
 }
 

@@ -1,10 +1,20 @@
 mod mob;
 mod projectile;
+mod xporb;
+mod item;
+mod fallingblock;
+mod tnt;
+mod effectcloud;
+mod endcrystal;
+mod eyeofender;
+mod fireworkrocket;
+mod itemframe;
+mod painting;
 
 /// Base NBT for all entities
 compound EntityBase {
 	/// The id of the entity
-	id: string,
+	id: id(minecraft:entity),
 	/// The position in [x, y, z]
 	Pos: [double] @ 3,
 	/// The motion in [x, y, z]

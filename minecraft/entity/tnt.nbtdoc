@@ -1,0 +1,6 @@
+compound Tnt extends super::EntityBase {
+	/// The number of ticks until this tnt explodes
+	Fuse: short
+}
+
+Tnt describes minecraft:entity[minecraft:tnt];

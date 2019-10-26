@@ -33,13 +33,15 @@ enum(byte) Pickup {
 }
 
 compound Arrow extends ArrowBase {
-	/// The color of the arrow, calculated as RED <<16 | GREEN <<8 | BLUE
+	/// The color of the arrow  
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
 	Color: int,
 	/// The custom potion effects to give to the hit entity
 	CustomPotionEffects: [PotionEffect],
 	/// The name of the default potion effect
 	Potion: id(minecraft:mob_effect),
-	/// The color of the arrow's particles, calculated as RED <<16 | GREEN <<8 | BLUE
+	/// The color of the arrow's particles  
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
 	CustomPotionColor: int
 }
 

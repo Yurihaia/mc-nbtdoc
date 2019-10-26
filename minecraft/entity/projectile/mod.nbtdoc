@@ -2,6 +2,8 @@ mod arrow;
 mod fireball;
 mod throwable;
 
+use ::minecraft::util::BlockState;
+
 compound ProjectileBase extends super::EntityBase {
 	/// The shake the projectile creates
 	shake: byte,
@@ -12,12 +14,5 @@ compound ProjectileBase extends super::EntityBase {
 	/// The z coordinate of the projectile
 	zTile: int,
 	/// The block the porjectile is in
-	inBlockState: InBlockState
-}
-
-compound InBlockState {
-	/// The id of the block
-	Name: id(minecraft:block),
-	/// The properties of the block
-	Properties: custom:blockitemstates[Name]
+	inBlockState: BlockState
 }

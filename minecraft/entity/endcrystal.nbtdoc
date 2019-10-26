@@ -1,0 +1,17 @@
+compound EndCrystal extends super::EntityBase {
+	/// Whether to show the base of the end crystal
+	ShowBottom: boolean,
+	/// The block that the beam is pointing to
+	BeamTarget: BeamTarget
+}
+
+compound BeamTarget {
+	/// The x coordinate of the block the beam is pointing to
+	X: int,
+	/// The y coordinate of the block the beam is pointing to
+	Y: int,
+	/// The z coordinate of the block the beam is pointing to
+	Z: int
+}
+
+EndCrystal describes minecraft:entity[minecraft:end_crystal];

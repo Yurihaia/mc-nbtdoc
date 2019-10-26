@@ -4,6 +4,7 @@ mod effect;
 mod color;
 mod bannerpattern;
 mod invitem;
+mod blockstate;
 
 export use attribute::Attribute;
 export use slot::Slot;
@@ -13,3 +14,4 @@ export use color::Color;
 export use bannerpattern::BannerPattern;
 export use invitem::InventoryItem;
 export use invitem::SlottedItem;
+export use blockstate::BlockState;

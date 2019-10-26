@@ -1,0 +1,6 @@
+compound BlockState {
+	/// The id of the block
+	Name: id(minecraft:block),
+	/// The properties of the block
+	Properties: custom:blockitemstates[Name]
+}

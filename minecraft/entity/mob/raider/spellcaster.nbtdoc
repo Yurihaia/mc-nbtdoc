@@ -3,7 +3,23 @@ compound Spellcaster extends super::RaiderBase {
 	SpellTicks: int
 }
 
+compound EvokerFangs extends super::super::super::EntityBase {
+	/// The number of ticks until the fangs pop out of the ground
+	Warmup: int,
+	/// The owner of the fangs
+	Owner: Owner
+}
+
+compound Owner {
+	/// The upper bits of the owner's UUID
+	OwnerUUIDMost: long,
+	/// The lower bits of the owner's UUID
+	OwnerUUIDLeast: long
+}
+
 Spellcaster describes minecraft:entity[
 	minecraft:evoker,
 	minecraft:illusioner
 ];
+
+EvokerFangs describes minecraft:entity[minecraft:evoker_fangs];
