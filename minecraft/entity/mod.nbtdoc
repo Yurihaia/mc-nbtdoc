@@ -46,11 +46,16 @@ compound EntityBase {
 	/// Whether the entity should make any sound
 	Silent: boolean,
 	/// The passengers on the entity
-	Passengers: [EntityBase],
+	Passengers: [AnyEntity],
 	/// Whether the entity should glow
 	Glowing: boolean,
 	/// The tags on the entity
 	Tags: [string]
+}
+
+compound AnyEntity extends minecraft:entity[id] {
+	/// The id of the entity
+	id: id(minecraft:entity)
 }
 
 EntityBase describes minecraft:entity;
