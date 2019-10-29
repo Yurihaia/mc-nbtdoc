@@ -2,3 +2,4 @@ mod entity;
 mod generated;
 mod item;
 mod util;
+mod block;

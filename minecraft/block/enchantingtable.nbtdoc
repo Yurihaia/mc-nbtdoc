@@ -1,0 +1,6 @@
+compound EnchantingTable extends super::BlockEntity {
+	/// The name of this enchanting table
+	CustomName: string
+}
+
+EnchantingTable describes minecraft:block[minecraft:enchanting_table];

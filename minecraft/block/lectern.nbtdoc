@@ -1,0 +1,10 @@
+use ::minecraft::util::InventoryItem;
+
+compound Lectern extends super::BlockEntity {
+	/// The book that is on the lectern
+	Book: InventoryItem,
+	/// The current page the book is on
+	Page: int
+}
+
+Lectern describes minecraft:block[minecraft:lectern];
