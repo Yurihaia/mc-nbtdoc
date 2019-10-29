@@ -1,0 +1,56 @@
+mod container;
+mod furnace;
+mod brewingstand;
+mod banner;
+mod beacon;
+mod beehive;
+mod campfire;
+mod comparator;
+mod commandblock;
+mod conduit;
+mod enchantingtable;
+mod endgateway;
+mod hopper;
+mod jigsaw;
+mod jukebox;
+mod lectern;
+mod spawner;
+mod movingpiston;
+mod sign;
+mod head;
+mod structureblock;
+
+compound BlockEntity {
+	/// The id of the block entity
+	id: id(minecraft:block_entity),
+	/// The x coordinate of the block entity
+	x: int,
+	/// The y coordinate of the block entity
+	y: int,
+	/// The z coordinate of the block entity
+	z: int,
+	/// Unknown
+	/// 0 for regular block entities
+	keepPacked: boolean
+}
+
+compound RegularBlock {}
+RegularBlock describes minecraft:block;
+
+BlockEntity describes minecraft:block[
+	minecraft:bed,
+	minecraft:bell,
+	minecraft:daylight_detector,
+	minecraft:ender_chest,
+	minecraft:end_portal,
+	minecraft:skeleton_skull,
+	minecraft:wither_skeleton_skull,
+	minecraft:creeper_head,
+	minecraft:zombie_head,
+	minecraft:dragon_head,
+	minecraft:skeleton_wall_skull,
+	minecraft:wither_skeleton_wall_skull,
+	minecraft:creeper_wall_head,
+	minecraft:zombie_wall_head,
+	minecraft:dragon_wall_head
+];

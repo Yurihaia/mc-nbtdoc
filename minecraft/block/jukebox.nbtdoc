@@ -1,0 +1,8 @@
+use ::minecraft::util::InventoryItem;
+
+compound Jukebox extends super::BlockEntity {
+	/// The item in the jukebox
+	RecordItem: InventoryItem
+}
+
+Jukebox describes minecraft:block[minecraft:jukebox];

@@ -1,0 +1,25 @@
+compound PlayerHead extends super::BlockEntity {
+	/// The owner of the skull
+	Owner: Owner
+}
+
+compound Owner {
+	/// UUID of the owner, optional
+	Id: string,
+	/// Name of the owner, if missing appears as a steve head
+	Name: string,
+	/// Texture properties
+	Properties: Properties
+}
+
+compound Properties {
+	/// The textures
+	textures: [Texture]
+}
+
+compound Texture {
+	/// Signature of the texture
+	Signature: string,
+	/// Base64 encoded JSON value of the texture
+	Value: string
+}

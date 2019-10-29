@@ -1,0 +1,13 @@
+compound Conduit extends super::BlockEntity {
+	/// The UUID of the conduit's target
+	target_uuid: TargetUUID
+}
+
+compound TargetUUID {
+	/// The upper bits of the target's UUID
+	M: long,
+	/// The lower bits of the target's UUID
+	L: long
+}
+
+Conduit describes minecraft:block[minecraft:conduit];
