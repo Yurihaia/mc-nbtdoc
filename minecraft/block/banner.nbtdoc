@@ -1,0 +1,19 @@
+use ::minecraft::util::color::ColorInt;
+use ::minecraft::util::BannerPattern;
+
+compound Banner extends super::BlockEntity {
+	/// The name of the banner  
+	/// Will show up on map markers
+	CustomName: string,
+	/// The patterns on the map
+	Patterns: [Pattern]
+}
+
+compound Pattern {
+	/// The color of the pattern
+	Color: ColorInt,
+	/// The pattern id
+	Pattern: BannerPattern
+}
+
+Banner describes minecraft:block[minecraft:banner];

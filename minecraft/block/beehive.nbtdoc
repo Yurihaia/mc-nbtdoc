@@ -1,0 +1,18 @@
+use ::minecraft::entity::AnyEntity;
+
+compound BeeHive extends super::BlockEntity {
+	FlowerPos: FlowerPos,
+	Bees: [Bee]
+}
+
+compound FlowerPos {
+	X: int,
+	Y: int,
+	Z: int
+}
+
+compound Bee {
+	MinOccupationTicks: int,
+	TicksInHive: int,
+	EntityData: AnyEntity
+}

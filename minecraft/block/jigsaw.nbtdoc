@@ -1,0 +1,10 @@
+compound Jigsaw extends super::BlockEntity {
+	/// The structure pool that the jigsaw will connect to
+	target_pool: string,
+	/// The final block state of the jigsaw
+	final_state: string,
+	/// The id of the type of jigsaw this connects to
+	attachement_type: string
+}
+
+Jigsaw describes minecraft:block[minecraft:jigsaw];

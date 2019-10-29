@@ -1,0 +1,6 @@
+compound Comparator extends super::BlockEntity {
+	/// The strength of the redstone output
+	OutputSignal: int
+}
+
+Comparator extends minecraft:block[minecraft:comparator];

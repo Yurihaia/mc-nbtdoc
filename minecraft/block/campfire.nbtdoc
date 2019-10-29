@@ -1,0 +1,14 @@
+use ::minecraft::util::SlottedItem;
+
+compound Campfire extends super::BlockEntity {
+	/// The items that are currently cooking
+	Items: [SlottedItem] @ 0..4,
+	/// The time each item has been cooking  
+	/// Index zero is slot zero, etc
+	CookingTimes: int[] @ 4,
+	/// The time each item has to cook  
+	/// Index zero is slot zero, etc
+	CookingTotalTimes: int[] @ 4
+}
+
+Campfire describes minecraft:block[minecraft:campfire];
