@@ -676,7 +676,9 @@
 	minecraft:sweet_berries,
 	minecraft:campfire,
 	minecraft:bee_nest,
-	minecraft:bee_hive
+	minecraft:beehive,
+	minecraft:honey_block,
+	minecraft:honeycomb_block
 ];
 ::minecraft::item::enchantedbook::EnchantedBook describes minecraft:item[
 	minecraft:enchanted_book
