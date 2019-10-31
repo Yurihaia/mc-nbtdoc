@@ -18,15 +18,15 @@ compound Fireworks {
 compound Explosion {
 	/// Whether the explosion should flicker
 	Flicker: boolean,
-	/// Whether the explosion should have a trait
+	/// Whether the explosion should have a trail
 	Trail: boolean,
 	/// The type of the explosion
 	Type: Type,
 	/// The colors of the explosion  
-	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive
 	Colors: int[],
 	/// The colors of the explosion fade  
-	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive
 	FadeColors: int[]
 }
 

@@ -5,7 +5,7 @@ compound EffectCloud extends super::EntityBase {
 	/// The area effect cloud will disappear when greater than `Duration + WaitTime`
 	Age: int,
 	/// The color of the particles  
-	/// calculated as `RED << 16 | GREEN << 8 | BLUE`
+	/// calculated as `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive
 	Color: int,
 	/// The maximum number of ticks until this area effect cloud will disappear after `WaitTime` is done
 	Duration: int,
@@ -26,7 +26,7 @@ compound EffectCloud extends super::EntityBase {
 	/// The change in the radius of the area effect cloud per tick
 	RadiusPerTick: float,
 	/// The particle the area effect cloud displays
-	Particle: id(minecraft:particle),
+	Particle: string,
 	/// The default potion effect
 	Potion: id(minecraft:potion),
 	/// The potion effects that get applied on use
