@@ -2,10 +2,11 @@
 `mc-nbtdoc` is a repository for schemas of Minecraft's NBT format,
 including entities, blocks, and items.
 
-## Parsing
+## Format
 The repo [nbtdoc-rs](https://github.com/MrYurihi/nbtdoc-rs)
 should serve as the main reference point for any offshoots of parser,
-and an official grammar definition will be put here soon
+and an official grammar definition will be put here soon.
+The documentation of the format can be found [here](https://github.com/MrYurihi/nbtdoc-rs/blob/master/docs/format.md)
 
 ## Validation
 The main point of these docs is to provide a way for language services
