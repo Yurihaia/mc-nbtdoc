@@ -12,7 +12,7 @@ path = "src/rebuild.rs"
 
 [[bin]]
 name = "main"
-path = "src/main.rs"
+path = "src/build.rs"
 
 [lib]
 name = "mc_nbtdoc_gen"
