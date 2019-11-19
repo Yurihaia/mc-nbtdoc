@@ -19,7 +19,7 @@ compound EntityBase {
 	Pos: [double] @ 3,
 	/// The motion in [x, y, z]
 	Motion: [double] @ 3,
-	/// The rotation in [pitch, yaw]
+	/// The rotation in [y-rotation, x-rotation]
 	Rotation: [float] @ 2,
 	/// How far the entity has fallen
 	FallDistance: float,
