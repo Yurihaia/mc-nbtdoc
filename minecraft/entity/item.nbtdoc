@@ -22,3 +22,5 @@ compound UUID {
 	/// The upper bits of the target player's UUID
 	M: long
 }
+
+Item describes minecraft:entity[minecraft:item];
