@@ -7,9 +7,11 @@ mod tnt;
 mod effectcloud;
 mod endcrystal;
 mod eyeofender;
+mod evokerfangs;
 mod fireworkrocket;
 mod itemframe;
 mod painting;
+mod fireball;
 
 /// Base NBT for all entities
 compound EntityBase {

@@ -4,6 +4,7 @@ compound Fish extends super::MobBase {
 }
 
 compound Pufferfish extends Fish {
+	/// How puffed the pufferfish is
 	PuffState: PuffState
 }
 

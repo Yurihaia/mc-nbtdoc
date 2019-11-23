@@ -9,7 +9,6 @@ mod enderman;
 mod endermite;
 mod ghast;
 mod slime;
-mod parrot;
 mod raider;
 mod shulker;
 mod snowgolem;

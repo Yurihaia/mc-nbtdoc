@@ -76,9 +76,6 @@
 	minecraft:zombie_villager_spawn_egg,
 	minecraft:armor_stand
 ];
-::minecraft::item::knowlegebook::KnowlegeBook describes minecraft:item[
-	minecraft:knowledge_book
-];
 ::minecraft::item::map::FilledMap describes minecraft:item[
 	minecraft:filled_map
 ];
@@ -685,6 +682,9 @@
 ];
 ::minecraft::item::shield::Shield describes minecraft:item[
 	minecraft:shield
+];
+::minecraft::item::knowledgebook::KnowledgeBook describes minecraft:item[
+	minecraft:knowledge_book
 ];
 ::minecraft::item::fishbucket::FishBucket describes minecraft:item[
 	minecraft:pufferfish_bucket,
