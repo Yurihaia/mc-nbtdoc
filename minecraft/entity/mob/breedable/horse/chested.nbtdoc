@@ -8,5 +8,6 @@ compound ChestedHorse extends super::HorseBase {
 }
 
 ChestedHorse describes minecraft:entity[
-	minecraft:donkey
+	minecraft:donkey,
+	minecraft:mule
 ];

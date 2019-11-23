@@ -1,12 +1,10 @@
 mod arrow;
-mod fireball;
 mod throwable;
+mod llamaspit;
 
 use ::minecraft::util::BlockState;
 
 compound ProjectileBase extends super::EntityBase {
-	/// The shake the projectile creates
-	shake: byte,
 	/// The x coordinate of the projectile
 	xTile: int,
 	/// The y coordinate of the projectile

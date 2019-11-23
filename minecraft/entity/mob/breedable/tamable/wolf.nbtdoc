@@ -1,0 +1,8 @@
+use ::minecraft::util::Color;
+
+compound Cat extends super::Tamable {
+	/// Whether the wolf is angry
+	Angry: boolean,
+	/// The wolf's collar color, present for wild wolfs
+	CollarColor: Color
+}

@@ -32,7 +32,9 @@ compound StructureBlock extends super::BlockEntity {
 	/// The chance for each block to stay
 	integrity: float,
 	/// The seed for the integrity randomness
-	seed: long
+	seed: long,
+	/// Whether to show invisible blocks inside the bounding box
+	showair: boolean
 }
 
 enum(string) Rotation {

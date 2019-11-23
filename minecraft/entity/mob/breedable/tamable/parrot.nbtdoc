@@ -1,4 +1,4 @@
-compound Parrot extends super::MobBase {
+compound Parrot extends super::Tamable {
 	/// The UUID of the owner
 	OwnerUUID: string,
 	/// Whether the parrot is sitting
