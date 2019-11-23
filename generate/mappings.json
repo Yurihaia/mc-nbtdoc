@@ -28,7 +28,7 @@
 		"net.minecraft.class_1833": "item::potion::EffectItem",
 		"net.minecraft.class_1803": "item::potion::EffectItem",
 		"net.minecraft.class_1819": "item::shield::Shield",
-		"net.minecraft.class_1801": "item::knowlegebook::KnowlegeBook",
+		"net.minecraft.class_1801": "item::knowledgebook::KnowledgeBook",
 		"net.minecraft.class_1764": "item::crossbow::Crossbow",
 		"net.minecraft.class_1830": "item::suspiciousstew::SuspiciousStew"
 	}

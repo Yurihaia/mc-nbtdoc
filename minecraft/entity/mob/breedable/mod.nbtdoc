@@ -6,6 +6,7 @@ mod mooshroom;
 mod tamable;
 mod ocelot;
 mod panda;
+mod pig;
 mod rabbit;
 mod sheep;
 mod turtle;

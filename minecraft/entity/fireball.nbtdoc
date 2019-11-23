@@ -1,6 +1,6 @@
 use ::minecraft::util::InventoryItem;
 
-compound FireballBase extends super::super::EntityBase {
+compound FireballBase extends super::EntityBase {
 	/// The direction of the fireball
 	direction: [double] @ 3,
 	/// The number of ticks since the fireball last moved

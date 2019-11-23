@@ -1,5 +1,0 @@
-/// A knowlege book item
-compound KnowlegeBook extends super::ItemBase {
-	/// The recipes this book can give
-	Recipes: [id(minecraft:recipe)]
-}

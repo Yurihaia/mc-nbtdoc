@@ -2,6 +2,8 @@ use ::minecraft::util::PotionEffect;
 use ::minecraft::util::InventoryItem;
 
 compound ArrowBase extends super::ProjectileBase {
+	/// The shake the projectile creates
+	shake: byte,
 	/// How players can pick up the projectile
 	pickup: Pickup,
 	/// Whether a player shot the projectile

@@ -3,7 +3,7 @@ use ::minecraft::util::Color;
 compound Cat extends super::Tamable {
 	/// The type of the cat
 	CatType: CatType,
-	/// The cats collar color, present for stray cats
+	/// The cat's collar color, present for stray cats
 	CollarColor: Color
 }
 
@@ -16,7 +16,7 @@ enum(int) CatType {
 	Siamese = 3,
 	Shorthair = 4,
 	Calico = 5,
-	Persain = 6,
+	Persian = 6,
 	Ragdoll = 7,
 	White = 8,
 	Jellie = 9,

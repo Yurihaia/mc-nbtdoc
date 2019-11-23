@@ -12,5 +12,5 @@ enum(int) RabbitType {
 	BlackAndWhite = 3,
 	Gold = 4,
 	SaltAndPepper = 5,
-	Killer = 6
+	Killer = 99
 }
