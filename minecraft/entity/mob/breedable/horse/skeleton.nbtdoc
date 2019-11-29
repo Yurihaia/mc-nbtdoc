@@ -1,8 +1,8 @@
-SkeletonHorse extends super::HorseBase {
+compound SkeletonHorse extends super::HorseBase {
 	/// Whether the skeleton horse is trapped
 	SkeletonTrap: boolean,
 	/// How many ticks the skeleton horse trap has been alive
 	SkeletonTrapTime: int
 }
 
-SkeletonHorse extends minecraft:entity[minecraft:skeleton_horse];
+SkeletonHorse describes minecraft:entity[minecraft:skeleton_horse];

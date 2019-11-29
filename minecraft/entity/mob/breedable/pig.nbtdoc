@@ -3,4 +3,4 @@ compound Pig extends super::Breedable {
 	Saddle: boolean
 }
 
-Pig extends minecraft:entity[minecraft:pig];
+Pig describes minecraft:entity[minecraft:pig];

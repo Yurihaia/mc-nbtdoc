@@ -7,4 +7,4 @@ compound Ravager extends super::RaiderBase {
 	StunTick: int
 }
 
-Ravager extends minecraft:entity[minecraft:ravager];
+Ravager describes minecraft:entity[minecraft:ravager];

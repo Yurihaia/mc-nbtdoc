@@ -17,7 +17,14 @@ mod tests {
 			let ress = fs::read_to_string(&path).unwrap();
 			let res = nbtdoc::parse::root::<nom::error::VerboseError<&str>>(&ress);
 			match res {
-				Ok(_) => (),
+				Ok((i, _)) => if i.trim().len() > 0 {
+					eprintln!(
+						"Error at end of file {}: {}",
+						path.to_str().unwrap(),
+						i
+					);
+					panic = true;
+				},
 				Err(e) => match e {
 					nom::Err::Error(e) | nom::Err::Failure(e) => {
 						eprintln!(

@@ -3,4 +3,4 @@ compound Wither extends super::MobBase {
 	Invul: int
 }
 
-Wither extends minecraft:entity[minecraft:wither];
+Wither describes minecraft:entity[minecraft:wither];
