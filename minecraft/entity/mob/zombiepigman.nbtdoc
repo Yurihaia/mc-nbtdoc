@@ -7,4 +7,4 @@ compound ZombiePigman extends super::MobBase {
 	HurtBy: string
 }
 
-ZombiePigman extends minecraft:entity[minecraft:zombie_pigman];
+ZombiePigman describes minecraft:entity[minecraft:zombie_pigman];

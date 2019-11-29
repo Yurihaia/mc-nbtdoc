@@ -3,4 +3,4 @@ compound Comparator extends super::BlockEntity {
 	OutputSignal: int
 }
 
-Comparator extends minecraft:block[minecraft:comparator];
+Comparator describes minecraft:block[minecraft:comparator];
