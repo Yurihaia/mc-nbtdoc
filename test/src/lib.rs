@@ -5,6 +5,8 @@ mod tests {
 	const TARGET: &str = "../minecraft";
 
 	use nbtdoc::Root;
+	use nbtdoc::NbtValue;
+	use std::collections::HashSet;
 	use glob::glob;
 	use std::fs;
 
@@ -47,5 +49,25 @@ mod tests {
 	fn check_resolve() {
 		let mut root = Root::new();
 		root.add_root_module(TARGET, &nbtdoc::DefaultFileProvider).unwrap();
+	}
+
+	#[test]
+	fn get_custom_registries() {
+		let mut root = Root::new();
+		root.add_root_module(TARGET, &nbtdoc::DefaultFileProvider).unwrap();
+		let mut hs = HashSet::new();
+		for x in root.get_compounds() {
+			for (_, f) in &x.fields {
+				match &f.nbttype {
+					NbtValue::Index { target, path: _ } => if root.get_registry(target).is_none() {
+						hs.insert(target);
+					},
+					_ => ()
+				}
+			}
+		}
+		for x in hs {
+			eprintln!("{} is not a described registry", x)
+		}
 	}
 }
