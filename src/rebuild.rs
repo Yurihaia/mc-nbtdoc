@@ -15,18 +15,10 @@ fn main() -> Result<(), git2::Error> {
 			Ok((t, v))
 		}
 	).collect::<Result<Vec<_>, git2::Error>>()?;
-	tags.sort_by(|(_, a), (_, b)| 
-		a.peel_to_commit()
-			.unwrap()
-			.time()
-			.cmp(
-				&b.peel_to_commit()
-				.unwrap()
-				.time())
-	);
+	tags.sort_unstable_by_key(|(_, a)| a.peel_to_commit().unwrap().time());
 
 	let sig = git2::Signature::now(
-		"MrYurihi",
+		"Yurihaia",
 		"mryurihi2003@gmail.com"
 	)?;
 	for (n, o) in tags {
