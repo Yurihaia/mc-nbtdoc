@@ -8,12 +8,12 @@ The main point of these docs is to provide a way for language services
 to be able to give in depth and complete information about a certain NBT tag.  
   
 Validation can be a tricky process, but should be much simpler than in 
-[mc-nbt-paths](https://github.com/MrYurih/mc-nbt-paths). Each compound tag is
+[mc-nbt-paths](https://github.com/Yurihaia/mc-nbt-paths). Each compound tag is
 described in its own definition, which looks similar to Rust's struct definitions.
 For values which can take only certain values, an `enum` can be used.  
 Doc comments, which show the description of certain objects start with `///`. Regular comments
 start with `//`. Doc comments are valid before `compound` and `enum` definitions, and on their fields.  
-For more information on validation, the [validation.md](https://github.com/MrYurihi/nbtdoc-rs/blob/master/docs/validation.md)
+For more information on validation, the [validation.md](https://github.com/Yurihaia/nbtdoc-rs/blob/master/docs/validation.md)
 file can server as a reference point.
 
 ## Versioning
@@ -27,15 +27,15 @@ discoraged to move a tag, this will happen when nescessary. Any non-data changes
 update to a tag.
 
 ## Format
-The repo [nbtdoc-rs](https://github.com/MrYurihi/nbtdoc-rs)
+The repo [nbtdoc-rs](https://github.com/Yurhaia/nbtdoc-rs)
 should serve as the main reference point for any offshoots of parser,
 and an official grammar definition will be put here soon.
-The documentation of the format can be found [here](https://github.com/MrYurihi/nbtdoc-rs/blob/master/docs/format.md).
+The documentation of the format can be found [here](https://github.com/Yurihaia/nbtdoc-rs/blob/master/docs/format.md).
 This is a best-effort documentation, and is not the official documentation to go by, but it *should* be accurate.
 
 ### Serialized Formats
 In case of users that do not have a library to parse and resolve the data, serialized forms of the data have been made 
-available in the [generated](https://github.com/MrYurihi/mc-nbtdoc/tree/generated) branch of this repository. The version
+available in the [generated](https://github.com/Yurihaia/mc-nbtdoc/tree/generated) branch of this repository. The version
 tags to that branch will match the version tags described [above](#versioning), with `-gen` appended on to the version from
 the official version manifest. All of the generated files will be located in the `build` directory, each with the name of
 `generated.<ext>`, and `generated.pretty.<ext>`, where `<ext>` is the specified extension. The `.pretty` file contains 
@@ -44,7 +44,7 @@ The current extensions are:
  * `.json` (with pretty printing)
 
 The format for the serialized data can be quite counterintuitive, so a TypeScript declaration file for the format can be
-found at [json_format.d.ts](https://github.com/MrYurihi/nbtdoc-rs/blob/master/docs/json_format.d.ts). While this data is 
+found at [json_format.d.ts](https://github.com/Yurihaia/nbtdoc-rs/blob/master/docs/json_format.d.ts). While this data is 
 especially useful for the JSON data, it should generally apply to all other serialized forms.
 
 ## Contributing
