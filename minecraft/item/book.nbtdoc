@@ -6,7 +6,7 @@ compound WritableBook extends super::ItemBase {
 	pages: [string]
 }
 
-compound WrittenBook extends super::ItemBase {
+compound WrittenBook extends WritableBook {
 	/// The generation of the book
 	generation: Generation,
 	/// The author of the book
