@@ -38,7 +38,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "nbtdoc"
 version = "0.1.0"
-source = "git+https://github.com/MrYurihi/nbtdoc-rs.git#562a048305b7e87a6ca838f8553c50e3461a90a1"
+source = "git+https://github.com/Yurihaia/nbtdoc-rs.git#f89d07715468459b38be2b8cc033837627c30c35"
 dependencies = [
  "nom 5.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -48,7 +48,7 @@ name = "nbtdoc-test"
 version = "0.1.0"
 dependencies = [
  "glob 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "nbtdoc 0.1.0 (git+https://github.com/MrYurihi/nbtdoc-rs.git)",
+ "nbtdoc 0.1.0 (git+https://github.com/Yurihaia/nbtdoc-rs.git)",
  "nom 5.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -109,7 +109,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum glob 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "9b919933a397b79c37e33b77bb2aa3dc8eb6e165ad809e58ff75bc7db2e34574"
 "checksum lexical-core 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)" = "2304bccb228c4b020f3a4835d247df0a02a7c4686098d4167762cfbbe4c5cb14"
 "checksum memchr 2.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "88579771288728879b57485cc7d6b07d648c9f0141eb955f8ab7f9d45394468e"
-"checksum nbtdoc 0.1.0 (git+https://github.com/MrYurihi/nbtdoc-rs.git)" = "<none>"
+"checksum nbtdoc 0.1.0 (git+https://github.com/Yurihaia/nbtdoc-rs.git)" = "<none>"
 "checksum nodrop 0.1.14 (registry+https://github.com/rust-lang/crates.io-index)" = "72ef4a56884ca558e5ddb05a1d1e7e1bfd9a68d9ed024c21704cc98872dae1bb"
 "checksum nom 5.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "c618b63422da4401283884e6668d39f819a106ef51f5f59b81add00075da35ca"
 "checksum rustc_version 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "138e3e0acb6c9fb258b19b67cb8abd63c00679d2851805ea151465464fe9030a"
