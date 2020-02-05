@@ -19,7 +19,7 @@ fn main() -> Result<(), git2::Error> {
 
 	let sig = git2::Signature::now(
 		"Yurihaia",
-		"mryurihi2003@gmail.com"
+		"17830663+Yurihaia@users.noreply.github.com"
 	)?;
 	for (n, o) in tags {
 		src.checkout_tree(
