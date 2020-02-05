@@ -137,6 +137,7 @@ MobBase describes minecraft:entity[
 	minecraft:elder_guardian,
 	minecraft:giant,
 	minecraft:guardian,
+	minecraft:hoglin,
 	minecraft:silverfish,
 	minecraft:skeleton,
 	minecraft:spider,
