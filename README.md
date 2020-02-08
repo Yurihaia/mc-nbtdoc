@@ -16,6 +16,11 @@ start with `//`. Doc comments are valid before `compound` and `enum` definitions
 For more information on validation, the [validation.md](https://github.com/Yurihaia/nbtdoc-rs/blob/master/docs/validation.md)
 file can server as a reference point.
 
+### Needed Registries
+To have a complete validation, the registries specified in [REGISTRY_LIST.md](REGISTRY_LIST.md) should be included.
+Any registries which cannot be accessed should just be validation as a string conforming to the resource location
+format.
+
 ## Versioning
 All of the data in this repo is under a strict versioning scheme. For each Minecraft release, snapshot, and pre-release, a 
 new tag is added to the repo with the name found in the
