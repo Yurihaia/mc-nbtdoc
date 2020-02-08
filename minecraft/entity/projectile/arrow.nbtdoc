@@ -41,7 +41,7 @@ compound Arrow extends ArrowBase {
 	/// The custom potion effects to give to the hit entity
 	CustomPotionEffects: [PotionEffect],
 	/// The name of the default potion effect
-	Potion: id(minecraft:mob_effect),
+	Potion: id(minecraft:potion),
 	/// The color of the arrow's particles  
 	/// calculated as `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive
 	CustomPotionColor: int
