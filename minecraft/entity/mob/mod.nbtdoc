@@ -16,6 +16,7 @@ mod trader;
 mod wither;
 mod armorstand;
 mod player;
+mod piglin;
 
 use ::minecraft::util::Attribute;
 use ::minecraft::util::PotionEffect;
@@ -137,7 +138,6 @@ MobBase describes minecraft:entity[
 	minecraft:elder_guardian,
 	minecraft:giant,
 	minecraft:guardian,
-	minecraft:hoglin,
 	minecraft:silverfish,
 	minecraft:skeleton,
 	minecraft:spider,
