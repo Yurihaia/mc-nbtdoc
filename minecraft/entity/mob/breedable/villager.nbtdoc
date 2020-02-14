@@ -16,7 +16,7 @@ compound Villager extends super::Breedable {
 	/// The xp the villager has, increases with trading
 	Xp: int,
 	/// The villager's inventory
-	Inventory: [InventoryItem],
+	Inventory: [InventoryItem] @ 0..8,
 	/// The trade offers the villager has
 	Offers: Offers
 }

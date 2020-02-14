@@ -30,5 +30,6 @@ compound Breedable extends super::MobBase {
 
 Breedable describes minecraft:entity[
 	minecraft:cow,
-	minecraft:polar_bear
+	minecraft:polar_bear,
+	minecraft:hoglin
 ];

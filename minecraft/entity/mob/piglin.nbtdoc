@@ -1,0 +1,10 @@
+use ::minecraft::util::InventoryItem;
+
+compound Piglin extends super::MobBase {
+	/// Whether the piglin is a baby
+	IsBaby: boolean,
+	/// The inventory of the piglin
+	Inventory: [InventoryItem] @ 0..8
+}
+
+Piglin describes minecraft:entity[minecraft:piglin];
