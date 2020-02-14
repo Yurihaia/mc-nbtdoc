@@ -32,7 +32,7 @@ discoraged to move a tag, this will happen when nescessary. Any non-data changes
 update to a tag.
 
 ## Format
-The repo [nbtdoc-rs](https://github.com/Yurhaia/nbtdoc-rs)
+The repo [nbtdoc-rs](https://github.com/Yurihaia/nbtdoc-rs)
 should serve as the main reference point for any offshoots of parser,
 and an official grammar definition will be put here soon.
 The documentation of the format can be found [here](https://github.com/Yurihaia/nbtdoc-rs/blob/master/docs/format.md).
