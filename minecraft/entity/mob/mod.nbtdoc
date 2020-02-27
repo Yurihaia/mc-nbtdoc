@@ -17,6 +17,7 @@ mod wither;
 mod armorstand;
 mod player;
 mod piglin;
+mod zombifiedpiglin;
 
 use ::minecraft::util::Attribute;
 use ::minecraft::util::PotionEffect;

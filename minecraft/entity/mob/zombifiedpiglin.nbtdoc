@@ -1,4 +1,4 @@
-compound ZombiePigman extends super::MobBase {
+compound ZombifiedPiglin extends super::MobBase {
 	/// Whether the zombie pigman is a baby
 	IsBaby: boolean,
 	/// The number of ticks that the zombie pigman will be angry for
@@ -7,4 +7,4 @@ compound ZombiePigman extends super::MobBase {
 	HurtBy: string
 }
 
-ZombiePigman describes minecraft:entity[minecraft:zombie_pigman];
+ZombifiedPiglin describes minecraft:entity[minecraft:zombified_piglin];
