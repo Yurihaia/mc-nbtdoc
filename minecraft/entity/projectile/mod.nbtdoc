@@ -1,6 +1,5 @@
 mod arrow;
 mod throwable;
-mod llamaspit;
 
 use ::minecraft::util::BlockState;
 
@@ -12,5 +11,11 @@ compound ProjectileBase extends super::EntityBase {
 	/// The z coordinate of the projectile
 	zTile: int,
 	/// The block the projectile is in
-	inBlockState: BlockState
+	inBlockState: BlockState,
+	/// The UUID of the projectile's owner
+	OwnerUUID: int[] @ 4
 }
+
+ProjectileBase describes minecraft:entity[
+	minecraft:llama_spit
+];

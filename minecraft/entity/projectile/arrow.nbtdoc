@@ -21,11 +21,7 @@ compound ArrowBase extends super::ProjectileBase {
 	/// The number of entities to pass through
 	PierceLevel: byte,
 	/// The sound event to play when the projectile hits something
-	SoundEvent: string,
-	/// The upper bits of the owner's UUID
-	OwnerUUIDMost: long,
-	/// The lower bits of the owner's UUID
-	OwnerUUIDLeast: long
+	SoundEvent: string
 }
 
 enum(byte) Pickup {

@@ -2,9 +2,7 @@ use ::minecraft::util::InventoryItem;
 
 compound Throwable extends super::ProjectileBase {
 	/// The shake the projectile creates
-	shake: byte,
-	/// The player that threw the projectile
-	owner: Owner
+	shake: byte
 }
 
 compound BasicThrowable extends Throwable {
@@ -15,13 +13,6 @@ compound BasicThrowable extends Throwable {
 compound PotionThrowable extends Throwable {
 	/// The item representation of the potion
 	Potion: InventoryItem
-}
-
-compound Owner {
-	/// The upper bits of the owner's UUID
-	M: long,
-	/// The lower bits of the owner's UUID
-	L: long
 }
 
 BasicThrowable describes minecraft:entity[

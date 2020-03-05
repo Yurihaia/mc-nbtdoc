@@ -1,0 +1,11 @@
+minecraft:structure
+minecraft:enchantment
+minecraft:villager_profession
+minecraft:block_entity
+minecraft:potion
+minecraft:loot_table
+minecraft:villager_type
+minecraft:motive
+custom:blockitemstates
+custom:blockstates
+custom:spawnitementag
