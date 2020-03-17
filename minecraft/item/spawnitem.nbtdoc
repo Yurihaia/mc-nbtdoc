@@ -1,5 +1,5 @@
 /// An item that can spawn an entity
 compound SpawnItem extends super::ItemBase {
 	/// The data of the spawned entity
-	EntityTag: custom:spawnitementag[super.id]
+	EntityTag: custom:spawnitemtag[super.id]
 }
