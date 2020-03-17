@@ -8,4 +8,4 @@ minecraft:villager_type
 minecraft:motive
 custom:blockitemstates
 custom:blockstates
-custom:spawnitementag
+custom:spawnitemtag
