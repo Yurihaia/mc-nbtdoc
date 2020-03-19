@@ -105,7 +105,7 @@ compound EnteredNetherPosition {
 
 compound RootVehicle {
 	/// The UUID of the ridden entity
-	Attach: int[] @ 4
+	Attach: int[] @ 4,
 	/// The ridden entity
 	Entity: AnyEntity
 }
