@@ -22,10 +22,8 @@ compound Breedable extends super::MobBase {
 	/// A value of age assigned to this mob when it grows up  
 	/// Incremented when a baby mob is fed
 	ForcedAge: int,
-	/// The UUIDMost of the entity that caused this mob to breed
-	LoveCauseMost: long,
-	/// The UUIDMost of the entity that caused this mob to breed
-	LoveCauseLeast: long
+	/// The UUID of the entity that caused this mob to breed
+	LoveCause: int[] @ 4
 }
 
 Breedable describes minecraft:entity[

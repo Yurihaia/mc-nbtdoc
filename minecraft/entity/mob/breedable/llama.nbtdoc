@@ -13,7 +13,7 @@ compound Llama extends super::Breedable {
 	/// Increases with feeding
 	Temper: int @ 0..100,
 	/// UUID of the player who tamed the llama
-	OwnerUUID: string,
+	Owner: int[] @ 4,
 	/// The carpet item of the llama
 	DecorItem: InventoryItem,
 	/// Whether the llama has a chest

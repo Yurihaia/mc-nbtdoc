@@ -15,10 +15,8 @@ compound EffectCloud extends super::EntityBase {
 	WaitTime: int,
 	/// The amount the duration changes when the area effect cloud is used
 	DurationOnUse: int,
-	/// The upper bits of the owner's UUID
-	OwnerUUIDMost: long,
-	/// The lower bits of the owner's UUID
-	OwnerUUIDLeast: long,
+	/// The UUID of the owner
+	Owner: int[] @ 4,
 	/// The radius of the area effect cloud
 	Radius: float,
 	/// The change in the radius of the area effect cloud when it is used

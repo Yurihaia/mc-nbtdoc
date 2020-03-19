@@ -16,7 +16,7 @@ compound Bee extends super::Breedable {
 	/// The number of ticks the bee will be angry for
 	Anger: int,
 	/// The UUID of the player that has attacked the bee
-	HurtBy: string
+	HurtBy: int[] @ 4
 }
 
 compound HivePos {

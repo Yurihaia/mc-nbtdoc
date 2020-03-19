@@ -28,10 +28,8 @@ compound ZombieVillager extends Zombie {
 	Offers: Offers,
 	/// The number of ticks until the zombie villager is converted
 	ConversionTime: int,
-	/// The lower bits of the player's uuid who triggered the conversion
-	ConversionPlayerLeast: long,
-	/// The upper bits of the player's uuid who triggered the conversion
-	ConversionPlayerMost: long
+	/// The UUID of the player who triggered the conversion
+	ConversionPlayer: int[] @ 4
 }
 
 ZombieVillager describes minecraft:entity[minecraft:zombie_villager];

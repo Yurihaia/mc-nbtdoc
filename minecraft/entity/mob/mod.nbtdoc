@@ -104,10 +104,8 @@ compound AttributeModifier {
 	Operation: Operation,
 	/// The change in the attribute
 	Amount: double,
-	/// The upper bits of the modifier's UUID
-	UUIDMost: long,
-	/// The lower bits of the modifier's UUID
-	UUIDLeast: long
+	/// The UUID of the modifier
+	UUID: int[] @ 4
 }
 
 compound Brain {
@@ -118,10 +116,8 @@ compound Brain {
 compound Memories {}
 
 compound UUIDLeash {
-	/// The upper bits of the other entity's UUID
-	UUIDMost: long,
-	/// The lower bits of the other entity's UUID
-	UUIDLeast: long
+	/// The UUID of the other entity
+	UUID: int[] @ 4
 }
 
 compound BlockLeash {

@@ -1,6 +1,6 @@
 compound Fox extends super::Breedable {
 	/// List of trusted players
-	TrustedUUIDs: [TrustedUUID],
+	Trusted: [int[] @ 4],
 	/// Whether the fox is sleeping
 	Sleeping: boolean,
 	/// The type of the fox
@@ -9,13 +9,6 @@ compound Fox extends super::Breedable {
 	Sitting: boolean,
 	/// Whether the fox is crouching
 	Crouching: boolean
-}
-
-compound TrustedUUID {
-	/// The lower bits of the trusted player's UUID
-	L: long,
-	/// The upper bits of the trusted player's UUID
-	M: long
 }
 
 enum(string) FoxType {
