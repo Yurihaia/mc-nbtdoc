@@ -1,6 +1,6 @@
 compound Parrot extends super::Tamable {
 	/// The UUID of the owner
-	OwnerUUID: string,
+	Owner: int[] @ 4,
 	/// Whether the parrot is sitting
 	Sitting: boolean,
 	/// The variant of the parrot

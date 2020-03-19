@@ -2,14 +2,7 @@ compound EvokerFangs extends super::EntityBase {
 	/// The number of ticks until the fangs pop out of the ground
 	Warmup: int,
 	/// The owner of the fangs
-	Owner: Owner
-}
-
-compound Owner {
-	/// The upper bits of the owner's UUID
-	OwnerUUIDMost: long,
-	/// The lower bits of the owner's UUID
-	OwnerUUIDLeast: long
+	Owner: int[] @ 4
 }
 
 EvokerFangs describes minecraft:entity[minecraft:evoker_fangs];

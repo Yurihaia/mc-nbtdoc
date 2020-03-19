@@ -7,20 +7,13 @@ compound Item extends super::EntityBase {
 	Health: short,
 	/// The number of ticks until a player can pick up this item
 	PickupDelay: short,
-	/// The owner of the item  
+	/// The UUID of the owner of the item  
 	/// Only the owner can pick up the item
-	Owner: UUID,
-	/// The player who threw the item
-	Thrower: UUID,
+	Owner: int[] @ 4,
+	/// The UUID of the player who threw the item
+	Thrower: int[] @ 4,
 	/// The item's representation
 	Item: InventoryItem
-}
-
-compound UUID {
-	/// The lower bits of the target player's UUID
-	L: long,
-	/// The upper bits of the target player's UUID
-	M: long
 }
 
 Item describes minecraft:entity[minecraft:item];

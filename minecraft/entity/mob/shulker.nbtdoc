@@ -58,10 +58,8 @@ compound ShulkerBullet extends super::super::EntityBase {
 }
 
 compound BulletTarget {
-	/// The upper bits of the target's UUID
-	M: long,
-	/// The lower bits of the target's UUID
-	L: long,
+	/// The UUID of the target
+	UUID: int[] @ 4
 	/// The x block coordiante of the target
 	X: int,
 	/// The y block coordiante of the target

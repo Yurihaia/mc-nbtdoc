@@ -36,10 +36,8 @@ compound Gossip {
 	Type: GossipType,
 	/// The value of the gossip
 	Value: int,
-	/// The upper bits of the gossip target's UUID
-	TargetMost: long,
-	/// The lower bits of the gossip target's UUID
-	TargetLeast: long
+	/// The UUID of the gossip target
+	Target: int[] @ 4
 }
 
 enum(string) GossipType {

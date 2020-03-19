@@ -4,7 +4,7 @@ mod wolf;
 
 compound Tamable extends super::Breedable {
 	/// The UUID of the owner
-	OwnerUUID: string,
+	Owner: int[] @ 4,
 	/// Whether the mob is sitting
 	Sitting: boolean
 }

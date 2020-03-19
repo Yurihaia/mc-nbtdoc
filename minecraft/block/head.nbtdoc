@@ -5,7 +5,7 @@ compound PlayerHead extends super::BlockEntity {
 
 compound Owner {
 	/// UUID of the owner, optional
-	Id: string,
+	Id: int[] @ 4,
 	/// Name of the owner, if missing appears as a steve head
 	Name: string,
 	/// Texture properties

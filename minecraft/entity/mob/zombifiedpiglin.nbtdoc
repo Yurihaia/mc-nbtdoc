@@ -4,7 +4,7 @@ compound ZombifiedPiglin extends super::MobBase {
 	/// The number of ticks that the zombie pigman will be angry for
 	Anger: short,
 	/// The UUID of the last player to hit a zombie pigman in this zombie pigman's detection range
-	HurtBy: string
+	HurtBy: int[] @ 4
 }
 
 ZombifiedPiglin describes minecraft:entity[minecraft:zombified_piglin];

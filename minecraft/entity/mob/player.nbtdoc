@@ -104,10 +104,8 @@ compound EnteredNetherPosition {
 }
 
 compound RootVehicle {
-	/// The upper bits of the ridden entity's UUID
-	AttachMost: long,
-	/// The lower bits of the ridden entity's UUID
-	AttachLeast: long,
+	/// The UUID of the ridden entity
+	Attach: int[] @ 4
 	/// The ridden entity
 	Entity: AnyEntity
 }
