@@ -28,8 +28,8 @@ use ::minecraft::util::attribute::Operation;
 compound LivingEntity extends super::EntityBase {
 	/// How much health the entity has
 	Health: float,
-	/// How much absorbtion health the entity has
-	AbsorbtionAmount: float,
+	/// How much absorption health the entity has
+	AbsorptionAmount: float,
 	/// Timer since the mob has been damaged  
 	/// Counts down to zero
 	HurtTime: short,
