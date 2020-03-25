@@ -11,6 +11,7 @@
 * minecraft:block
 * minecraft:enchantment
 * minecraft:item
+* minecraft:dimension
 # Custom Registries
 * custom:blockitemstates: block states based on the corresponding item ID
 * custom:blockstates: block states based on the corresponding block ID

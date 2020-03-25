@@ -6,6 +6,7 @@ minecraft:potion
 minecraft:loot_table
 minecraft:villager_type
 minecraft:motive
+minecraft:dimension
 custom:blockitemstates
 custom:blockstates
 custom:spawnitemtag

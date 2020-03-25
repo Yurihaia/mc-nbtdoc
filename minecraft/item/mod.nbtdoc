@@ -1,5 +1,6 @@
 mod blockitem;
 mod book;
+mod compass;
 mod crossbow;
 mod enchantedbook;
 mod firework;

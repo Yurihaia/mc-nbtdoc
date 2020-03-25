@@ -62,6 +62,7 @@
 	minecraft:spider_spawn_egg,
 	minecraft:squid_spawn_egg,
 	minecraft:stray_spawn_egg,
+	minecraft:strider_spawn_egg,
 	minecraft:trader_llama_spawn_egg,
 	minecraft:tropical_fish_spawn_egg,
 	minecraft:turtle_spawn_egg,
@@ -77,6 +78,9 @@
 	minecraft:zombified_piglin_spawn_egg,
 	minecraft:zombie_villager_spawn_egg,
 	minecraft:armor_stand
+];
+::minecraft::item::compass::Compass describes minecraft:item[
+	minecraft:compass
 ];
 ::minecraft::item::map::FilledMap describes minecraft:item[
 	minecraft:filled_map
@@ -227,6 +231,9 @@
 	minecraft:nether_sprouts,
 	minecraft:weeping_vines,
 	minecraft:twisting_vines,
+	minecraft:sugar_cane,
+	minecraft:kelp,
+	minecraft:bamboo,
 	minecraft:gold_block,
 	minecraft:iron_block,
 	minecraft:oak_slab,
@@ -666,10 +673,7 @@
 	minecraft:water_bucket,
 	minecraft:lava_bucket,
 	minecraft:redstone,
-	minecraft:sugar_cane,
-	minecraft:kelp,
 	minecraft:dried_kelp_block,
-	minecraft:bamboo,
 	minecraft:cocoa_beans,
 	minecraft:cake,
 	minecraft:pumpkin_seeds,
@@ -723,6 +727,7 @@
 	minecraft:beehive,
 	minecraft:honey_block,
 	minecraft:honeycomb_block,
+	minecraft:lodestone,
 	minecraft:netherite_block,
 	minecraft:ancient_debris,
 	minecraft:target,

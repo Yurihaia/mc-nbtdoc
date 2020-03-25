@@ -1,0 +1,9 @@
+compound Saddled extends super::Breedable {
+	/// Whether there is a saddle on the animal
+	Saddle: boolean
+}
+
+Saddled describes minecraft:entity[
+	minecraft:pig,
+	minecraft:strider
+];

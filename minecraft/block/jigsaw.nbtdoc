@@ -1,10 +1,21 @@
 compound Jigsaw extends super::BlockEntity {
-	/// The structure pool that the jigsaw will connect to
-	target_pool: string,
+	/// How the resultant structure can be transformed
+	joint: JointType,
+	/// The id of the jigsaw that this will "spawn" in
+	name: string,
+	/// The structure pool that the jigsaw will "spawn" in
+	pool: string,
 	/// The final block state of the jigsaw
 	final_state: string,
-	/// The id of the type of jigsaw this connects to
-	attachement_type: string
+	/// The id of the type of jigsaw this will be "spawned" from
+	target: string
+}
+
+enum(string) JointType {
+	/// The structure can be rotated
+	Rollable = "rollable",
+	/// The structure cannot be transformed
+	Aligned = "aligned"
 }
 
 Jigsaw describes minecraft:block[minecraft:jigsaw];
