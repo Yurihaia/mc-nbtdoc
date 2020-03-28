@@ -22,3 +22,5 @@ enum(int) CatType {
 	Jellie = 9,
 	Black = 10
 }
+
+Cat describes minecraft:entity[minecraft:cat];
