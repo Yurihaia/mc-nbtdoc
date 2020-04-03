@@ -14,7 +14,6 @@ mod shield;
 mod spawnitem;
 mod suspiciousstew;
 
-use ::minecraft::util::Attribute;
 use ::minecraft::util::Slot;
 use ::minecraft::util::attribute::Operation;
 
@@ -61,7 +60,7 @@ compound Enchantment {
 /// A single attribute modifier
 compound AttributeModifier {
 	/// The name of the attribute
-	AttributeName: Attribute,
+	AttributeName: id(minecraft:attribute),
 	/// Name of the modifier, has no real effect
 	Name: string,
 	/// The slot that the modifier is active in
