@@ -5,7 +5,10 @@ compound Compass extends super::ItemBase {
 	/// The dimension the lodestone is in
 	LodestoneDimension: id(minecraft:dimension),
 	/// The position of the lodestone
-	LodestonePos: LodestonePos
+	LodestonePos: LodestonePos,
+	/// Whether the compass should be linked to a lodestone.
+	/// When true, the compass will reset if the lodestone at the position is removed.
+	LodestoneTracked: boolean
 }
 
 compound LodestonePos {

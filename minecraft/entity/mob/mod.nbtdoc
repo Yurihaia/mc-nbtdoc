@@ -19,7 +19,6 @@ mod player;
 mod piglin;
 mod zombifiedpiglin;
 
-use ::minecraft::util::Attribute;
 use ::minecraft::util::PotionEffect;
 use ::minecraft::util::InventoryItem;
 use ::minecraft::util::Slot;
@@ -87,7 +86,7 @@ compound MobBase extends LivingEntity {
 /// A single attribute
 compound Attribute {
 	/// The name of the attribute
-	Name: Attribute,
+	Name: id(minecraft:attribute),
 	/// The base value of the attribute
 	Base: double,
 	/// The modifiers that act on the attribute
@@ -140,5 +139,6 @@ MobBase describes minecraft:entity[
 	minecraft:spider,
 	minecraft:squid,
 	minecraft:stray,
-	minecraft:wither_skeleton
+	minecraft:wither_skeleton,
+	minecraft:zoglin
 ];

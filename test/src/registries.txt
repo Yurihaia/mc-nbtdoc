@@ -7,6 +7,7 @@ minecraft:loot_table
 minecraft:villager_type
 minecraft:motive
 minecraft:dimension
+minecraft:attribute
 custom:blockitemstates
 custom:blockstates
 custom:spawnitemtag

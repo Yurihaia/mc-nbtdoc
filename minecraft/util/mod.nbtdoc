@@ -6,7 +6,6 @@ mod bannerpattern;
 mod invitem;
 mod blockstate;
 
-export use attribute::Attribute;
 export use slot::Slot;
 export use effect::PotionEffect;
 export use effect::EffectId;
