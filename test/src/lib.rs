@@ -20,7 +20,7 @@ mod tests {
             let res = nbtdoc::parse::root::<nom::error::VerboseError<&str>>(&ress);
             match res {
                 Ok((i, _)) => {
-                    if i.trim().len() > 0 {
+                    if !i.trim().is_empty() {
                         eprintln!("Error at end of file {}: {}", path.to_str().unwrap(), i);
                         panic = true;
                     }
@@ -57,7 +57,7 @@ mod tests {
             .unwrap();
         let mut hs = HashSet::new();
         for x in root.get_compounds() {
-            for (_, f) in &x.fields {
+            for f in x.fields.values() {
                 match &f.nbttype {
                     NbtValue::Index { target, .. } | NbtValue::Id(target) => {
                         if root.get_registry(target).is_none() {
@@ -74,9 +74,9 @@ mod tests {
             }
         }
         let known = include_str!("./registries.txt")
-            .split("\n")
+            .split('\n')
             .filter_map(|v| {
-                let mut split = v.split(":");
+                let mut split = v.split(':');
                 Some(Identifier::new(split.next()?.into(), split.next()?.into()))
             })
             .collect::<HashSet<_>>();
