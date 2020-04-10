@@ -1,3 +1,5 @@
+use ::minecraft::util::SlottedItem;
+
 compound HopperMinecart extends super::MinecartBase {
 	/// The loot table that will populate this hopper minecart
 	LootTable: id(minecraft:loot_table),

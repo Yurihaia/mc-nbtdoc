@@ -1,3 +1,5 @@
+use ::minecraft::util::SlottedItem;
+
 compound ChestMinecart extends super::MinecartBase {
 	/// The loot table that will populate this chest minecart
 	LootTable: id(minecraft:loot_table),
