@@ -11,4 +11,7 @@ compound Campfire extends super::BlockEntity {
 	CookingTotalTimes: int[] @ 4
 }
 
-Campfire describes minecraft:block[minecraft:campfire];
+Campfire describes minecraft:block[
+	minecraft:campfire,
+	minecraft:soul_campfire
+];
