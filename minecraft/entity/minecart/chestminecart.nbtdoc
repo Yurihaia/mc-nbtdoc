@@ -1,0 +1,10 @@
+compound ChestMinecart extends super::MinecartBase {
+	/// The loot table that will populate this chest minecart
+	LootTable: id(minecraft:loot_table),
+	/// The seed of the loot table
+	LootTableSeed: long,
+	/// The items in this chest minecart, with slots from 0 to 26
+	Items: [SlottedItem] @ 0..27
+}
+
+ChestMinecart describes minecraft:entity[minecraft:chest_minecart];

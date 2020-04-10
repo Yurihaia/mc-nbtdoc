@@ -1,0 +1,14 @@
+compound HopperMinecart extends super::MinecartBase {
+	/// The loot table that will populate this hopper minecart
+	LootTable: id(minecraft:loot_table),
+	/// The seed of the loot table
+	LootTableSeed: long,
+	/// The items in this hopper minecart, with slots from 0 to 4
+	Items: [SlottedItem] @ 0..5,
+	/// The number of ticks until an item can be transfered
+	TransferCooldown: int,
+	/// Whether this hopper minecart should pick up items
+	Enabled: boolean
+}
+
+HopperMinecart describes minecraft:entity[minecraft:hopper_minecart];
