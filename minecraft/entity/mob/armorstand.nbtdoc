@@ -1,4 +1,10 @@
 compound ArmorStand extends super::LivingEntity {
+	/// The items that the armor stand is wearing, in [head, body, legs, feet]
+	ArmorItems: [InventoryItem] @ 4,
+	/// The items that the armor stand is holding, in [main hand, offhand]
+	HandItems: [InventoryItem] @ 2,
+	/// Whether the armor stand should be invisible
+	Invisible: boolean,
 	/// Whether the armor stand has no hitbox
 	Marker: boolean,
 	/// Whether the armor stand should have a no base plate
