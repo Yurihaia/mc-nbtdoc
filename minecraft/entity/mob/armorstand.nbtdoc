@@ -1,3 +1,5 @@
+use ::minecraft::util::InventoryItem;
+
 compound ArmorStand extends super::LivingEntity {
 	/// The items that the armor stand is wearing, in [head, body, legs, feet]
 	ArmorItems: [InventoryItem] @ 4,
