@@ -1,0 +1,20 @@
+mod chestminecart;
+mod commandminecart;
+mod furnaceminecart;
+mod hopperminecart;
+mod spawnerminecart;
+mod tntminecart;
+
+use ::minecraft::util::BlockState;
+
+compound MinecartBase extends super::EntityBase {
+	/// Whether the minecart should display a custom block in it
+	CustomDisplayTile: boolean,
+	/// The custom block to display in the minecart  
+	/// Only have effects when `CustomDisplayTile` is true
+	DisplayState: BlockState,
+	/// The offset of the custom block displayed in the minecart
+	DisplayOffset: int
+}
+
+MinecartBase describes minecraft:entity[minecraft:minecart];

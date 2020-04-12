@@ -1,0 +1,26 @@
+use ::minecraft::entity::AnyEntity;
+use ::minecraft::block::spawner::SpawnPotential;
+
+compound SpawnerMinecart extends super::MinecartBase {
+	/// A list of potential entities to spawn next
+	SpawnPotentials: [SpawnPotential],
+	/// The data for the next mob to spawn  
+	/// Will get overwritten by `SpawnPotentials`
+	SpawnData: AnyEntity,
+	/// The number of entities that will be placed
+	SpawnCount: short,
+	/// The range that the spawned entities will be placed
+	SpawnRange: short,
+	/// The number of ticks until the next spawn
+	Delay: short,
+	/// The minimum random delay for the next spawn
+	MinSpawnDelay: short,
+	/// The maximum random delay for the next spawn
+	MaxSpawnDelay: short,
+	/// The maximum number of entities nearby
+	MaxNearbyEntities: short,
+	/// The radius in blocks that a player has to be within to spawn entities
+	RequiredPlayerRange: short
+}
+
+SpawnerMinecart describes minecraft:entity[minecraft:spawner_minecart];

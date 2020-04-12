@@ -1,0 +1,15 @@
+compound Boat extends super::EntityBase {
+	/// The wood type of this boat
+	Type: BoatType
+}
+
+enum(string) BoatType {
+	Oak = "oak",
+	Spruce = "spruce",
+	Birch = "birch",
+	Jungle = "jungle",
+	Acacia = "acacia",
+	DarkOak = "dark_oak"
+}
+
+Boat describes minecraft:entity[minecraft:boat];
