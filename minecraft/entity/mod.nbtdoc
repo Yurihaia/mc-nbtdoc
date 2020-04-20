@@ -12,6 +12,8 @@ mod fireworkrocket;
 mod itemframe;
 mod painting;
 mod fireball;
+mod minecart;
+mod boat;
 
 /// Base NBT for all entities
 compound EntityBase {

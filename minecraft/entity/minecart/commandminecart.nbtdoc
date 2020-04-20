@@ -1,0 +1,12 @@
+compound CommandMinecart extends super::MinecartBase {
+	/// The command stored in this command block minecart
+	Command: string,
+	/// The success count of the last command
+	SuccessCount: int,
+	/// The last output of this command block minecart
+	LastOutput: string,
+	/// Whether the command block minecart should track its output
+	TrackOutput: boolean
+}
+
+CommandMinecart describes minecraft:entity[minecraft:command_block_minecart];
