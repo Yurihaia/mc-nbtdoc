@@ -1,0 +1,10 @@
+compound FurnaceMinecart extends super::MinecartBase {
+	/// The acceleration in x axis
+	PushX: double,
+	/// The acceleration in y axis
+	PushY: double,
+	/// The number of ticks until the fuel runs out
+	Fuel: short
+}
+
+FurnaceMinecart describes minecraft:entity[minecraft:furnace_minecart];

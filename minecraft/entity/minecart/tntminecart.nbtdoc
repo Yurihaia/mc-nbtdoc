@@ -1,0 +1,6 @@
+compound TntMinecart extends super::MinecartBase {
+	/// The number of ticks until this TNT minecart explodes
+	TNTFuse: int
+}
+
+TntMinecart describes minecraft:entity[minecraft:tnt_minecart];
