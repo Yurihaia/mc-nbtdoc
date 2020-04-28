@@ -7,7 +7,7 @@ compound FilledMap extends super::ItemBase {
 	/// The decorations on the map
 	Decorations: [Decoration],
 	/// The display for the item
-	display: Display
+	display: MapColorDisplay
 }
 
 /// A decoration on a map
@@ -82,11 +82,7 @@ enum(byte) IconId {
 }
 
 /// The display settings of an item
-compound Display {
-	/// The name of an item, as a JSON text component
-	Name: string,
-	/// The lore of an item, with each element being a lore line
-	Lore: [string],
+compound MapColorDisplay extends super::Display {
 	/// The color of the map  
 	/// calculated as `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive
 	MapColor: int

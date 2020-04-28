@@ -23,7 +23,7 @@ detailed below
   and must start with an *uppercase* letter (where applicable obviously)
 * `descibes` definitions have to have their targets on multiple lines,
   unless they only have a single target in which case they should be on a single line
-  with the brackets having *one* space between them and the minecraft id
+  with the brackets having *no* spaces between them and the minecraft id
 * **Judgement**: If a repo owner says to fix the styling of some element, *please do*
 
 Examples
@@ -46,5 +46,5 @@ MyCompound describes minecraft:entity[
 	minecraft:cow
 ];
 
-MyOtherCompound describes minecraft:entity[ minecraft:chicken ];
+MyOtherCompound describes minecraft:entity[minecraft:chicken];
 ```
