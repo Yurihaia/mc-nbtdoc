@@ -35,7 +35,8 @@ Container27 describes minecraft:block[
 	minecraft:brown_shulker_box,
 	minecraft:green_shulker_box,
 	minecraft:red_shulker_box,
-	minecraft:black_shulker_box
+	minecraft:black_shulker_box,
+	minecraft:trapped_chest
 ];
 
 compound Container9 extends ContainerBase {
