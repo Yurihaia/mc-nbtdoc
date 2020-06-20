@@ -1,6 +1,8 @@
 use ::minecraft::util::InventoryItem;
 
 compound Villager extends super::Breedable {
+	/// The villager's brain
+	Brain: Brain,
 	/// Whether the villager is willing to breed
 	Willing: boolean,
 	/// The data associated with the villager and it's skin
@@ -19,6 +21,43 @@ compound Villager extends super::Breedable {
 	Inventory: [InventoryItem] @ 0..8,
 	/// The trade offers the villager has
 	Offers: Offers
+}
+
+compound Brain {
+	/// The villager's memories
+	memories: Memories
+}
+
+compound Memories {
+	/// The location of the villager's meeting point
+	"minecraft:meeting_point": PositionMemory,
+	/// The location of the villager's home
+	"minecraft:home": PositionMemory,
+	/// The location of the villager's job site
+	"minecraft:job_site": PositionMemory,
+	/// The tick when the villager last slept
+	"minecraft:last_slept": TickMemory,
+	/// The tick when the villager last woke up
+	"minecraft:last_woken": TickMemory,
+	/// The tick when the villager last worked
+	"minecraft:last_worked_at_poi": TickMemory
+}
+
+compound PositionMemory {
+	/// The position value
+	value: PositionMemoryValue
+}
+
+compound PositionMemoryValue {
+	/// The coordinates of the location in [x, y, z]
+	pos: int[] @ 3,
+	/// The dimension of the location
+	dimension: id(minecraft:dimension)
+}
+
+compound TickMemory {
+	/// The tick value
+	value: long
 }
 
 compound VillagerData {

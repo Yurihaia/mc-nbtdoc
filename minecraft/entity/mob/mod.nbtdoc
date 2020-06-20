@@ -108,7 +108,7 @@ compound AttributeModifier {
 }
 
 compound Brain {
-	/// The mobs memories, empty
+	/// The mob's memories, empty
 	memories: Memories
 }
 
