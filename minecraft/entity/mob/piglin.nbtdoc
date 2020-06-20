@@ -1,10 +1,47 @@
 use ::minecraft::util::InventoryItem;
 
 compound Piglin extends super::MobBase {
+	/// The piglin's brain
+	Brain: Brain,
 	/// Whether the piglin is a baby
 	IsBaby: boolean,
+	/// Whether the piglin will not transform to a zomblified piglin when it is in the Overword
+	IsImmuneToZombification: boolean,
+	/// Whether the piglin does not hunt hoglins
+	CannotHunt: boolean,
+	/// The number of ticks the piglin has been in the overworld
+	TimeInOverworld: int,
 	/// The inventory of the piglin
 	Inventory: [InventoryItem] @ 0..8
+}
+
+compound Brain {
+	/// The piglin's memories
+	memories: Memories
+}
+
+compound Memories {
+	/// The target of the piglin
+	"minecraft:angry_at": AngryAtMemory,
+	/// Whether the piglin is admiring an item
+	"minecraft:admiring_item": StatusMemory,
+	/// Whether the piglin cannot admire an item
+	"minecraft:admiring_disabled": StatusMemory,
+	/// Whether the piglin hunted recently
+	"minecraft:hunted_recently": StatusMemory
+}
+
+compound AngryAtMemory {
+	/// The UUID of the target
+	value: int[] @ 4,
+	/// The number of ticks until this memory is removed
+	ttl: long
+}
+
+compound StatusMemory {
+	value: boolean,
+	/// The number of ticks until this memory is removed
+	ttl: long
 }
 
 Piglin describes minecraft:entity[minecraft:piglin];
