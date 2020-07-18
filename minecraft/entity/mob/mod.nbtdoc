@@ -8,6 +8,8 @@ mod enderdragon;
 mod enderman;
 mod endermite;
 mod ghast;
+mod irongolem;
+mod phantom;
 mod slime;
 mod raider;
 mod shulker;
@@ -17,6 +19,7 @@ mod wither;
 mod armorstand;
 mod player;
 mod piglin;
+mod vex;
 mod zombifiedpiglin;
 
 use ::minecraft::util::PotionEffect;
