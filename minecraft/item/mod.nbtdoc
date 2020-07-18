@@ -54,7 +54,7 @@ compound Enchantment {
 	/// Which enchantment is being described
 	id: id(minecraft:enchantment),
 	/// Which level the enchantment is
-	lvl: short @ 1..
+	lvl: (short @ 1.. | int @ 1..)
 }
 
 /// A single attribute modifier
