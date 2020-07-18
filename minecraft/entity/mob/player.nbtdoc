@@ -5,7 +5,7 @@ compound Player extends super::LivingEntity {
 	/// The version of the player NBT structure
 	DataVersion: int,
 	/// The dimension the player is in
-	Dimension: Dimension,
+	Dimension: id(minecraft:dimension),
 	/// The game mode that the player is in
 	playerGameType: Gamemode,
 	/// The score to display upon death
@@ -62,12 +62,6 @@ compound Player extends super::LivingEntity {
 	id: (),
 	CustomName: (),
 	CustomNameVisible: ()
-}
-
-enum(int) Dimension {
-	Nether = -1,
-	Overworld = 0,
-	End = 1
 }
 
 enum(int) Gamemode {
