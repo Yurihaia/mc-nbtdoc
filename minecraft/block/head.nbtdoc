@@ -1,9 +1,9 @@
 compound PlayerHead extends super::BlockEntity {
 	/// The owner of the skull
-	Owner: Owner
+	SkullOwner: SkullOwner
 }
 
-compound Owner {
+compound SkullOwner {
 	/// UUID of the owner, optional
 	Id: int[] @ 4,
 	/// Name of the owner, if missing appears as a steve head
