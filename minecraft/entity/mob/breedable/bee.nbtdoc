@@ -1,8 +1,8 @@
 compound Bee extends super::Breedable {
 	/// The number of tickets that the bee will be angry for
-    AngerTime: int,
-    /// The UUID of the target that the bee is angry at
-    AngryAt: int[] @ 4,
+	AngerTime: int,
+	/// The UUID of the target that the bee is angry at
+	AngryAt: int[] @ 4,
 	/// The position of the bee's hive
 	HivePos: HivePos,
 	/// The position of the flower the bee is circling
