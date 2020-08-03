@@ -1,4 +1,8 @@
 compound IronGolem extends super::MobBase {
+	/// The number of tickets that the iron golem will be angry for
+    AngerTime: int,
+    /// The UUID of the target that the iron golem is angry at
+    AngryAt: int[] @ 4,
 	/// Whether the player created the golem
 	PlayerCreated: boolean
 }

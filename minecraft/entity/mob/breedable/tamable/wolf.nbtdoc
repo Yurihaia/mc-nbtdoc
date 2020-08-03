@@ -1,8 +1,10 @@
 use ::minecraft::util::Color;
 
 compound Wolf extends super::Tamable {
-	/// Whether the wolf is angry
-	Angry: boolean,
+	/// The number of tickets that the wolf will be angry for
+    AngerTime: int,
+    /// The UUID of the target that the wolf is angry at
+    AngryAt: int[] @ 4,
 	/// The wolf's collar color, present for wild wolfs
 	CollarColor: Color
 }

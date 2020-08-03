@@ -1,8 +1,10 @@
 compound ZombifiedPiglin extends super::MobBase {
+	/// The number of tickets that the zombified piglin will be angry for
+    AngerTime: int,
+    /// The UUID of the target that the zombified piglin is angry at
+    AngryAt: int[] @ 4,
 	/// Whether the zombie pigman is a baby
 	IsBaby: boolean,
-	/// The number of ticks that the zombie pigman will be angry for
-	Anger: short,
 	/// The UUID of the last player to hit a zombie pigman in this zombie pigman's detection range
 	HurtBy: int[] @ 4
 }

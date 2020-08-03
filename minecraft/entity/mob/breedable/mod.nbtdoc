@@ -6,6 +6,7 @@ mod mooshroom;
 mod tamable;
 mod ocelot;
 mod panda;
+mod polarbear;
 mod saddled;
 mod rabbit;
 mod sheep;
@@ -28,6 +29,5 @@ compound Breedable extends super::MobBase {
 
 Breedable describes minecraft:entity[
 	minecraft:cow,
-	minecraft:polar_bear,
 	minecraft:hoglin
 ];

@@ -1,6 +1,10 @@
 use ::minecraft::util::BlockState;
 
 compound Enderman extends super::MobBase {
+	/// The number of tickets that the enderman will be angry for
+    AngerTime: int,
+    /// The UUID of the target that the enderman is angry at
+    AngryAt: int[] @ 4,
 	/// The block the enderman is carrying
 	carriedBlockState: BlockState
 }
