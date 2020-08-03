@@ -5,4 +5,4 @@ compound PolarBear extends super::Breedable {
 	AngryAt: int[] @ 4
 }
 
-PolarBear describes minecraft:entity[minecraft:polar_bear]
+PolarBear describes minecraft:entity[minecraft:polar_bear];
