@@ -7,6 +7,8 @@ compound Shield extends super::ItemBase {
 }
 
 compound Tag {
+	/// The base color of the shield
+	Base: ColorInt,
 	/// The patterns on the shield
 	Patterns: [Pattern]
 }
