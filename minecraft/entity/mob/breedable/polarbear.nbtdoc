@@ -1,0 +1,8 @@
+compound PolarBear extends super::Breedable {
+	/// The number of tickets that the polar bear will be angry for
+	AngerTime: int,
+	/// The UUID of the target that the polar bear is angry at
+	AngryAt: int[] @ 4
+}
+
+PolarBear describes minecraft:entity[minecraft:polar_bear];
