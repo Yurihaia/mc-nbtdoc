@@ -5,8 +5,6 @@ compound Throwable extends super::ProjectileBase {
 	shake: byte
 	/// The item representation of the projectile
 	Item: InventoryItem
-	/// The UUID of the entity who threw the item
-	Owner: int[] @ 4
 }
 
 Throwable describes minecraft:entity[
