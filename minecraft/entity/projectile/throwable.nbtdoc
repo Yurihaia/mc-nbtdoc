@@ -2,7 +2,7 @@ use ::minecraft::util::InventoryItem;
 
 compound Throwable extends super::ProjectileBase {
 	/// The shake the projectile creates
-	shake: byte
+	shake: byte,
 	/// The item representation of the projectile
 	Item: InventoryItem
 }
