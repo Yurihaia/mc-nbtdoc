@@ -1,6 +1,6 @@
 use ::minecraft::util::InventoryItem;
 
-compound BasicThrowable extends Throwable {
+compound Throwable extends super::ProjectileBase {
 	/// The shake the projectile creates
 	shake: byte
 	/// The item representation of the projectile
