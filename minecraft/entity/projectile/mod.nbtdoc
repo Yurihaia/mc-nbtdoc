@@ -13,7 +13,9 @@ compound ProjectileBase extends super::EntityBase {
 	/// The block the projectile is in
 	inBlockState: BlockState,
 	/// The UUID of the projectile's owner
-	Owner: int[] @ 4
+	Owner: int[] @ 4,
+	/// Whether the projectile has left its owner
+	LeftOwner: boolean
 }
 
 ProjectileBase describes minecraft:entity[
