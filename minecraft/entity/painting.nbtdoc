@@ -17,3 +17,5 @@ enum(byte) Facing {
 	North = 2,
 	East = 3
 }
+
+Painting describes minecraft:entity[minecraft:painting];
