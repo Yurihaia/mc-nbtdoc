@@ -2,3 +2,5 @@ compound Ocelot {
 	/// Whether the ocelot trusts players
 	Trusting: boolean
 }
+
+Ocelot describes minecraft:entity[minecraft:ocelot];
