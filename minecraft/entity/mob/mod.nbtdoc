@@ -64,11 +64,11 @@ compound LivingEntity extends super::EntityBase {
 compound MobBase extends LivingEntity {
 	/// The items that the mob is holding, in [main hand, offhand]
 	HandItems: [InventoryItem] @ 2,
-	/// The items that the mob is wearing, in [head, body, legs, feet]
+	/// The items that the mob is wearing, in [feet, legs, body, head]
 	ArmorItems: [InventoryItem] @ 4,
 	/// The chance to drop the items that the mob is holding, in [main hand, offhand]
 	HandDropChances: [float] @ 2,
-	/// The chance to drop the items that the mob is wearing, in [head, body, legs, feet]
+	/// The chance to drop the items that the mob is wearing, in [feet, legs, body, head]
 	ArmorDropChances: [float] @ 4,
 	/// The mob's death loot table
 	DeathLootTable: id(minecraft:loot_table),

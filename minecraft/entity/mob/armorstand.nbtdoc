@@ -1,7 +1,7 @@
 use ::minecraft::util::InventoryItem;
 
 compound ArmorStand extends super::LivingEntity {
-	/// The items that the armor stand is wearing, in [head, body, legs, feet]
+	/// The items that the armor stand is wearing, in [feet, legs, body, head]
 	ArmorItems: [InventoryItem] @ 4,
 	/// The items that the armor stand is holding, in [main hand, offhand]
 	HandItems: [InventoryItem] @ 2,
