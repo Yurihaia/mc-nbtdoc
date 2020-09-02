@@ -2,7 +2,7 @@
 compound PotionEffect {
 	Id: EffectId,
 	Amplifier: byte,
-	Duration: int @ 1..,
+	Duration: int,
 	/// Whether the effect particles are semi-transparent (like with a Beacon)
 	Ambient: boolean,
 	/// Whether the effect particles should be shown
