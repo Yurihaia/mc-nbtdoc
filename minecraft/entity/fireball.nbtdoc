@@ -1,6 +1,8 @@
 use ::minecraft::util::InventoryItem;
 
 compound FireballBase extends super::EntityBase {
+	/// The UUID of the fireball's owner
+	Owner: int[] @ 4,
 	/// The acceleration of the fireball
 	power: [double] @ 3
 }
