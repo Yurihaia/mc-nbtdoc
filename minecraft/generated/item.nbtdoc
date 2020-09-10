@@ -47,6 +47,7 @@
 	minecraft:phantom_spawn_egg,
 	minecraft:pig_spawn_egg,
 	minecraft:piglin_spawn_egg,
+	minecraft:piglin_brute_spawn_egg,
 	minecraft:pillager_spawn_egg,
 	minecraft:polar_bear_spawn_egg,
 	minecraft:pufferfish_spawn_egg,
@@ -76,8 +77,8 @@
 	minecraft:zoglin_spawn_egg,
 	minecraft:zombie_spawn_egg,
 	minecraft:zombie_horse_spawn_egg,
-	minecraft:zombified_piglin_spawn_egg,
 	minecraft:zombie_villager_spawn_egg,
+	minecraft:zombified_piglin_spawn_egg,
 	minecraft:armor_stand
 ];
 ::minecraft::item::compass::Compass describes minecraft:item[

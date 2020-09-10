@@ -44,4 +44,7 @@ compound StatusMemory {
 	ttl: long
 }
 
-Piglin describes minecraft:entity[minecraft:piglin];
+Piglin describes minecraft:entity[
+	minecraft:piglin,
+	minecraft:piglin_brute
+];
