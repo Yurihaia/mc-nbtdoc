@@ -8,6 +8,8 @@ compound Player extends super::LivingEntity {
 	Dimension: id(minecraft:dimension),
 	/// The game mode that the player is in
 	playerGameType: Gamemode,
+	/// The previous game mode that the player was in
+	previousPlayerGameType: Gamemode,
 	/// The score to display upon death
 	Score: int,
 	/// The hotbar slot the player has selected
