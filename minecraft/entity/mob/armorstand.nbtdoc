@@ -17,7 +17,7 @@ compound ArmorStand extends super::LivingEntity {
 	Small: boolean,
 	/// A bit field of the slots that cannot be used
 	DisabledSlots: int,
-	/// The post of the armor stand
+	/// The pose of the armor stand
 	Pose: Pose
 }
 
