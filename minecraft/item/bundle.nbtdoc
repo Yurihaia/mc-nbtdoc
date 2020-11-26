@@ -1,0 +1,7 @@
+use ::minecraft::util::InventoryItem;
+
+/// A bundle
+compound Bundle extends super::ItemBase {
+	/// The items stored in this bundle
+	Items: [InventoryItem]
+}
