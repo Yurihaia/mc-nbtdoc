@@ -32,7 +32,7 @@
 		"net.minecraft.class_1764": "item::crossbow::Crossbow",
 		"net.minecraft.class_1830": "item::suspiciousstew::SuspiciousStew",
 		"net.minecraft.class_1759": "item::compass::Compass",
-		"net.minecraft.class_5537": "item::bundle::BundleItem",
+		"net.minecraft.class_5537": "item::bundle::Bundle",
 		"net.minecraft.class_1738": null,
 		"net.minecraft.class_1792": null,
 		"net.minecraft.class_1821": null,
