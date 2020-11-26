@@ -87,6 +87,9 @@
 ::minecraft::item::map::FilledMap describes minecraft:item[
 	minecraft:filled_map
 ];
+::minecraft::item::bundle::BundleItem describes minecraft:item[
+	minecraft:bundle
+];
 ::minecraft::item::book::WritableBook describes minecraft:item[
 	minecraft:writable_book
 ];
@@ -834,7 +837,4 @@
 ];
 ::minecraft::item::suspiciousstew::SuspiciousStew describes minecraft:item[
 	minecraft:suspicious_stew
-];
-::minecraft::item::bundle::Bundle describes minecraft:item[
-	minecraft:bundle
 ];
