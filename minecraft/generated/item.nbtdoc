@@ -87,7 +87,7 @@
 ::minecraft::item::map::FilledMap describes minecraft:item[
 	minecraft:filled_map
 ];
-::minecraft::item::bundle::BundleItem describes minecraft:item[
+::minecraft::item::bundle::Bundle describes minecraft:item[
 	minecraft:bundle
 ];
 ::minecraft::item::book::WritableBook describes minecraft:item[
