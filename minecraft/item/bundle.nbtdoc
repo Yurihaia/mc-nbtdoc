@@ -5,3 +5,5 @@ compound Bundle extends super::ItemBase {
 	/// The items stored in this bundle
 	Items: [InventoryItem]
 }
+
+
