@@ -815,7 +815,9 @@
 	minecraft:waxed_cut_copper_slab,
 	minecraft:waxed_lightly_weathered_cut_copper_slab,
 	minecraft:waxed_semi_weathered_cut_copper_slab,
-	minecraft:lightning_rod
+	minecraft:lightning_rod,
+	minecraft:pointed_dripstone,
+	minecraft:dripstone_block
 ];
 ::minecraft::item::enchantedbook::EnchantedBook describes minecraft:item[
 	minecraft:enchanted_book
