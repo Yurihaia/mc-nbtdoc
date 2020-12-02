@@ -1,0 +1,46 @@
+name: Generate JSONs
+
+on:
+  workflow_run:
+    workflows:
+      - Test
+    branches: 
+      - master
+    types: 
+      - completed
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          ref: generated
+          submodules: recursive
+
+      - name: Update Submodule
+        run: git submodule update --remote
+
+      - name: Cache Cargo Build
+        uses: actions/cache@v2
+        env:
+          cache-name: cargo-build
+        with:
+          path: ./target
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Generate
+        run: cargo run --bin main --release
+
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Update to {{ github.sha }}"
+          git push
