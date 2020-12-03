@@ -3,9 +3,7 @@ name: Test and Serialize
 on: 
   push: {}
   pull_request: {}
-  workflow_run:
-    workflows: [Tick]
-    types: [completed]
+  workflow_dispatch: {}
 
 jobs:
   build:
