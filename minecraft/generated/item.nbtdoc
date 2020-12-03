@@ -817,7 +817,8 @@
 	minecraft:waxed_semi_weathered_cut_copper_slab,
 	minecraft:lightning_rod,
 	minecraft:pointed_dripstone,
-	minecraft:dripstone_block
+	minecraft:dripstone_block,
+	minecraft:sculk_sensor
 ];
 ::minecraft::item::enchantedbook::EnchantedBook describes minecraft:item[
 	minecraft:enchanted_book
