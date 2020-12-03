@@ -15,5 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Tick
-        run: ./tick.py
+        run: |
+          chmod +x ./tick.py
+          ./tick.py
         working-directory: ./scripts
