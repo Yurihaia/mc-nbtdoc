@@ -1,6 +1,11 @@
-name: Test and Generate
+name: Test and Serialize
 
-on: [push, pull_request]
+on: 
+  push: {}
+  pull_request: {}
+  workflow_run:
+    workflows: [Tick]
+    types: [completed]
 
 jobs:
   build:
@@ -16,7 +21,7 @@ jobs:
         run: cargo test --verbose
         working-directory: ./test
 
-  generate:
+  serialize:
     needs: [build]
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
@@ -24,7 +29,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: generated
-          submodules: recursive
+          submodules: true
 
       - name: Update Submodule
         run: git submodule update --remote
@@ -44,7 +49,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Generate
+      - name: Serialize
         run: cargo run --bin main --release
 
       - name: Commit
