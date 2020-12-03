@@ -61,7 +61,7 @@ especially useful for the JSON data, it should generally apply to all other seri
 | Tick               | Update `master` branch for new Minecraft releases automatically.                                   | ![Tick][spyglass-tick-workflow]      |
 
 [test-workflow]: https://github.com/Yurihaia/mc-nbtdoc/workflows/Test%20and%20Serialize/badge.svg
-[spyglass-tick-workflow]: https://github.com/Yurihaia/mc-nbtdoc/mc-nbtdoc-generator/workflows/Tick/badge.svg
+[spyglass-tick-workflow]: https://github.com/Yurihaia/mc-nbtdoc/workflows/Tick/badge.svg
 
 ## Contributing
 Help on this repo is welcomed and encouraged, but make sure you follow the style guidelines at
