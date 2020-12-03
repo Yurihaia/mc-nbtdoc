@@ -1,4 +1,5 @@
 # MC-NBTDOC
+
 `mc-nbtdoc` is a repository for schemas of Minecraft's NBT format,
 including entities, blocks, and items.
 
@@ -51,6 +52,16 @@ The current extensions are:
 The format for the serialized data can be quite counterintuitive, so a TypeScript declaration file for the format can be
 found at [json_format.d.ts](https://github.com/Yurihaia/nbtdoc-rs/blob/master/docs/json_format.d.ts). While this data is 
 especially useful for the JSON data, it should generally apply to all other serialized forms.
+
+## GitHub Workflows
+
+| Name               | Description                                                                                        | Status                               |
+| ------------------ | -------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| Test and Serialize | Test the latest commit in `master` branch, and update `generated` branch with the serialized data. | ![Test and Serialize][test-workflow] |
+| Tick               | Update `master` branch for new Minecraft releases automatically.                                   | ![Tick][spyglass-tick-workflow]      |
+
+[test-workflow]: https://github.com/Yurihaia/mc-nbtdoc/workflows/Test%20and%20Serialize/badge.svg
+[spyglass-tick-workflow]: https://github.com/Yurihaia/mc-nbtdoc/mc-nbtdoc-generator/workflows/Tick/badge.svg
 
 ## Contributing
 Help on this repo is welcomed and encouraged, but make sure you follow the style guidelines at

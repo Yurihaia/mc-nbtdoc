@@ -1,0 +1,19 @@
+name: Tick
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Every hour.
+  workflow_dispatch: {} # Manual trigger.
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Tick
+        run: ./tick.py
+        working-directory: ./scripts

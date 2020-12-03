@@ -1,0 +1,3 @@
+[submodule "scripts/nbtdoc-genmod"]
+	path = scripts/nbtdoc-genmod
+	url = https://github.com/SPYGlassMC/nbtdoc-genmod.git
