@@ -16,6 +16,6 @@ jobs:
 
       - name: Tick
         run: |
-          chmod +x ./tick.py
+          chmod -R 777 .
           ./tick.py
         working-directory: ./scripts
