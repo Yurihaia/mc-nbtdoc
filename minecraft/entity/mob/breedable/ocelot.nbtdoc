@@ -1,4 +1,4 @@
-compound Ocelot {
+compound Ocelot extends super::Breedable {
 	/// Whether the ocelot trusts players
 	Trusting: boolean
 }
