@@ -15,6 +15,7 @@
 	minecraft:lingering_potion
 ];
 ::minecraft::item::spawnitem::SpawnItem describes minecraft:item[
+	minecraft:axolotl_spawn_egg,
 	minecraft:bat_spawn_egg,
 	minecraft:bee_spawn_egg,
 	minecraft:blaze_spawn_egg,
@@ -833,7 +834,8 @@
 	minecraft:pufferfish_bucket,
 	minecraft:salmon_bucket,
 	minecraft:cod_bucket,
-	minecraft:tropical_fish_bucket
+	minecraft:tropical_fish_bucket,
+	minecraft:axolotl_bucket
 ];
 ::minecraft::item::head::PlayerHead describes minecraft:item[
 	minecraft:player_head
