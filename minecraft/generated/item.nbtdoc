@@ -34,6 +34,7 @@
 	minecraft:evoker_spawn_egg,
 	minecraft:fox_spawn_egg,
 	minecraft:ghast_spawn_egg,
+	minecraft:glow_squid_spawn_egg,
 	minecraft:guardian_spawn_egg,
 	minecraft:hoglin_spawn_egg,
 	minecraft:horse_spawn_egg,
@@ -819,7 +820,8 @@
 	minecraft:lightning_rod,
 	minecraft:pointed_dripstone,
 	minecraft:dripstone_block,
-	minecraft:sculk_sensor
+	minecraft:sculk_sensor,
+	minecraft:glow_lichen
 ];
 ::minecraft::item::enchantedbook::EnchantedBook describes minecraft:item[
 	minecraft:enchanted_book
