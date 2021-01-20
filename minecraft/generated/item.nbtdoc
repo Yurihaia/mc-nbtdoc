@@ -15,6 +15,7 @@
 	minecraft:lingering_potion
 ];
 ::minecraft::item::spawnitem::SpawnItem describes minecraft:item[
+	minecraft:axolotl_spawn_egg,
 	minecraft:bat_spawn_egg,
 	minecraft:bee_spawn_egg,
 	minecraft:blaze_spawn_egg,
@@ -33,6 +34,7 @@
 	minecraft:evoker_spawn_egg,
 	minecraft:fox_spawn_egg,
 	minecraft:ghast_spawn_egg,
+	minecraft:glow_squid_spawn_egg,
 	minecraft:guardian_spawn_egg,
 	minecraft:hoglin_spawn_egg,
 	minecraft:horse_spawn_egg,
@@ -87,6 +89,9 @@
 ::minecraft::item::map::FilledMap describes minecraft:item[
 	minecraft:filled_map
 ];
+::minecraft::item::bundle::Bundle describes minecraft:item[
+	minecraft:bundle
+];
 ::minecraft::item::book::WritableBook describes minecraft:item[
 	minecraft:writable_book
 ];
@@ -108,6 +113,8 @@
 	minecraft:polished_diorite,
 	minecraft:andesite,
 	minecraft:polished_andesite,
+	minecraft:calcite,
+	minecraft:tuff,
 	minecraft:grass_block,
 	minecraft:dirt,
 	minecraft:coarse_dirt,
@@ -135,6 +142,7 @@
 	minecraft:gravel,
 	minecraft:gold_ore,
 	minecraft:iron_ore,
+	minecraft:copper_ore,
 	minecraft:coal_ore,
 	minecraft:nether_gold_ore,
 	minecraft:oak_log,
@@ -178,6 +186,7 @@
 	minecraft:sponge,
 	minecraft:wet_sponge,
 	minecraft:glass,
+	minecraft:tinted_glass,
 	minecraft:lapis_ore,
 	minecraft:lapis_block,
 	minecraft:dispenser,
@@ -318,6 +327,7 @@
 	minecraft:warped_fence,
 	minecraft:pumpkin,
 	minecraft:carved_pumpkin,
+	minecraft:jack_o_lantern,
 	minecraft:netherrack,
 	minecraft:soul_sand,
 	minecraft:soul_soil,
@@ -325,7 +335,6 @@
 	minecraft:polished_basalt,
 	minecraft:soul_torch,
 	minecraft:glowstone,
-	minecraft:jack_o_lantern,
 	minecraft:oak_trapdoor,
 	minecraft:spruce_trapdoor,
 	minecraft:birch_trapdoor,
@@ -472,7 +481,7 @@
 	minecraft:acacia_stairs,
 	minecraft:dark_oak_stairs,
 	minecraft:slime_block,
-	minecraft:grass_path,
+	minecraft:dirt_path,
 	minecraft:sunflower,
 	minecraft:lilac,
 	minecraft:rose_bush,
@@ -756,7 +765,63 @@
 	minecraft:polished_blackstone_brick_slab,
 	minecraft:polished_blackstone_brick_stairs,
 	minecraft:cracked_polished_blackstone_bricks,
-	minecraft:respawn_anchor
+	minecraft:respawn_anchor,
+	minecraft:candle,
+	minecraft:white_candle,
+	minecraft:orange_candle,
+	minecraft:magenta_candle,
+	minecraft:light_blue_candle,
+	minecraft:yellow_candle,
+	minecraft:lime_candle,
+	minecraft:pink_candle,
+	minecraft:gray_candle,
+	minecraft:light_gray_candle,
+	minecraft:cyan_candle,
+	minecraft:purple_candle,
+	minecraft:blue_candle,
+	minecraft:brown_candle,
+	minecraft:green_candle,
+	minecraft:red_candle,
+	minecraft:black_candle,
+	minecraft:amethyst_block,
+	minecraft:budding_amethyst,
+	minecraft:small_amethyst_bud,
+	minecraft:medium_amethyst_bud,
+	minecraft:large_amethyst_bud,
+	minecraft:amethyst_cluster,
+	minecraft:copper_block,
+	minecraft:lightly_weathered_copper_block,
+	minecraft:semi_weathered_copper_block,
+	minecraft:weathered_copper_block,
+	minecraft:cut_copper,
+	minecraft:lightly_weathered_cut_copper,
+	minecraft:semi_weathered_cut_copper,
+	minecraft:weathered_cut_copper,
+	minecraft:cut_copper_stairs,
+	minecraft:lightly_weathered_cut_copper_stairs,
+	minecraft:semi_weathered_cut_copper_stairs,
+	minecraft:weathered_cut_copper_stairs,
+	minecraft:cut_copper_slab,
+	minecraft:lightly_weathered_cut_copper_slab,
+	minecraft:semi_weathered_cut_copper_slab,
+	minecraft:weathered_cut_copper_slab,
+	minecraft:waxed_copper,
+	minecraft:waxed_lightly_weathered_copper,
+	minecraft:waxed_semi_weathered_copper,
+	minecraft:waxed_cut_copper,
+	minecraft:waxed_lightly_weathered_cut_copper,
+	minecraft:waxed_semi_weathered_cut_copper,
+	minecraft:waxed_cut_copper_stairs,
+	minecraft:waxed_lightly_weathered_cut_copper_stairs,
+	minecraft:waxed_semi_weathered_cut_copper_stairs,
+	minecraft:waxed_cut_copper_slab,
+	minecraft:waxed_lightly_weathered_cut_copper_slab,
+	minecraft:waxed_semi_weathered_cut_copper_slab,
+	minecraft:lightning_rod,
+	minecraft:pointed_dripstone,
+	minecraft:dripstone_block,
+	minecraft:sculk_sensor,
+	minecraft:glow_lichen
 ];
 ::minecraft::item::enchantedbook::EnchantedBook describes minecraft:item[
 	minecraft:enchanted_book
@@ -771,7 +836,8 @@
 	minecraft:pufferfish_bucket,
 	minecraft:salmon_bucket,
 	minecraft:cod_bucket,
-	minecraft:tropical_fish_bucket
+	minecraft:tropical_fish_bucket,
+	minecraft:axolotl_bucket
 ];
 ::minecraft::item::head::PlayerHead describes minecraft:item[
 	minecraft:player_head
