@@ -1,0 +1,6 @@
+compound GlowSquid extends super::MobBase {
+	/// The number of tickets that the glow squid will wait before glowing
+	DarkTicksRemaining: int
+}
+
+GlowSquid describes minecraft:entity[minecraft:glow_squid];

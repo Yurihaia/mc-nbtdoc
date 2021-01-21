@@ -8,6 +8,7 @@ mod enderdragon;
 mod enderman;
 mod endermite;
 mod ghast;
+mod glowsquid;
 mod irongolem;
 mod phantom;
 mod slime;
