@@ -31,4 +31,7 @@ enum(byte) Facing {
 	East = 5
 }
 
-ItemFrame describes minecraft:entity[minecraft:item_frame];
+ItemFrame describes minecraft:entity[
+	minecraft:item_frame,
+	minecraft:glow_item_frame
+];
