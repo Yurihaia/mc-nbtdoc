@@ -16,3 +16,5 @@ compound Bee {
 	TicksInHive: int,
 	EntityData: AnyEntity
 }
+
+BeeHive describes minecraft:block[minecraft:beehive];
