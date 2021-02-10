@@ -7,7 +7,7 @@ compound WrittenBook extends super::ItemBase {
 	/// Whether the dynamic content on the pages has been resolved
 	resolved: boolean,
 	/// The pages of the book as JSON text components
-	pages: [string]
+	pages: [string],
 	/// The generation of the book
 	generation: Generation,
 	/// The author of the book
