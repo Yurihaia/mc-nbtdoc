@@ -1,4 +1,4 @@
-name: Test and Serialize
+name: Test
 
 on: 
   push:
