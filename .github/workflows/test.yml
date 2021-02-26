@@ -1,0 +1,21 @@
+name: Test and Serialize
+
+on: 
+  push:
+    branches-ignore:
+      - master
+  pull_request: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Build
+        run: cargo build --verbose
+        working-directory: ./test
+
+      - name: Run tests
+        run: cargo test --verbose
+        working-directory: ./test
