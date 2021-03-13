@@ -11,7 +11,7 @@ compound Beacon extends super::BlockEntity {
 
 /// Numerical ids for effects
 enum(int) EffectId {
-	None = 0,
+	None = -1,
 	Speed = 1,
 	Slowness = 2,
 	Haste = 3,
