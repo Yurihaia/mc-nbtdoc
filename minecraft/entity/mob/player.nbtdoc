@@ -16,6 +16,8 @@ compound Player extends super::LivingEntity {
 	SelectedItemSlot: int @ 0..8,
 	/// The item in the hotbar slot the player has selected
 	SelectedItem: SlottedItem,
+	/// The dimension of the player's respawn point
+	SpawnDimension: id(minecraft:dimension),
 	/// The x coordinate of the player's spawpoint
 	SpawnX: int,
 	/// The y coordinate of the player's spawpoint
