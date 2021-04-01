@@ -21,8 +21,24 @@ compound Brain {
 }
 
 compound Memories {
+	/// Whether the axolotl has a hunting cooldown
+	"minecraft:has_hunting_cooldown": CooldownMemory,
+	/// Whether the axolotl is tempted by the player
+	"minecraft:is_tempted": BooleanMemory,
 	/// The number of ticks until the axolotl stops playing dead
-	"minecraft:play_dead_ticks": TickMemory
+	"minecraft:play_dead_ticks": TickMemory,
+	/// The number of ticks until the axolotl can be tempted again
+	"minecraft:temptation_cooldown_ticks": TickMemory
+}
+
+compound CooldownMemory {
+	value: boolean,
+	/// The number of ticks until this memory is removed
+	ttl: long
+}
+
+compound BooleanMemory {
+	value: boolean
 }
 
 compound TickMemory {

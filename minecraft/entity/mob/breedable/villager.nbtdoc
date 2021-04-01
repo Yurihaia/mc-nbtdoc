@@ -29,8 +29,8 @@ compound Brain {
 }
 
 compound Memories {
-	/// The location of the villager's meeting point
-	"minecraft:meeting_point": PositionMemory,
+	/// Whether the villager has detected an iron golem recently
+	"minecraft:golem_detected_recently": GolemDetectedMemory,
 	/// The location of the villager's home
 	"minecraft:home": PositionMemory,
 	/// The location of the villager's job site
@@ -40,7 +40,17 @@ compound Memories {
 	/// The tick when the villager last woke up
 	"minecraft:last_woken": TickMemory,
 	/// The tick when the villager last worked
-	"minecraft:last_worked_at_poi": TickMemory
+	"minecraft:last_worked_at_poi": TickMemory,
+	/// The location of the villager's meeting point
+	"minecraft:meeting_point": PositionMemory,
+	/// The location of the villager's potential job site
+	"minecraft:potential_job_site": PositionMemory
+}
+
+compound GolemDetectedMemory {
+	value: boolean,
+	/// The number of ticks until this memory is removed
+	ttl: long
 }
 
 compound PositionMemory {

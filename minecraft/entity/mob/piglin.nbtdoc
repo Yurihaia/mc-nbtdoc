@@ -21,14 +21,16 @@ compound Brain {
 }
 
 compound Memories {
-	/// The target of the piglin
-	"minecraft:angry_at": AngryAtMemory,
-	/// Whether the piglin is admiring an item
-	"minecraft:admiring_item": StatusMemory,
 	/// Whether the piglin cannot admire an item
 	"minecraft:admiring_disabled": StatusMemory,
+	/// Whether the piglin is admiring an item
+	"minecraft:admiring_item": StatusMemory,
+	/// The target of the piglin
+	"minecraft:angry_at": AngryAtMemory,
 	/// Whether the piglin hunted recently
-	"minecraft:hunted_recently": StatusMemory
+	"minecraft:hunted_recently": StatusMemory,
+	/// Whether the piglin is being angered universally
+	"minecraft:universal_anger": StatusMemory
 }
 
 compound AngryAtMemory {
