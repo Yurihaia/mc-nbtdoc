@@ -1,0 +1,18 @@
+compound Goat extends super::Breedable {
+	/// The goat's brain
+	Brain: Brain,
+	/// Whether the goat is a screaming goat
+	IsScreamingGoat: boolean
+}
+
+compound Brain {
+	/// The goat's memories
+	memories: Memories
+}
+
+compound Memories {
+	/// The number of ticks until the goat can leap again.
+	"minecraft:long_jump_cooling_down": int
+}
+
+Goat describes minecraft:entity[minecraft:goat];

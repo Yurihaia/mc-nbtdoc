@@ -1,4 +1,6 @@
 compound Axolotl extends super::Breedable {
+	/// The axolotl's brain
+	Brain: Brain,
 	/// The variant of the axolotl
 	Variant: Variant,
 	/// If this axolotl was released from a bucket
@@ -11,6 +13,16 @@ enum(int) Variant {
 	Gold = 2,
 	Cyan = 3,
 	Blue = 4
+}
+
+compound Brain {
+	/// The axolotl's memories
+	memories: Memories
+}
+
+compound Memories {
+	/// The number of ticks until the axolotl stops playing dead
+	"minecraft:play_dead_ticks": int
 }
 
 Axolotl describes minecraft:entity[minecraft:axolotl];
