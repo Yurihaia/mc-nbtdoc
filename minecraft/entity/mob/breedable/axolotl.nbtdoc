@@ -22,7 +22,11 @@ compound Brain {
 
 compound Memories {
 	/// The number of ticks until the axolotl stops playing dead
-	"minecraft:play_dead_ticks": int
+	"minecraft:play_dead_ticks": TickMemory
+}
+
+compound TickMemory {
+	value: int
 }
 
 Axolotl describes minecraft:entity[minecraft:axolotl];

@@ -12,7 +12,11 @@ compound Brain {
 
 compound Memories {
 	/// The number of ticks until the goat can leap again.
-	"minecraft:long_jump_cooling_down": int
+	"minecraft:long_jump_cooling_down": TickMemory
+}
+
+compound TickMemory {
+	value: int
 }
 
 Goat describes minecraft:entity[minecraft:goat];
