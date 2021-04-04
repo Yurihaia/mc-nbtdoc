@@ -81,8 +81,6 @@ compound MobBase extends LivingEntity {
 	PersistenceRequired: boolean,
 	/// Whether the mob is left handed
 	LeftHanded: boolean,
-	/// Whether the mob is leashed
-	Leashed: boolean,
 	/// What the leash is attached to
 	Leash: (UUIDLeash | BlockLeash)
 }
