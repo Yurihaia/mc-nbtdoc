@@ -2,24 +2,25 @@ use ::minecraft::util::PotionEffect;
 use ::minecraft::util::InventoryItem;
 
 compound ArrowBase extends super::ProjectileBase {
-	/// The shake the projectile creates
-	shake: byte,
-	/// How players can pick up the projectile
-	pickup: Pickup,
-	/// Whether a player shot the projectile
-	player: boolean,
-	/// The number of ticks since the projectile last moved
-	life: short,
-	/// The damage the projectile should do
-	damage: double,
-	/// Whether the projectile is in the ground
-	inGround: boolean,
 	/// Whether the projectile should do critical damage
 	crit: boolean,
-	/// Whether the projectile was shot from a crossbow
-	ShotFromCrossbow: boolean,
+	/// The damage the projectile should do
+	damage: double,
+	/// The block the arrow is in
+	inBlockState: BlockState,
+	/// Whether the projectile is in the ground
+	inGround: boolean,
+	/// The number of ticks since the projectile last moved
+	life: short,
+	/// How players can pick up the projectile
+	pickup: Pickup,
 	/// The number of entities to pass through
 	PierceLevel: byte,
+	/// The number of ticks until this arrow can be picked up by players.
+	/// This is set to 7 when the arrow initially hits a block
+	shake: byte,
+	/// Whether the projectile was shot from a crossbow
+	ShotFromCrossbow: boolean,
 	/// The sound event to play when the projectile hits something
 	SoundEvent: string
 }
