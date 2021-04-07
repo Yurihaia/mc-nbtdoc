@@ -37,14 +37,14 @@ with urlopen(mavenUrl) as url:
 	fabricVersion = re.search('<latest>(.*)</latest>', url.read().decode(), re.IGNORECASE).group(1)
 print(f'fabricVersion = {fabricVersion}')
 
-# Replace paths in `HijackMain.java`.
-hijackMainPath = abspath('./nbtdoc-genmod/src/main/java/yurihaia/rd/mixin/HijackMain.java')
+# Replace paths in `HijackBootstrap.java`.
+hijackBootstrapPath = abspath('./nbtdoc-genmod/src/main/java/yurihaia/rd/mixin/HijackBootstrap.java')
 mappingsFilePath = abspath('../generate/mappings.json')
 generatedDirPath = abspath('../minecraft/generated')
 print(f'mappingsFilePath = {mappingsFilePath}')
 print(f'generatedDirPath = {generatedDirPath}')
-print(f'Start configuring paths in {hijackMainPath}.')
-with open(hijackMainPath, 'r+') as file:
+print(f'Start configuring paths in {hijackBootstrapPath}.')
+with open(hijackBootstrapPath, 'r+') as file:
 	content = file.read()
 	file.seek(0)
 	file.write(content
@@ -52,7 +52,7 @@ with open(hijackMainPath, 'r+') as file:
 		.replace('%GENERATED_DIR_PATH%', generatedDirPath)
 	)
 	file.truncate()
-print(f'Configured paths in {hijackMainPath}.')
+print(f'Configured paths in {hijackBootstrapPath}.')
 
 # Replace versions in `gradle.properties`.
 gradlePropertiesPath = abspath('./nbtdoc-genmod/gradle.properties')
