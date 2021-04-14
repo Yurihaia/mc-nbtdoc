@@ -1,0 +1,8 @@
+compound Marker extends super::EntityBase {
+	/// The data stored in this marker
+	data: Any
+}
+
+compound Any {}
+
+Marker describes minecraft:entity[minecraft:marker];

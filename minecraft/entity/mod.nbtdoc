@@ -14,6 +14,7 @@ mod painting;
 mod fireball;
 mod minecart;
 mod boat;
+mod marker;
 
 /// Base NBT for all entities
 compound EntityBase {
