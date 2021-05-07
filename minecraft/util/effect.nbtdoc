@@ -1,10 +1,12 @@
 /// A single potion effect
 compound PotionEffect {
 	Id: EffectId,
-	Amplifier: byte,
-	Duration: int,
 	/// Whether the effect particles are semi-transparent (like with a Beacon)
 	Ambient: boolean,
+	Amplifier: byte,
+	Duration: int,
+	/// A lower amplifier effect of the same type.
+	HiddenEffect: PotionEffect,
 	/// Whether the effect particles should be shown
 	ShowParticles: boolean,
 	/// Whether the effect icon should be shown
