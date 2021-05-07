@@ -121,11 +121,11 @@ compound UUIDLeash {
 }
 
 compound BlockLeash {
-	/// The x coordiante of leash knot
+	/// The x coordinate of leash knot
 	X: int,
-	/// The y coordiante of leash knot
+	/// The y coordinate of leash knot
 	Y: int,
-	/// The z coordiante of leash knot
+	/// The z coordinate of leash knot
 	Z: int
 }
 
