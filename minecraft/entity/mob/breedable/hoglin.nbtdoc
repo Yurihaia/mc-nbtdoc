@@ -1,0 +1,10 @@
+compound Hoglin extends super::Breedable {
+	/// Whether the hoglin will not transform to a zoglin when it is in the Overword
+	IsImmuneToZombification: boolean,
+	/// Whether the hoglin cannot be hunted by piglins
+	CannotBeHunted: boolean,
+	/// The number of ticks the hoglin has been in the overworld
+	TimeInOverworld: int
+}
+
+Hoglin describes minecraft:entity[minecraft:hoglin];

@@ -1,20 +1,21 @@
+mod axolotl;
+mod bee;
 mod chicken;
-mod horse;
 mod fox;
+mod goat;
+mod hoglin;
+mod horse;
 mod llama;
 mod mooshroom;
-mod tamable;
 mod ocelot;
 mod panda;
 mod polarbear;
-mod saddled;
 mod rabbit;
+mod saddled;
 mod sheep;
+mod tamable;
 mod turtle;
 mod villager;
-mod bee;
-mod axolotl;
-mod goat;
 
 compound Breedable extends super::MobBase {
 	/// Number of ticks until the mob stops searching for a mate
@@ -29,7 +30,4 @@ compound Breedable extends super::MobBase {
 	LoveCause: int[] @ 4
 }
 
-Breedable describes minecraft:entity[
-	minecraft:cow,
-	minecraft:hoglin
-];
+Breedable describes minecraft:entity[minecraft:cow];

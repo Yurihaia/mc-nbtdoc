@@ -1,0 +1,6 @@
+compound Zoglin extends super::MobBase {
+	/// Whether the zoglin is a baby
+	IsBaby: boolean
+}
+
+Zoglin describes minecraft:entity[minecraft:zoglin];
