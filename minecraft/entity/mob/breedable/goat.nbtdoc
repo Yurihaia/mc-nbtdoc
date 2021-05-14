@@ -15,6 +15,8 @@ compound Memories {
 	"minecraft:is_tempted": BooleanMemory,
 	/// The number of ticks until the goat can leap again
 	"minecraft:long_jump_cooling_down": TickMemory,
+	/// The number of ticks until the goat can ram again
+	"minecraft:ram_cooldown_ticks": TickMemory,
 	/// The number of ticks until the goat can be tempted again
 	"minecraft:temptation_cooldown_ticks": TickMemory
 }
