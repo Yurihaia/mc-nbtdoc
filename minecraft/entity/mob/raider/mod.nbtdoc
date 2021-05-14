@@ -4,6 +4,7 @@ mod ravager;
 mod vindicator;
 
 compound RaiderBase extends super::MobBase {
+	CanJoinRaid: boolean,
 	HasRaidGoal: boolean,
 	Patrolling: boolean,
 	/// Whether the raider is leading the patrol
