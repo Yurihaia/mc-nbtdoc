@@ -1,3 +1,4 @@
+mod armorstand;
 mod bat;
 mod breedable;
 mod creeper;
@@ -11,17 +12,17 @@ mod ghast;
 mod glowsquid;
 mod irongolem;
 mod phantom;
-mod slime;
-mod raider;
-mod shulker;
-mod snowgolem;
-mod trader;
-mod wither;
-mod armorstand;
 mod player;
 mod piglin;
+mod raider;
+mod shulker;
+mod slime;
+mod snowgolem;
+mod trader;
 mod vex;
+mod wither;
 mod zombifiedpiglin;
+mod zoglin;
 
 use ::minecraft::util::PotionEffect;
 use ::minecraft::util::InventoryItem;
@@ -141,6 +142,5 @@ MobBase describes minecraft:entity[
 	minecraft:spider,
 	minecraft:squid,
 	minecraft:stray,
-	minecraft:wither_skeleton,
-	minecraft:zoglin
+	minecraft:wither_skeleton
 ];
