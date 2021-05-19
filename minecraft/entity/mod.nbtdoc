@@ -32,6 +32,8 @@ compound EntityBase {
 	Fire: short,
 	/// Ticks of air left
 	Air: short,
+	/// Whether the entity has visual fire
+	HasVisualFire: boolean,
 	/// Whether the entity is on the ground
 	OnGround: boolean,
 	/// Whether the entity should be effected by gravity
