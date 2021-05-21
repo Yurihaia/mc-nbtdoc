@@ -1,17 +1,18 @@
 # Defined Minecraft Registries
-* minecraft:loot_table
+* minecraft:attribute
+* minecraft:block
 * minecraft:block_entity: block entity ID, **not** block id
-* minecraft:structure
-* minecraft:potion
+* minecraft:dimension
+* minecraft:enchantment
 * minecraft:entity
+* minecraft:item
+* minecraft:loot_table
 * minecraft:motive: Painting ID
+* minecraft:potion
 * minecraft:recipe
+* minecraft:structure
 * minecraft:villager_profession: Which profession the villager is
 * minecraft:villager_type: Which type of village the villager comes from
-* minecraft:block
-* minecraft:enchantment
-* minecraft:item
-* minecraft:dimension
 # Custom Registries
 * custom:blockitemstates: block states based on the corresponding item ID
 * custom:blockstates: block states based on the corresponding block ID
