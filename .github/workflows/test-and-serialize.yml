@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v1
 
@@ -22,7 +21,7 @@ jobs:
 
   serialize:
     needs: [build]
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/branch-1.16'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,7 +30,12 @@ jobs:
           submodules: true
 
       - name: Update Submodule
-        run: git submodule update --remote
+        run: |
+          git submodule update --remote
+          cd mc-nbtdoc
+          git checkout -b branch-1.16
+          git pull
+          cd ..
 
       - name: Cache Cargo Build
         uses: actions/cache@v2
@@ -50,6 +54,9 @@ jobs:
 
       - name: Serialize
         run: cargo run --bin main --release
+
+      - name: Restore Submodule
+        run: git submodule update --init 
 
       - name: Commit
         run: |
