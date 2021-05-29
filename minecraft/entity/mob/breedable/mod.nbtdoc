@@ -1,8 +1,6 @@
-mod axolotl;
 mod bee;
 mod chicken;
 mod fox;
-mod goat;
 mod hoglin;
 mod horse;
 mod llama;
