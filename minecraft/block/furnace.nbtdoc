@@ -1,7 +1,7 @@
 use ::minecraft::util::SlottedItem;
 
 compound Furnace extends super::BlockEntity {
-	/// The name of the furance
+	/// The name of the furnace
 	CustomName: string,
 	/// The name of the item that a player has to be holding to open this furnace
 	Lock: string,

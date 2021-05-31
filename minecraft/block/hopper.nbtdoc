@@ -11,7 +11,7 @@ compound Hopper extends super::BlockEntity {
 	Items: [SlottedItem] @ 0..5,
 	/// The seed of the loot table
 	LootTableSeed: long,
-	/// The number of ticks until an item can be transfered
+	/// The number of ticks until an item can be transferred
 	TransferCooldown: int
 }
 

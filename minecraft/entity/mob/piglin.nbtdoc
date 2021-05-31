@@ -5,7 +5,7 @@ compound Piglin extends super::MobBase {
 	Brain: Brain,
 	/// Whether the piglin is a baby
 	IsBaby: boolean,
-	/// Whether the piglin will not transform to a zomblified piglin when it is in the Overword
+	/// Whether the piglin will not transform to a zombified piglin when it is in the Overword
 	IsImmuneToZombification: boolean,
 	/// Whether the piglin does not hunt hoglins
 	CannotHunt: boolean,
