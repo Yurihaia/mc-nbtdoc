@@ -14,7 +14,7 @@ compound Fireball extends FireballBase {
 
 compound LargeFireball extends Fireball {
 	/// The power of the fireball explosion
-	ExplosionPower: int
+	ExplosionPower: byte
 }
 
 FireballBase describes minecraft:entity[
