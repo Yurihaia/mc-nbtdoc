@@ -20,7 +20,7 @@ gameVersion = versions['game'][0]['version']
 print(f'gameVersion = {gameVersion}')
 
 gitTags = subprocess.run(['git', 'tag'], stdout=subprocess.PIPE).stdout.decode('utf-8')
-if gameVersion in gitTags:
+if (f'{gameVersion}-candidate' in gitTags) or (f'{gameVersion}-gen' in gitTags):
 	print(f'{gameVersion} already exists in the git tag list.\nTask ends.')
 	sys.exit()
 
