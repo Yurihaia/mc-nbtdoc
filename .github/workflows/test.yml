@@ -12,6 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: Install Toolchain 1.48.0
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: 1.48.0
+          default: true
+
       - name: Build
         run: cargo build --verbose
         working-directory: ./test

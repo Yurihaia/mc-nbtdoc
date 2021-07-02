@@ -1,6 +1,6 @@
 name: Test and Serialize
 
-on: 
+on:
   push:
     branches:
       - master
@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+
+      - name: Install Toolchain 1.48.0
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: 1.48.0
+          default: true
 
       - name: Build
         run: cargo build --verbose
@@ -27,6 +33,12 @@ jobs:
         with:
           ref: generated
           submodules: true
+
+      - name: Install Toolchain 1.48.0
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: 1.48.0
+          default: true
 
       - name: Update Submodule
         run: git submodule update --remote
