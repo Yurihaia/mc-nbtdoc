@@ -27,7 +27,7 @@ if (f'{gameVersion}-candidate' in gitTags) or (f'{gameVersion}-gen' in gitTags):
 print(f'{gameVersion} is an unknown version.\nStart generating.')
 
 # Get mappings version and loader version.
-mappingsVersion = versions['mappings'][0]['version']
+mappingsVersion = next(filter(lambda d: d['gameVersion'] == gameVersion, versions['mappings']))['version']
 loaderVersion = versions['loader'][0]['version']
 print(f'mappingsVersion = {mappingsVersion}')
 print(f'loaderVersion = {loaderVersion}')
