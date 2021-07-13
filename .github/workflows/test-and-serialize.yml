@@ -3,7 +3,7 @@ name: Test and Serialize
 on:
   push:
     branches:
-      - master
+      - branch-1.17
 
 jobs:
   build:
@@ -27,6 +27,7 @@ jobs:
 
   serialize:
     needs: [build]
+    if: github.ref == 'refs/heads/branch-1.17'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -41,8 +42,12 @@ jobs:
           default: true
 
       - name: Update Submodule
-        run: git submodule update --remote
-
+        run: |
+          git submodule update --remote
+          cd mc-nbtdoc
+          git checkout -b branch-1.17
+          git pull
+          cd ..
       - name: Cache Cargo Build
         uses: actions/cache@v2
         env:
@@ -60,6 +65,9 @@ jobs:
 
       - name: Serialize
         run: cargo run --bin main --release
+
+      - name: Restore Submodule
+        run: git submodule update --init 
 
       - name: Commit
         run: |
