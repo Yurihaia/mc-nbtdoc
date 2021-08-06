@@ -16,6 +16,7 @@ mod player;
 mod piglin;
 mod raider;
 mod shulker;
+mod skeleton;
 mod slime;
 mod snowgolem;
 mod trader;
@@ -138,7 +139,6 @@ MobBase describes minecraft:entity[
 	minecraft:giant,
 	minecraft:guardian,
 	minecraft:silverfish,
-	minecraft:skeleton,
 	minecraft:spider,
 	minecraft:squid,
 	minecraft:stray,
