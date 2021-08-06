@@ -1,0 +1,6 @@
+compound Skeleton extends super::MobBase {
+	/// Time until the skeleton converts
+	StrayConversionTime: int
+}
+
+Skeleton describes minecraft:entity[minecraft:skeleton];
