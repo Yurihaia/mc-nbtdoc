@@ -5,7 +5,7 @@ compound Spawner extends super::BlockEntity {
 	SpawnPotentials: [SpawnPotential],
 	/// The data for the next mob to spawn  
 	/// Will get overwritten by `SpawnPotentials`
-	SpawnData: AnyEntity,
+	SpawnData: SpawnerEntry,
 	/// The number of entities that will be placed
 	SpawnCount: short,
 	/// The range that the spawned entities will be placed
@@ -23,10 +23,29 @@ compound Spawner extends super::BlockEntity {
 }
 
 compound SpawnPotential {
-	/// The entity to spawn
-	Entity: AnyEntity,
+	/// The data for this spawn potential entry
+	data: SpawnerEntry,
 	/// The weight for this entry to get chosen
-	Weight: int
+	weight: int @ 0..
+}
+
+compound SpawnerEntry {
+	/// Custom spawn rules
+	custom_spawn_rules: CustomSpawnRules,
+	/// The entity to spawn
+	entity: AnyEntity
+}
+
+compound CustomSpawnRules {
+	/// The range of block light level required for the entity to spawn
+	block_light_limit: (int @ 1..15 | [int @ 1..15] @ 2 | LightLimitRange),
+	/// The range of sky light level required for the entity to spawn
+	sky_light_limit: (int @ 1..15 | [int @ 1..15] @ 2 | LightLimitRange)
+}
+
+compound LightLimitRange {
+	max_inclusive: int @ 1..15,
+	min_inclusive: int @ 1..15
 }
 
 Spawner describes minecraft:block[minecraft:spawner];
