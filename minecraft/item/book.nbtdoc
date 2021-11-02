@@ -4,6 +4,8 @@ compound WritableBook extends super::ItemBase {
 }
 
 compound WrittenBook extends super::ItemBase {
+	filtered_title: string,
+	filtered_pages: string,
 	/// Whether the dynamic content on the pages has been resolved
 	resolved: boolean,
 	/// The pages of the book as JSON text components
