@@ -44,7 +44,8 @@ compound ItemBase {
 	/// 4 -> `Unbreakable`  
 	/// 8 -> `CanDestroy`  
 	/// 16 -> `CanPlaceOn` (for block items)  
-	/// 32 -> other misc info
+	/// 32 -> other misc info  
+	/// 64 -> `display.color` (for leather amor)
 	HideFlags: int
 }
 
