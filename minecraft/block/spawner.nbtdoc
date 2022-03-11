@@ -38,14 +38,14 @@ compound SpawnerEntry {
 
 compound CustomSpawnRules {
 	/// The range of block light level required for the entity to spawn
-	block_light_limit: (int @ 1..15 | [int @ 1..15] @ 2 | LightLimitRange),
+	block_light_limit: (int @ 0..15 | [int @ 0..15] @ 2 | LightLimitRange),
 	/// The range of sky light level required for the entity to spawn
-	sky_light_limit: (int @ 1..15 | [int @ 1..15] @ 2 | LightLimitRange)
+	sky_light_limit: (int @ 0..15 | [int @ 0..15] @ 2 | LightLimitRange)
 }
 
 compound LightLimitRange {
-	max_inclusive: int @ 1..15,
-	min_inclusive: int @ 1..15
+	max_inclusive: int @ 0..15,
+	min_inclusive: int @ 0..15
 }
 
 Spawner describes minecraft:block[minecraft:spawner];
