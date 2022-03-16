@@ -2,6 +2,7 @@ mod axolotl;
 mod bee;
 mod chicken;
 mod fox;
+mod frog;
 mod goat;
 mod hoglin;
 mod horse;

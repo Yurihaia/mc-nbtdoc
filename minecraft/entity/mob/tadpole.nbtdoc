@@ -1,0 +1,8 @@
+compound Tadpole extends super::MobBase {
+	/// The age of the tadpole in ticks. When greater than or equal to 24000, the tadpole grows into a frog
+	Age: int,
+	/// If this tadpole was released from a bucket
+	FromBucket: boolean
+}
+
+Tadpole describes minecraft:entity[minecraft:tadpole];

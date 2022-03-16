@@ -19,6 +19,7 @@ mod shulker;
 mod skeleton;
 mod slime;
 mod snowgolem;
+mod tadpole;
 mod trader;
 mod vex;
 mod wither;
