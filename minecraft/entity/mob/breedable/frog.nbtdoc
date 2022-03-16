@@ -1,0 +1,12 @@
+compound Frog extends super::Breedable {
+	/// The variant of the frog
+	Variant: FrogVariant
+}
+
+enum(int) FrogVariant {
+	Temperate = 0,
+	Warm = 1,
+	Cold = 2
+}
+
+Frog describes minecraft:entity[minecraft:frog];
