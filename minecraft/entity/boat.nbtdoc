@@ -1,3 +1,5 @@
+use ::minecraft::util::SlottedItem;
+
 compound Boat extends super::EntityBase {
 	/// The wood type of this boat
 	Type: BoatType
