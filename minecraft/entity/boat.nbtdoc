@@ -9,7 +9,18 @@ enum(string) BoatType {
 	Birch = "birch",
 	Jungle = "jungle",
 	Acacia = "acacia",
-	DarkOak = "dark_oak"
+	DarkOak = "dark_oak",
+	Mangrove = "mangrove"
+}
+
+compound ChestBoat extends Boat {
+	/// The loot table that will populate this chest boat
+	LootTable: id(minecraft:loot_table),
+	/// The seed of the loot table
+	LootTableSeed: long,
+	/// The items in this chest boat, with slots from 0 to 26
+	Items: [SlottedItem] @ 0..27
 }
 
 Boat describes minecraft:entity[minecraft:boat];
+ChestBoat describes minecraft:entity[minecraft:chest_boat];

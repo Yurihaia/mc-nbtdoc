@@ -1,0 +1,14 @@
+use ::minecraft::util::Any;
+
+compound Warden extends super::MobBase {
+	/// Anger management of the warden
+	anger: AngerManagement
+}
+
+compound AngerManagement {
+	/// A map from entity UUIDs to non-negative integers representing the level of anger the warden has on that entity.
+	/// The levels of anger for all entities decrease by 1 every tick and have a maximum value of 150.
+	suspects: Any
+}
+
+Warden describes minecraft:entity[minecraft:warden];

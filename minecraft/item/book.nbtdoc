@@ -1,3 +1,5 @@
+use ::minecraft::util::Any;
+
 compound WritableBook extends super::ItemBase {
 	/// The pages of the book as raw strings
 	pages: [string]
@@ -17,8 +19,6 @@ compound WrittenBook extends super::ItemBase {
 	/// The title of the book
 	title: string
 }
-
-compound Any {}
 
 /// The generation of the book
 enum(int) Generation {

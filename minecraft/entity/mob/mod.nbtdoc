@@ -22,6 +22,7 @@ mod snowgolem;
 mod tadpole;
 mod trader;
 mod vex;
+mod warden;
 mod wither;
 mod zombifiedpiglin;
 mod zoglin;
