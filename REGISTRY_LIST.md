@@ -2,9 +2,11 @@
 * minecraft:attribute
 * minecraft:block
 * minecraft:block_entity: block entity ID, **not** block id
+* minecraft:cat_variant
 * minecraft:dimension
 * minecraft:enchantment
 * minecraft:entity
+* minecraft:frog_variant
 * minecraft:item
 * minecraft:loot_table
 * minecraft:motive: Painting ID
