@@ -1,4 +1,5 @@
 use ::minecraft::util::SlottedItem;
+use ::minecraft::util::codec::GlobalPos;
 use ::minecraft::entity::AnyEntity;
 
 compound Player extends super::LivingEntity {
@@ -6,6 +7,8 @@ compound Player extends super::LivingEntity {
 	DataVersion: int,
 	/// The dimension the player is in
 	Dimension: id(minecraft:dimension),
+	/// The location of the player's last death
+	LastDeathLocation: GlobalPos,
 	/// The game mode that the player is in
 	playerGameType: Gamemode,
 	/// The previous game mode that the player was in

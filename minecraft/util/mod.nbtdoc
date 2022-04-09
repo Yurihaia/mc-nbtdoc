@@ -1,3 +1,4 @@
+mod codec;
 mod any;
 mod attribute;
 mod slot;
