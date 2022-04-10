@@ -33,16 +33,20 @@ enum(string) Color {
 }
 
 Sign describes minecraft:block[
+	minecraft:acacia_sign,
+	minecraft:birch_sign,
+	minecraft:crimson_sign,
+	minecraft:dark_oak_sign,
+	minecraft:jungle_sign,
 	minecraft:oak_sign,
 	minecraft:spruce_sign,
-	minecraft:birch_sign,
-	minecraft:jungle_sign,
-	minecraft:acacia_sign,
-	minecraft:dark_oak_sign,
+	minecraft:warped_sign,
+	minecraft:acacia_wall_sign,
+	minecraft:birch_wall_sign,
+	minecraft:crimson_wall_sign,
+	minecraft:dark_oak_wall_sign,
+	minecraft:jungle_wall_sign,
 	minecraft:oak_wall_sign,
 	minecraft:spruce_wall_sign,
-	minecraft:birch_wall_sign,
-	minecraft:jungle_wall_sign,
-	minecraft:acacia_wall_sign,
-	minecraft:dark_oak_wall_sign
+	minecraft:warped_wall_sign
 ];

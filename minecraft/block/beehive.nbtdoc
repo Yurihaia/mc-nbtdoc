@@ -17,4 +17,7 @@ compound Bee {
 	EntityData: AnyEntity
 }
 
-BeeHive describes minecraft:block[minecraft:beehive];
+BeeHive describes minecraft:block[
+	minecraft:beehive,
+	minecraft:bee_nest
+];
