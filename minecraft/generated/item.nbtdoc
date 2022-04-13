@@ -88,12 +88,11 @@
 	minecraft:potion,
 	minecraft:tipped_arrow
 ];
-::minecraft::item::compass::Compass describes minecraft:item[
-	minecraft:recovery_compass,
-	minecraft:compass
-];
 ::minecraft::item::map::FilledMap describes minecraft:item[
 	minecraft:filled_map
+];
+::minecraft::item::compass::Compass describes minecraft:item[
+	minecraft:compass
 ];
 ::minecraft::item::bundle::Bundle describes minecraft:item[
 	minecraft:bundle
