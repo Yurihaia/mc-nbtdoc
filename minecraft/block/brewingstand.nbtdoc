@@ -5,7 +5,7 @@ compound BrewingStand extends super::BlockEntity {
 	CustomName: string,
 	/// The name of the item that a player has to be holding to open this brewing stand
 	Lock: string,
-	/// The items in this furnace, with slots:  
+	/// The items in this brewing stand, with slots:  
 	/// * 0: left brewing slot  
 	/// * 1: middle brewing slot  
 	/// * 2: right brewing slot  
