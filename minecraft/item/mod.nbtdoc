@@ -3,6 +3,7 @@ mod book;
 mod bundle;
 mod compass;
 mod crossbow;
+mod debugstick;
 mod enchantedbook;
 mod firework;
 mod fishbucket;
