@@ -1,0 +1,7 @@
+use ::minecraft::util::Any;
+
+/// A debug stick item
+compound DebugStick extends super::ItemBase {
+	/// A map from block IDs to block state names
+	DebugProperty: Any
+}
