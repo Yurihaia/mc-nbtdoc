@@ -1,6 +1,9 @@
 ::minecraft::item::book::WrittenBook describes minecraft:item[
 	minecraft:written_book
 ];
+::minecraft::item::debugstick::DebugStick describes minecraft:item[
+	minecraft:debug_stick
+];
 ::minecraft::item::spawnitem::SpawnItem describes minecraft:item[
 	minecraft:ravager_spawn_egg,
 	minecraft:mule_spawn_egg,
