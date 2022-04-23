@@ -9,7 +9,8 @@
 * minecraft:frog_variant
 * minecraft:item
 * minecraft:loot_table
-* minecraft:motive: Painting ID
+* minecraft:motive: Painting ID (pre-22w16a)
+* minecraft:painting_variant: Painting ID (post-22w16a)
 * minecraft:potion
 * minecraft:recipe
 * minecraft:structure

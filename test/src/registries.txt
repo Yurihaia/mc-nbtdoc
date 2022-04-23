@@ -8,7 +8,7 @@ minecraft:dimension
 minecraft:enchantment
 minecraft:frog_variant
 minecraft:loot_table
-minecraft:motive
+minecraft:painting_variant
 minecraft:potion
 minecraft:structure
 minecraft:villager_profession
