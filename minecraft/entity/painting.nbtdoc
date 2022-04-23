@@ -8,7 +8,7 @@ compound Painting extends super::EntityBase {
 	/// The direction the painting is facing
 	Facing: Facing,
 	/// The type of the painting
-	Motive: id(minecraft:motive)
+	variant: id(minecraft:painting_variant)
 }
 
 enum(byte) Facing {
