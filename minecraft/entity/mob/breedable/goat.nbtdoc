@@ -1,6 +1,10 @@
 compound Goat extends super::Breedable {
 	/// The goat's brain
 	Brain: Brain,
+	/// Whether the goat has its left horn
+	HasLeftHorn: boolean,
+	/// Whether the goat has its right horn
+	HasRightHorn: boolean,
 	/// Whether the goat is a screaming goat
 	IsScreamingGoat: boolean
 }
