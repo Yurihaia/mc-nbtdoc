@@ -112,6 +112,9 @@
 ::minecraft::item::firework::FireworkRocket describes minecraft:item[
 	minecraft:firework_rocket
 ];
+::minecraft::item::instrument::Instrument describes minecraft:item[
+	minecraft:goat_horn
+];
 ::minecraft::item::blockitem::BlockItem describes minecraft:item[
 	minecraft:dark_oak_button,
 	minecraft:structure_block,
