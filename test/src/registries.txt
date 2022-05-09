@@ -7,8 +7,10 @@ minecraft:cat_variant
 minecraft:dimension
 minecraft:enchantment
 minecraft:frog_variant
+minecraft:game_event
 minecraft:loot_table
 minecraft:painting_variant
+minecraft:position_source_type
 minecraft:potion
 minecraft:structure
 minecraft:villager_profession
