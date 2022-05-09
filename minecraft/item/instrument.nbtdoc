@@ -1,0 +1,4 @@
+compound Instrument extends super::ItemBase {
+	/// The name of the instrument
+	instrument: id(minecraft:instrument)
+}

@@ -8,6 +8,7 @@
 * minecraft:entity
 * minecraft:frog_variant
 * minecraft:game_event
+* minecraft:instrument
 * minecraft:item
 * minecraft:loot_table
 * minecraft:motive: Painting ID (pre-22w16a)

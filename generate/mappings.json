@@ -28,6 +28,7 @@
 		"net.minecraft.class_1828": "item::potion::EffectItem",
 		"net.minecraft.class_1833": "item::potion::EffectItem",
 		"net.minecraft.class_1803": "item::potion::EffectItem",
+		"net.minecraft.class_7430": "item::instrument::Instrument",
 		"net.minecraft.class_1819": "item::shield::Shield",
 		"net.minecraft.class_1801": "item::knowledgebook::KnowledgeBook",
 		"net.minecraft.class_1764": "item::crossbow::Crossbow",

@@ -8,6 +8,7 @@ minecraft:dimension
 minecraft:enchantment
 minecraft:frog_variant
 minecraft:game_event
+minecraft:instrument
 minecraft:loot_table
 minecraft:painting_variant
 minecraft:position_source_type
