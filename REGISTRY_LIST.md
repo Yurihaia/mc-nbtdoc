@@ -7,10 +7,12 @@
 * minecraft:enchantment
 * minecraft:entity
 * minecraft:frog_variant
+* minecraft:game_event
 * minecraft:item
 * minecraft:loot_table
 * minecraft:motive: Painting ID (pre-22w16a)
 * minecraft:painting_variant: Painting ID (post-22w16a)
+* minecraft:position_source_type
 * minecraft:potion
 * minecraft:recipe
 * minecraft:structure
