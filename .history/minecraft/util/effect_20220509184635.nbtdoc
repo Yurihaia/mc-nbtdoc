@@ -14,7 +14,7 @@ compound PotionEffect {
 }
 
 /// Numerical ids for effects
-enum(int) EffectId {
+enum(byte) EffectId {
 	Speed = 1,
 	Slowness = 2,
 	Haste = 3,
