@@ -6,7 +6,7 @@ compound Painting extends super::EntityBase {
 	/// The z coordinate of the block the item frame is in
 	TileZ: int,
 	/// The direction the painting is facing
-	Facing: Facing,
+	facing: Facing,
 	/// The type of the painting
 	variant: id(minecraft:painting_variant)
 }
