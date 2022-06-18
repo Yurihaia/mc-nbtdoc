@@ -1,6 +1,11 @@
 use ::minecraft::util::InventoryItem;
 
 compound Allay extends super::MobBase {
+	/// If the allay can duplicate.
+	/// This is set to `false` when the allay duplicates, and `true` when the cooldown reaches `0`
+	CanDuplicate: boolean,
+	/// The allay's duplication cooldown in ticks. This is set to 2400 when the allay duplicates
+	DuplicationCooldown: long,
 	/// The items that the allay has picked up. Note that the item given by the player is in
 	/// the allay's `HandItems[0]` tag, not here
 	Inventory: [InventoryItem] @ 1,
