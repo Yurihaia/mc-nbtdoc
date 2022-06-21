@@ -25,7 +25,7 @@ format.
 ## Versioning
 All of the data in this repo is under a strict versioning scheme. For each Minecraft release, snapshot, and pre-release, a 
 new tag is added to the repo with the name found in the
-[version_manifest.json](https://launchermeta.mojang.com/mc/game/version_manifest.json) file.  
+[version_manifest.json](https://piston-meta.mojang.com/mc/game/version_manifest.json) file.  
 If any problems are found in the repo, the changes will not be moved under the version tag until the next version tag. The 
 only exception is for releases, all critical bugs found will be corrected as soon as possible, and the tag will be updated 
 to match. Any non-critical bugs will not trigger a new tag update, but will still be committed to `master`. While it is 
