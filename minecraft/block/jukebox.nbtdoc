@@ -2,7 +2,14 @@ use ::minecraft::util::InventoryItem;
 
 compound Jukebox extends super::BlockEntity {
 	/// The item in the jukebox
-	RecordItem: InventoryItem
+	RecordItem: InventoryItem,
+	/// Whether the jukebox is playing the record
+	IsPlaying: boolean,
+	/// The tick count when the record started playing
+	RecordStartTick: long,
+	/// The tick count specific to this jukebox  
+	/// Increases when the jukebox has a record
+	TickCount: long
 }
 
 Jukebox describes minecraft:block[minecraft:jukebox];
