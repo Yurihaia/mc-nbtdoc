@@ -46,5 +46,6 @@ enum(int) EffectId {
 	ConduitPower = 29,
 	DolphinsGrace = 30,
 	BadOmen = 31,
-	HeroOfTheVillage = 32
+	HeroOfTheVillage = 32,
+	Darkness = 33
 }
