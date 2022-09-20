@@ -1,6 +1,8 @@
 compound PlayerHead extends super::BlockEntity {
 	/// The owner of the skull
-	SkullOwner: SkullOwner
+	SkullOwner: SkullOwner,
+	/// Name of the owner, if exists will be converted to SkullOwner
+	ExtraType: string
 }
 
 compound SkullOwner {
