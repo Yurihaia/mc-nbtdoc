@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-# Execute in the `scripts` directory.
+# Current working directory should be the `scripts` directory.
+# An optional game version may be specified as the first command argument.
+# If no game version is provided, the latest one is used.
 
 from urllib.request import urlopen
 from os.path import abspath
@@ -16,7 +18,7 @@ with urlopen(versionsUrl) as url:
 	versions: dict = json.loads(url.read().decode())
 
 # Get and check game version.
-gameVersion = versions['game'][0]['version']
+gameVersion = sys.argv[1] if len(sys.argv) > 1 else versions['game'][0]['version']
 print(f'gameVersion = {gameVersion}')
 
 gitTags = subprocess.run(['git', 'tag'], stdout=subprocess.PIPE).stdout.decode('utf-8')
@@ -78,11 +80,12 @@ else:
 	print(f'Minecraft server exited with error code {returnCode}\nTask ends.')
 	sys.exit(1)
 
-# Commit, push, and tag.
-subprocess.run('git config user.name actions-user'.split(' '))
-subprocess.run('git config user.email action@github.com'.split(' '))
-subprocess.run('git add ..'.split(' '))
-subprocess.run(['git', 'commit', '-m', f'Update to {gameVersion}'])
-subprocess.run('git push'.split(' '))
-subprocess.run(['git', 'tag', f'{gameVersion}-candidate'])
-subprocess.run('git push --tags'.split(' '))
+if len(sys.argv) == 1:
+	# Commit, push, and tag.
+	subprocess.run('git config user.name actions-user'.split(' '))
+	subprocess.run('git config user.email action@github.com'.split(' '))
+	subprocess.run('git add ..'.split(' '))
+	subprocess.run(['git', 'commit', '-m', f'Update to {gameVersion}'])
+	subprocess.run('git push'.split(' '))
+	subprocess.run(['git', 'tag', f'{gameVersion}-candidate'])
+	subprocess.run('git push --tags'.split(' '))
