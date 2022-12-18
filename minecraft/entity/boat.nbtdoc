@@ -11,9 +11,9 @@ enum(string) BoatType {
 	Birch = "birch",
 	DarkOak = "dark_oak",
 	Jungle = "jungle",
-	Mangrove = "mangrove"
+	Mangrove = "mangrove",
 	Oak = "oak",
-	Spruce = "spruce",
+	Spruce = "spruce"
 }
 
 compound ChestBoat extends Boat {
