@@ -5,6 +5,7 @@ mod banner;
 mod beacon;
 mod beehive;
 mod campfire;
+mod chiseledbookshelf;
 mod comparator;
 mod commandblock;
 mod conduit;

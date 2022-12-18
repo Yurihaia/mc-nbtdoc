@@ -6,13 +6,14 @@ compound Boat extends super::EntityBase {
 }
 
 enum(string) BoatType {
+	Acacia = "acacia",
+	Bamboo = "bamboo",
+	Birch = "birch",
+	DarkOak = "dark_oak",
+	Jungle = "jungle",
+	Mangrove = "mangrove"
 	Oak = "oak",
 	Spruce = "spruce",
-	Birch = "birch",
-	Jungle = "jungle",
-	Acacia = "acacia",
-	DarkOak = "dark_oak",
-	Mangrove = "mangrove"
 }
 
 compound ChestBoat extends Boat {
