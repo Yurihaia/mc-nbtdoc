@@ -1,25 +1,24 @@
-mod horse;
+mod camel;
 mod chested;
+mod horse;
 mod skeleton;
 
 use ::minecraft::util::InventoryItem;
 
 compound HorseBase extends super::Breedable {
 	/// Unknown use  
-	/// Remains `0` even if the horse was bred
+	/// Remains `0` even if the mob was bred
 	Bred: boolean,
-	/// Whether the horse is eating a haystack
+	/// Whether the mob is eating a haystack
 	EatingHaystack: boolean,
-	/// Whether the horse has been tamed
+	/// Whether the mob has been tamed
 	Tame: boolean,
-	/// Higher values make the horse easier to tame  
+	/// Higher values make the mob easier to tame  
 	/// Increases with feeding
 	Temper: int @ 0..100,
-	/// UUID of the player who tamed the horse
+	/// UUID of the player who tamed the mob
 	Owner: int[] @ 4,
-	/// The armor item of the horse
-	ArmorItem: InventoryItem,
-	/// The saddle item of the horse
+	/// The saddle item of the mob
 	SaddleItem: InventoryItem
 }
 

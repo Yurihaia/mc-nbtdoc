@@ -1,0 +1,8 @@
+use ::minecraft::util::SlottedItem;
+
+compound ChiseledBookshelf extends super::BlockEntity {
+	/// The items in this container, with slots from 0 to 5
+	Items: [SlottedItem] @ 0..6
+}
+
+ChiseledBookshelf describes minecraft:block[minecraft:chiseled_bookshelf];

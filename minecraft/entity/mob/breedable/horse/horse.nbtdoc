@@ -1,4 +1,6 @@
 compound Horse extends super::HorseBase {
+	/// The armor item of the horse
+	ArmorItem: InventoryItem,
 	/// The variant of the horse
 	Variant: int
 }

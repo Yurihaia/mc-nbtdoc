@@ -1,0 +1,32 @@
+compound Camel extends super::HorseBase {
+	/// The camel's brain
+	Brain: Brain,
+	/// Whether the camel is sitting
+	IsSitting: boolean,
+	/// The tick when the camel started changing its pose
+	LastPoseTick: long
+}
+
+compound Brain {
+	/// The camel's memories
+	memories: Memories
+}
+
+compound Memories {
+	/// The number of ticks until the camel can look around randomly again
+	"minecraft:gaze_cooldown_ticks": TickMemory,
+	/// Whether the camel is tempted by the player
+	"minecraft:is_tempted": BooleanMemory,
+	/// The number of ticks until the camel can be tempted again
+	"minecraft:temptation_cooldown_ticks": TickMemory
+}
+
+compound BooleanMemory {
+	value: boolean
+}
+
+compound TickMemory {
+	value: int
+}
+
+Camel describes minecraft:entity[minecraft:camel];
