@@ -1,3 +1,5 @@
+use ::minecraft::util::InventoryItem;
+
 compound Horse extends super::HorseBase {
 	/// The armor item of the horse
 	ArmorItem: InventoryItem,
