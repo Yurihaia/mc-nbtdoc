@@ -72,5 +72,5 @@ Sign describes minecraft:block[
 	minecraft:mangrove_wall_hanging_sign,
 	minecraft:oak_wall_hanging_sign,
 	minecraft:spruce_wall_hanging_sign,
-	minecraft:warped_wall_hanging_sign,
+	minecraft:warped_wall_hanging_sign
 ];
