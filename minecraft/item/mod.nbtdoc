@@ -48,7 +48,10 @@ compound ItemBase {
 	/// 16 -> `CanPlaceOn` (for block items)  
 	/// 32 -> other misc info  
 	/// 64 -> `display.color` (for leather amor)
-	HideFlags: int
+	/// 128 -> `Trim`
+	HideFlags: int,
+	/// The trim to apply to the item & armor when worn
+	Trim: Trim
 }
 
 ItemBase describes minecraft:item;
@@ -83,4 +86,11 @@ compound Display {
 	Name: string,
 	/// The lore of an item, with each element being a lore line
 	Lore: [string]
+}
+
+compound Trim {
+	/// Gets used by the `trim_type` model predicate via the material item_model_index and armor rendering for the material's `asset_name` for the `armor_trims` atlas
+	material: string,
+	/// Gets used by armor rendering for the pattern's `asset_id`
+	pattern: string
 }
