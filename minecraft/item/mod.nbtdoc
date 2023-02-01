@@ -51,7 +51,7 @@ compound ItemBase {
 	/// 128 -> `Trim`
 	HideFlags: int,
 	/// The trim to apply to the item & armor when worn
-	Trim: [Trim]
+	Trim: Trim
 }
 
 ItemBase describes minecraft:item;
