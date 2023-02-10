@@ -50,7 +50,7 @@ compound Transformation {
 	left_rotation: ([float] @ 4 | AxisAngle),
 	/// Quaternion form (used for saving) in [x, y, z, w] or Axis-angle form.
 	/// For more complex transformations.
-	right_rotation: ([float] @ 4 | AxisAngle)
+	right_rotation: ([float] @ 4 | AxisAngle),
 	/// Scale in [x, y, z]
 	scale: [float] @ 3
 }
