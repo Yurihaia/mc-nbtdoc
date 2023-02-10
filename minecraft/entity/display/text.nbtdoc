@@ -24,4 +24,4 @@ enum(string) Alignment {
 	Right = "right"
 }
 
-TextDisplay extends minecraft:entity[minecraft:text_display]
+TextDisplay describes minecraft:entity[minecraft:text_display]

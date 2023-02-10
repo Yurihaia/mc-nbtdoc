@@ -25,9 +25,9 @@ compound DisplayBase extends super::EntityBase {
 	interpolation_duration: int @ 0..,
 	/// Controls if model should pivot to face player when rendered. Disabled (set to fixed) by default.
 	billboard: (DisabledBillboard | Billboard),
-	/// When defined, overrides light values used for rendering. Omited by default (which means rendering uses values from entity position).
+	/// When defined, overrides light values used for rendering. Omitted by default (which means rendering uses values from entity position).
 	brightness: Brightness,
-	/// Maximum view range of this entity. Actual distance depends on client-side render distance and entity distance scalling. Default value 1.0 (roughly the same as fireball).
+	/// Maximum view range of this entity. Actual distance depends on client-side render distance and entity distance scaling. Default value 1.0 (roughly the same as fireball).
 	view_range: float @ 0..,
 	/// Describe width of culling bounding box.
 	/// Bounding box spans vertically y to y+height and horizontally width/2 in all directions from entity position.
