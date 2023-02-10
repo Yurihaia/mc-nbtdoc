@@ -1,0 +1,112 @@
+mod text;
+
+use ::minecraft::util::BlockState;
+use ::minecraft::util::InventoryItem;
+
+compound DisplayBase extends super::EntityBase {
+	/// Either a matrix form (describing a row-major matrix), or a decomposed form (used for saving & ease of use).
+	/// Transformation applied to model (after normal entity orientation). Defaults to identity. Interpolated.
+	/// See [Misode's tool](https://misode.github.io/transformation/) or [Singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition).
+	transformation: ([float] @ 16 | Transformation),
+	/// Size of shadow. Defaults to 0 (no shadow). Interpolated.
+	shadow_radius: float @ 0..,
+	/// Strength of the shadow. Controls the opacity of the shadow as a function of distance to block below. Defaults to 1. Interpolated.
+	shadow_strength: float @ 0..1,
+	/// Start of interpolation (entity fully in "previous" state) is defined by game time, in ticks.
+	/// Info:
+	/// All interpolated properties are part of a single interpolation set.
+	/// Any update to an interpolated property will cause all values of the interpolation set to be saved as "current".
+	/// - Data command executions that do not change value of property (even if it's present in NBT) do not count as updates.
+	/// - Updates are synchronized to clients at most once per tick, so multiple updates within command will still count as single update.
+	/// Previous current values are saved as "previous".
+	/// If interpolation is enabled, entity will transition between "previous" and "current" values over time.
+	interpolation_start: int @ -1..,
+	/// End of interpolation (entity fully in "current" state) is defined as start+duration, in ticks.
+	interpolation_duration: int @ 0..,
+	/// Controls if model should pivot to face player when rendered. Disabled (set to fixed) by default.
+	billboard: (DisabledBillboard | Billboard),
+	/// When defined, overrides light values used for rendering. Omitted by default (which means rendering uses values from entity position).
+	brightness: Brightness,
+	/// Maximum view range of this entity. Actual distance depends on client-side render distance and entity distance scaling. Default value 1.0 (roughly the same as fireball).
+	view_range: float @ 0..,
+	/// Describe width of culling bounding box.
+	/// Bounding box spans vertically y to y+height and horizontally width/2 in all directions from entity position.
+	/// If field is set to 0, culling is disabled. Defaults to 0.
+	width: float @ 0..,
+	/// Describe height of culling bounding box.
+	/// Bounding box spans vertically y to y+height and horizontally width/2 in all directions from entity position.
+	/// If field is set to 0, culling is disabled. Defaults to 0.
+	height: float @ 0..,
+	/// Override glow border color. If field is set to 0, uses team color. Defaults to 0.
+	/// Calculated as a bit field of `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive.
+	glow_color_override: int @ 0..
+}
+
+compound Transformation {
+	/// Translation in [x, y, z].
+	translation: [float] @ 3,
+	/// Quaternion form (used for saving) in [x, y, z, w] or Axis-angle form.
+	/// Using this rotation is enough for most transformations.
+	left_rotation: ([float] @ 4 | AxisAngle),
+	/// Quaternion form (used for saving) in [x, y, z, w] or Axis-angle form.
+	/// For more complex transformations.
+	right_rotation: ([float] @ 4 | AxisAngle),
+	/// Scale in [x, y, z]
+	scale: [float] @ 3
+}
+
+compound AxisAngle {
+	/// Local position of the axis in [x, y, z].
+	axis: [float] @ 3,
+	/// Angle to rotate around axis in radians.
+	angle: float
+}
+
+compound DisabledBillboard {
+	/// No rotation.
+	fixed: boolean
+}
+
+compound Billboard {
+	/// Model can pivot around vertical axis.
+	vertical: boolean,
+	/// Model can pivot around horizontal axis.
+	horizontal: boolean,
+	/// Model can pivot around the center point.
+	center: boolean
+}
+
+compound Brightness {
+	/// Value of skylight.
+	sky: int @ 0..15,
+	/// Value of block light.
+	block: int @ 0..15
+}
+
+compound BlockDisplay extends DisplayBase {
+	/// Block state to display.
+	/// Does display most block entities (eg. Chests, Beds, Furnaces, etc).
+	/// Does not display specially rendered block entities (eg. The bell in a bell block, an end gateway, the book on an enchantment table, a banner, a sign, etc).
+	block_state: BlockState
+}
+
+compound ItemDisplay extends DisplayBase {
+	/// Item stack to display.
+	item: InventoryItem,
+	/// Describes item model transform applied to item (as defined in `display` section in model JSON). Defaults to `fixed`.
+	alignment: ItemTransformType
+}
+
+enum(string) ItemTransformType {
+	FirstPersonRighthand = "firstperson_righthand",
+	FirstPersonLefthand = "firstperson_lefthand",
+	ThirdPersonRighthand = "thirdperson_righthand",
+	ThirdPersonLefthand = "thirdperson_lefthand",
+	Gui = "gui",
+	Head = "head",
+	Ground = "ground",
+	Fixed = "fixed"
+}
+
+BlockDisplay describes minecraft:entity[minecraft:block_display];
+ItemDisplay describes minecraft:entity[minecraft:item_display];
