@@ -1,8 +1,6 @@
 mod arrow;
 mod throwable;
 
-use ::minecraft::util::BlockState;
-
 compound ProjectileBase extends super::EntityBase {
 	/// Whether the projectile has been shot. This is set to true when the projectile exists for
 	/// at least one tick, and is used by the game to ensure it only triggers the projectile_shoot
