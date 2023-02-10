@@ -3,7 +3,7 @@ mod text;
 use ::minecraft::util::BlockState
 use ::minecraft::util::InventoryItem;
 
-struct DisplayBase extends super::EntityBase {
+compound DisplayBase extends super::EntityBase {
 	...super::EntityBase,
 	/// Either a matrix form (describing a row-major matrix), or a decomposed form (used for saving & ease of use).
 	/// Transformation applied to model (after normal entity orientation). Defaults to identity. Interpolated.
@@ -43,7 +43,7 @@ struct DisplayBase extends super::EntityBase {
 	glow_color_override: int @ 0..,
 }
 
-struct Transformation {
+compound Transformation {
 	/// Translation in [x, y, z].
 	translation: [float] @ 3,
 	/// Quaternion form (used for saving) in [x, y, z, w] or Axis-angle form.
@@ -56,19 +56,19 @@ struct Transformation {
 	scale: [float] @ 3,
 }
 
-struct AxisAngle {
+compound AxisAngle {
 	/// Local position of the axis in [x, y, z].
 	axis: [float] @ 3,
 	/// Angle to rotate around axis in radians.
 	angle: float,
 }
 
-struct DisabledBillboard {
+compound DisabledBillboard {
 	/// No rotation.
 	fixed: boolean,
 }
 
-struct Billboard {
+compound Billboard {
 	/// Model can pivot around vertical axis.
 	vertical: boolean,
 	/// Model can pivot around horizontal axis.
@@ -77,21 +77,21 @@ struct Billboard {
 	center: boolean,
 }
 
-struct Brightness {
+compound Brightness {
 	/// Value of skylight.
 	sky: int @ 0..15,
 	/// Value of block light.
 	block: int @ 0..15,
 }
 
-struct BlockDisplay extends DisplayBase {
+compound BlockDisplay extends DisplayBase {
 	/// Block state to display.
 	/// Does display most block entities (eg. Chests, Beds, Furnaces, etc).
 	/// Does not display specially rendered block entities (eg. The bell in a bell block, an end gateway, the book on an enchantment table, a banner, a sign, etc).
 	block_state: BlockState,
 }
 
-struct ItemDisplay extends DisplayBase {
+compound ItemDisplay extends DisplayBase {
 	/// Item stack to display.
 	item: InventoryItem,
 	/// Describes item model transform applied to item (as defined in `display` section in model JSON). Defaults to `fixed`.
