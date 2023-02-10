@@ -1,10 +1,9 @@
 mod text;
 
-use ::minecraft::util::BlockState
+use ::minecraft::util::BlockState;
 use ::minecraft::util::InventoryItem;
 
 compound DisplayBase extends super::EntityBase {
-	...super::EntityBase,
 	/// Either a matrix form (describing a row-major matrix), or a decomposed form (used for saving & ease of use).
 	/// Transformation applied to model (after normal entity orientation). Defaults to identity. Interpolated.
 	/// See [Misode's tool](https://misode.github.io/transformation/) or [Singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition).
@@ -40,7 +39,7 @@ compound DisplayBase extends super::EntityBase {
 	height: float @ 0..,
 	/// Override glow border color. If field is set to 0, uses team color. Defaults to 0.
 	/// Calculated as a bit field of `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive.
-	glow_color_override: int @ 0..,
+	glow_color_override: int @ 0..
 }
 
 compound Transformation {
@@ -53,19 +52,19 @@ compound Transformation {
 	/// For more complex transformations.
 	right_rotation: ([float] @ 4 | AxisAngle)
 	/// Scale in [x, y, z]
-	scale: [float] @ 3,
+	scale: [float] @ 3
 }
 
 compound AxisAngle {
 	/// Local position of the axis in [x, y, z].
 	axis: [float] @ 3,
 	/// Angle to rotate around axis in radians.
-	angle: float,
+	angle: float
 }
 
 compound DisabledBillboard {
 	/// No rotation.
-	fixed: boolean,
+	fixed: boolean
 }
 
 compound Billboard {
@@ -74,28 +73,28 @@ compound Billboard {
 	/// Model can pivot around horizontal axis.
 	horizontal: boolean,
 	/// Model can pivot around the center point.
-	center: boolean,
+	center: boolean
 }
 
 compound Brightness {
 	/// Value of skylight.
 	sky: int @ 0..15,
 	/// Value of block light.
-	block: int @ 0..15,
+	block: int @ 0..15
 }
 
 compound BlockDisplay extends DisplayBase {
 	/// Block state to display.
 	/// Does display most block entities (eg. Chests, Beds, Furnaces, etc).
 	/// Does not display specially rendered block entities (eg. The bell in a bell block, an end gateway, the book on an enchantment table, a banner, a sign, etc).
-	block_state: BlockState,
+	block_state: BlockState
 }
 
 compound ItemDisplay extends DisplayBase {
 	/// Item stack to display.
 	item: InventoryItem,
 	/// Describes item model transform applied to item (as defined in `display` section in model JSON). Defaults to `fixed`.
-	alignment: ItemTransformType,
+	alignment: ItemTransformType
 }
 
 enum(string) ItemTransformType {
@@ -106,7 +105,7 @@ enum(string) ItemTransformType {
 	Gui = "gui",
 	Head = "head",
 	Ground = "ground",
-	Fixed = "fixed",
+	Fixed = "fixed"
 }
 
 BlockDisplay describes minecraft:entity[minecraft:block_display];

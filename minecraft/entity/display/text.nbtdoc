@@ -15,13 +15,13 @@ compound TextDisplay extends super::DisplayBase {
 	/// Should text be visible through blocks. Defaults to false.
 	see_through: boolean,
 	/// How text should be aligned. Defaults to `center`.
-	alignment: Alignment,
+	alignment: Alignment
 }
 
 enum(string) Alignment {
 	Center = "center",
 	Left = "left",
-	Right = "right",
+	Right = "right"
 }
 
 TextDisplay extends minecraft:entity[minecraft:text_display]
