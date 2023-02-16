@@ -1,0 +1,27 @@
+compound Sniffer extends super::Breedable {
+	/// The sniffer's brain
+	Brain: Brain
+}
+
+compound Brain {
+	/// The sniffer's memories
+	memories: Memories
+}
+
+compound Memories {
+	/// Ticks till the sniffer can explore another position
+	"minecraft:sniff_cooldown": SniffCooldownMemory,
+	/// 
+	"minecraft:sniffer_explored_positions": ExploredPositionsMemory
+}
+
+compound SniffCooldownMemory {
+	value: boolean,
+	/// The number of ticks until this memory is removed
+	ttl: long
+}
+
+compound ExploredPositionsMemory {
+    /// Coordinates in the world that the sniffer has already explored.
+	value: [int[] @ 3] @ ..20
+}
