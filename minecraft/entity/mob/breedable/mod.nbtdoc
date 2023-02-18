@@ -15,6 +15,7 @@ mod rabbit;
 mod saddled;
 mod sheep;
 mod tamable;
+mod sniffer;
 mod turtle;
 mod villager;
 
