@@ -20,6 +20,7 @@ mod movingpiston;
 mod sign;
 mod head;
 mod structureblock;
+mod decoratedpot;
 
 compound BlockEntity {
 	/// The id of the block entity
