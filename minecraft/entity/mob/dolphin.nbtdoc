@@ -7,8 +7,8 @@ compound Dolphin extends super::MobBase {
 	TreasurePosZ: int,
 	/// Whether the dolphin has gotten fish from a player
 	GotFish: boolean,
-	/// Whether the dolphin will lead a player to treasure
-	CanFindTreasure: boolean
+	/// The moistness of the dolphin
+	Moistness: int
 }
 
 Dolphin describes minecraft:entity[minecraft:dolphin];
