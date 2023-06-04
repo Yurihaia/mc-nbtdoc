@@ -1,16 +1,21 @@
 compound Sign extends super::BlockEntity {
-	/// The color the sign has been dyed
-	Color: Color,
-	/// Whether the texts on this sign are glowing
-	GlowingText: boolean,
-	/// The first line of text from the top
-	Text1: string,
-	/// The second line of text from the top
-	Text2: string,
-	/// The third line of text from the top
-	Text3: string,
-	/// The fourth line of text from the top
-	Text4: string
+	/// The text on the front side of the sign
+	front_text: SignText,
+	/// The text on the back side of the sign
+	back_text: SignText,
+	/// Whether the sign is waxed and can no longer be edited
+	is_waxed: boolean
+}
+
+compound SignText {
+	/// The lines of text
+	messages: [string] @ 4,
+	/// If present; the filtered lines of text
+	filtered_messages: [string] @ 4
+	/// The color the sign has been dyed on this side
+	color: Color
+	/// Whether the text is glowing on this side
+	has_glowing_text: boolean
 }
 
 enum(string) Color {
