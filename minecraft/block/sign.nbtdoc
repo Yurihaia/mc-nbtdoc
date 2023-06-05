@@ -11,9 +11,9 @@ compound SignText {
 	/// The lines of text
 	messages: [string] @ 4,
 	/// If present; the filtered lines of text
-	filtered_messages: [string] @ 4
+	filtered_messages: [string] @ 4,
 	/// The color the sign has been dyed on this side
-	color: Color
+	color: Color,
 	/// Whether the text is glowing on this side
 	has_glowing_text: boolean
 }
