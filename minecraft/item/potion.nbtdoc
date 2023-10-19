@@ -3,7 +3,7 @@ use ::minecraft::util::PotionEffect;
 /// An item that has a potion effect
 compound EffectItem extends super::ItemBase {
 	/// A list of the potion effects that will be used with this item
-	CustomPotionEffects: [PotionEffect],
+	custom_potion_effects: [PotionEffect],
 	/// The name of the default potion effect
 	Potion: id(minecraft:potion),
 	/// Color of this item  
