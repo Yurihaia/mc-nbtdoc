@@ -1,51 +1,25 @@
 /// A single potion effect
 compound PotionEffect {
-	Id: EffectId,
+	id: id(minecraft:mob_effect),
 	/// Whether the effect particles are semi-transparent (like with a Beacon)
-	Ambient: boolean,
-	Amplifier: byte,
-	Duration: int,
+	ambient: boolean,
+	amplifier: byte,
+	duration: int,
 	/// A lower amplifier effect of the same type.
-	HiddenEffect: PotionEffect,
+	hidden_effect: PotionEffect,
 	/// Whether the effect particles should be shown
-	ShowParticles: boolean,
+	show_particles: boolean,
 	/// Whether the effect icon should be shown
-	ShowIcon: boolean
+	show_icon: boolean,
+	factor_calculation_data: FactorData
 }
 
-/// Numerical ids for effects
-enum(int) EffectId {
-	Speed = 1,
-	Slowness = 2,
-	Haste = 3,
-	MiningFatigue = 4,
-	Strength = 5,
-	InstantHealth = 6,
-	InstantDamage = 7,
-	JumpBoost = 8,
-	Nausea = 9,
-	Regeneration = 10,
-	Resistance = 11,
-	FireResistance = 12,
-	WaterBreathing = 13,
-	Invisibility = 14,
-	Blindness = 15,
-	NightVision = 16,
-	Hunger = 17,
-	Weakness = 18,
-	Poison = 19,
-	Wither = 20,
-	HealthBoost = 21,
-	Absorption = 22,
-	Saturation = 23,
-	Glowing = 24,
-	Levitation = 25,
-	Luck = 26,
-	UnLuck = 27,
-	SlowFalling = 28,
-	ConduitPower = 29,
-	DolphinsGrace = 30,
-	BadOmen = 31,
-	HeroOfTheVillage = 32,
-	Darkness = 33
+compound FactorData {
+	padding_duration: int @ 0..,
+	factor_start: float,
+	factor_target: float,
+	factor_current: float,
+	ticks_active: int @ 0..,
+	factor_previous_frame: float,
+	had_effect_last_tick: boolean
 }

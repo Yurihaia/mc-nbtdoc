@@ -1,15 +1,13 @@
-use ::minecraft::util::EffectId;
-
 /// A suspicious stew item
 compound SuspiciousStew extends super::ItemBase {
 	/// The effects this stew will give
-	Effects: [Effect]
+	effects: [SuspiciousEffect]
 }
 
 /// A suspicious stew effect
-compound Effect {
+compound SuspiciousEffect {
 	/// The id of the effect
-	EffectId: EffectId,
+	id: id(minecraft:mob_effect),
 	/// The duration of the effect in ticks
-	EffectDuration: int @ 1..
+	duration: int @ 1..
 }

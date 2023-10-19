@@ -28,7 +28,7 @@ compound EffectCloud extends super::EntityBase {
 	/// The default potion effect
 	Potion: id(minecraft:potion),
 	/// The potion effects that get applied on use
-	Effects: [PotionEffect]
+	effects: [PotionEffect]
 }
 
 EffectCloud describes minecraft:entity[minecraft:area_effect_cloud];
