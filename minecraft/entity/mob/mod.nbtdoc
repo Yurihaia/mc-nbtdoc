@@ -59,7 +59,7 @@ compound LivingEntity extends super::EntityBase {
 	/// The mob's attributes
 	Attributes: [Attribute],
 	/// The active potion effects on the mob
-	ActiveEffects: [PotionEffect],
+	active_effects: [PotionEffect],
 	/// Whether the mob should have an AI
 	NoAI: boolean,
 	/// The team to join when the mob is spawned

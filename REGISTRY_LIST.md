@@ -11,6 +11,7 @@
 * minecraft:instrument
 * minecraft:item
 * minecraft:loot_table
+* minecraft:mob_effect (post-23w32a)
 * minecraft:motive: Painting ID (pre-22w16a)
 * minecraft:painting_variant: Painting ID (post-22w16a)
 * minecraft:position_source_type

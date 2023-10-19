@@ -1,12 +1,10 @@
-use ::minecraft::util::EffectId;
+use ::minecraft::item::suspiciousstew::SuspiciousEffect;
 
 compound Mooshroom extends super::Breedable {
 	/// The type of the mooshroom
 	Type: Type,
-	/// The effect that the mooshroom gives to suspicious stew
-	EffectId: EffectId,
-	/// The duration of the suspicious stew effect
-	EffectDuration: int
+	/// The effects that the mooshroom gives to suspicious stew
+	stew_effects: [SuspiciousEffect]
 }
 
 enum(string) Type {
