@@ -4,7 +4,7 @@ compound Mooshroom extends super::Breedable {
 	/// The type of the mooshroom
 	Type: Type,
 	/// The effects that the mooshroom gives to suspicious stew
-	stew_effects: SuspiciousEffect[]
+	stew_effects: [SuspiciousEffect]
 }
 
 enum(string) Type {
