@@ -5,7 +5,7 @@ on:
     branches-ignore:
       - master
   pull_request: {}
-  workflow dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
