@@ -40,8 +40,8 @@ compound DisplayBase extends super::EntityBase {
 	/// Override glow border color. If field is set to 0, uses team color. Defaults to 0.
 	/// Calculated as a bit field of `RED << 16 | GREEN << 8 | BLUE`. Each of these fields must be between 0 and 255, inclusive.
 	glow_color_override: int @ 0..,
-	teleport_duration: int @ 0..
 	/// Determines the time it takes in ticks for the entity's position to interpolate.
+	teleport_duration: int @ 0..
 }
 
 compound Transformation {
