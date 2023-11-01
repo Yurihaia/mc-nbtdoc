@@ -23,7 +23,9 @@ compound ArrowBase extends super::ProjectileBase {
 	/// Whether the projectile was shot from a crossbow
 	ShotFromCrossbow: boolean,
 	/// The sound event to play when the projectile hits something
-	SoundEvent: string
+	SoundEvent: string,
+	/// The item that will be picked up when collecting the projectile
+	item: InventoryItem
 }
 
 enum(byte) Pickup {
@@ -51,8 +53,6 @@ compound SpectralArrow extends ArrowBase {
 }
 
 compound Trident extends ArrowBase {
-	/// The trident that was thrown
-	Trident: InventoryItem,
 	/// Whether the trident has damaged an entity already
 	DealtDamage: boolean
 }

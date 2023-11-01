@@ -48,7 +48,7 @@ compound EntityBase {
 	UUID: int[] @ 4,
 	/// The JSON text component name
 	CustomName: string,
-	/// Whether the custom name should be visible always
+	/// Whether the custom name should be visible always or only when looked at
 	CustomNameVisible: boolean,
 	/// Whether the entity should make any sound
 	Silent: boolean,
