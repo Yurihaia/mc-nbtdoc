@@ -1,6 +1,12 @@
+use ::minecraft::util::BlockState;
+
 compound Tnt extends super::EntityBase {
 	/// The number of ticks until this tnt explodes
-	Fuse: short
+	fuse: short,
+	// The block model this entity will be rendered with
+	/// Does display most block entities (eg. Chests, Beds, Furnaces, etc).
+	/// Does not display specially rendered block entities (eg. The bell in a bell block, an end gateway, the book on an enchantment table, a banner, a sign, etc).
+	block_state: BlockState
 }
 
 Tnt describes minecraft:entity[minecraft:tnt];
