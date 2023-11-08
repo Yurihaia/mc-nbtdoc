@@ -82,7 +82,8 @@
 	minecraft:spider_spawn_egg,
 	minecraft:panda_spawn_egg,
 	minecraft:axolotl_spawn_egg,
-	minecraft:snow_golem_spawn_egg
+	minecraft:snow_golem_spawn_egg,
+	minecraft:breeze_spawn_egg
 ];
 ::minecraft::item::leatherarmor::LeatherArmor describes minecraft:item[
 	minecraft:leather_chestplate,
@@ -869,6 +870,7 @@
 	minecraft:copper_ore,
 	minecraft:bookshelf,
 	minecraft:dark_prismarine_stairs,
+	minecraft:trial_spawner,
 	minecraft:light_gray_candle,
 	minecraft:lapis_block,
 	minecraft:purple_carpet,
