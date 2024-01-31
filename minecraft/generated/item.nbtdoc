@@ -86,13 +86,6 @@
 	minecraft:snow_golem_spawn_egg,
 	minecraft:breeze_spawn_egg
 ];
-::minecraft::item::leatherarmor::LeatherArmor describes minecraft:item[
-	minecraft:leather_chestplate,
-	minecraft:leather_helmet,
-	minecraft:leather_boots,
-	minecraft:leather_leggings,
-	minecraft:leather_horse_armor
-];
 ::minecraft::item::potion::EffectItem describes minecraft:item[
 	minecraft:splash_potion,
 	minecraft:lingering_potion,
@@ -677,6 +670,7 @@
 	minecraft:deepslate_brick_stairs,
 	minecraft:stone_pressure_plate,
 	minecraft:dropper,
+	minecraft:vault,
 	minecraft:yellow_stained_glass_pane,
 	minecraft:redstone_lamp,
 	minecraft:black_carpet,
