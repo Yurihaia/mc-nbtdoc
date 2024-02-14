@@ -29,6 +29,7 @@
 	minecraft:armor_stand,
 	minecraft:polar_bear_spawn_egg,
 	minecraft:stray_spawn_egg,
+	minecraft:bogged_spawn_egg,
 	minecraft:sniffer_spawn_egg,
 	minecraft:zombie_horse_spawn_egg,
 	minecraft:silverfish_spawn_egg,
